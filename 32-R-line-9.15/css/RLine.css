@@ -1,0 +1,169 @@
+/*	reset 	*/
+*{
+	margin: 0;
+	padding: 0;
+}
+img{
+	border: 0;
+	vertical-align: top;
+}
+html,body,#R_Line,.swiper-container,.swiper-slide,.imgBG{
+	height: 100%;
+}
+
+/*	swiper	*/
+#R_Line{
+	max-width: 480px;
+	margin: 0 auto;
+}
+.swiper-container{
+	overflow: hidden;
+}
+.swiper-wrapper{
+	height: 500%;
+}
+.swiper-slide{
+	position: relative;
+	background-color: #fff;
+}
+.imgBG{
+	width: 100%;
+}
+.logo{
+	width: 100%;
+	margin: 7px 0;
+	position: absolute;
+	top: 0;
+}
+.logo1{
+	position: absolute;
+	left: 7px;
+	top: 10px;
+	width: 28.8%;
+}
+.logo2{
+	position: absolute;
+	right: 7px;
+	width: 7.73%;
+}
+/*	section 1 	*/
+.img1_title{
+	position: absolute;
+	left: 7px;
+	top: 14.865%;
+	width: 80.266%;
+}
+.img1_word{
+	position: absolute;
+	top: 38%;
+	left: 7px;
+	width: 90.133%;
+}
+.img1_carBox{
+	position: absolute;
+	left: -22.66%;
+	top: 61.7%;
+	width: 120%;
+}
+.img1_car{
+	width: 100%;
+}
+.img1_wheel{
+	position: absolute;
+	width: 13.8%;
+	top: 32.1%;
+	left: 52%;
+	/*animation: rot 1.5s linear 1.6s 1;*/
+}
+/*@keyframes rot{
+	from{transform: rotateZ(180deg);}
+	to{transform: rotateZ(360deg);}
+}*/
+
+/*	section 2 	*/
+.img2_title{
+	position: absolute;
+	top: 10.961%;
+	left: 11px;
+	width: 76.266%;
+}
+.img2_car{
+	position: absolute;
+	top: 60.66%;
+	right: 0;
+	width: 93.333%;
+}
+
+/*	section 3 	*/
+.img3_title{
+	position: absolute;
+	top: 12.913%;
+	right: 15px;
+	width: 76.266%;
+}
+.img3_generator{
+	position: absolute;
+	left: 7px;
+	top: 57%;
+	width: 55.2%;
+}
+
+/*	section 4 	*/
+.img4_title{
+	position: absolute;
+	left: 7px;
+	top: 7.958%;
+	width: 80%;
+}
+.img4_word{
+	position: absolute;
+	top: 31.88%;
+	left: 7px;
+	width: 80%;
+}
+.img4_bg{
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	bottom: 0;
+}
+
+/*	section 5 	*/
+.img5_title{
+	position: absolute;
+	top: 7.808%;
+	left: 7px;
+	width: 80.266%;
+}
+.img5_btn{
+	position: absolute;
+	top: 28%;
+	right: 18px;
+	width: 45.333%;
+}
+.img5_car{
+	position: absolute;
+	top: 58%;
+	left: 0;
+	width: 91.2%;
+}
+
+/* arrow	*/
+.arrow{
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	z-index: 5;
+	bottom: 23px;
+	animation: flash 1.2s linear infinite;
+}
+@keyframes flash{
+	from{
+		opacity: 0;
+		transform: translateY(0);
+	}
+	to{
+		opacity: 1;
+		transform: translateY(18px);
+	}
+}
