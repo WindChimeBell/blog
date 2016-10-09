@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>CSS3和JS炫酷3D拖拽卡片动画特效</title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			html,body,#drag_card{height: 100%;}
+			#drag_card{
+				background: url(img/border1.jpg) 0% 50%/cover no-repeat;
+				border: 20px solid #000;
+				box-sizing: border-box;
+				border-image: url(img/border2.png) 16% stretch;
+				/*border-image: url(img/border.png) 18% stretch;*/
+				cursor: url(img/hearthstone-cursor.png),auto;
+				position: relative;
+				perspective: 1000px;
+			}
+			img{
+				width: 150px;
+				position: absolute;
+				top: 45%;
+				left: 45%;
+				transition: transform .5s;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="drag_card">
+			<img src="img/hearthstone-ragnaros.png" id="card" />
+		</div>
+		
+		<script src="js/drag-card.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
