@@ -44,9 +44,85 @@
 	margin-top: 7.5px;
 	border: none;
 }
-.classify_Title input::-webkit-input-placeholder{
+.classify_Title input::-webkit-input-placeholder,#head_MB input::-webkit-input-placeholder{
 	color: #999;
 	font: 16px "黑体";
+}
+/*搜索页面*/
+#sePage_MB{
+	display: none;
+	overflow: hidden;
+	background-color: #ECECEC;
+	padding-bottom: 22px;
+}
+#sePage_MB div{
+	width: 93.33%;
+	margin: 8px auto 0;
+	background-color: #fff;
+	border: 2px solid #E2E2E2;
+}
+#sePage_MB h2{
+	background-image: url(../img/product_classify_MB/searchIcon.png);
+	background-repeat: no-repeat;
+	height: 44px;
+	line-height: 44px;
+	padding-left: 40px;
+	font-size: 20px;
+	border-bottom: 2px solid #E2E2E2;
+}
+#sePage_MB .sebox2 h2{
+	border: none;
+}
+.sebox1 .SP_h21{background-position: 9px 8px;}
+.sebox2 .SP_h22{background-position: 9px -59px;}
+.sebox2 .SP_h23{background-position: 9px -131px;}
+.sebox2 .SP_h24{background-position: 9px -208px;}
+.sebox2 .SP_h25{background-position: 9px -289px;}
+.sebox1 ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align: center;
+	margin: 8px auto 13px;
+}
+.sebox1 ul li{
+	flex: 1 0 0;
+	padding-top: 60px;
+	background-image: url(../img/product_classify_MB/searchIcon.png);
+	background-repeat: no-repeat;
+}
+.sebox1_li1{
+	background-position: 50% 49.5%;
+}
+.sebox1_li2{
+	background-position: 50% 64.7%;
+}
+.sebox1_li3{
+	background-position: 50% 81.2%;
+}
+.sebox1_li4{
+	background-position: 50% 98.2%;
+}
+.sebox2 ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align: center;
+	flex-wrap: wrap;
+}
+.sebox2 ul li{
+	display: flex;
+	align-items: center;
+	flex: 1 0 20%;
+	height: 44px;
+	border-top: 2px solid #E2E2E2;
+	border-right: 2px solid #E2E2E2;
+}
+.sebox2 ul li a{
+	flex: 1 0 auto;
+}
+.sebox2 ul .noRborder{
+	border-right: none;
 }
 
 /*左侧的功能栏*/
@@ -95,7 +171,6 @@
 }
 .productes-main ul li{
 	width: 100%;
-	height: 115px;
 	padding-bottom: 10px;
 }
 .productes-main ul li:hover{
@@ -107,11 +182,9 @@
 	overflow: hidden;
 	display: flex;
 	flex-direction: row;
-	height: 115px;
 }
 .productes-main-one-img{
 	flex: 1 0 38.42%;
-	height: 101px;
 	overflow: hidden;
 }
 .product-right{
@@ -123,6 +196,8 @@
 }
 .productes-main-one-img img{
 	width: 100%;
+}
+.productes-main-one-img a{
 	height: 100%;
 }
 .productes-main-one-price{

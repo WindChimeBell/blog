@@ -13,7 +13,16 @@ $(window).on("load",function(){
 		$("#product-banner").slideToggle(1000);
 	},3000);
 	
-	$("#seMask").css("height",$("body").height());
+	$("#seMask").css("height",$("body").height());//使蒙版的高度和body高度一致
+	//点击搜索框弹出搜索页面
+	$("#search_MB").click(function(){
+		$(".productes").css("display","none");
+		$("#sePage_MB").css("display","block");
+	});
+	$(".head_back").click(function(){
+		$(".productes").css("display","block");
+		$("#sePage_MB").css("display","none");
+	});
 	siftT();
 });
 
