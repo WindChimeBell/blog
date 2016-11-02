@@ -49,7 +49,7 @@
 }
 .classify_Title input::-webkit-input-placeholder,#head_MB input::-webkit-input-placeholder{
 	color: #999;
-	font: 16px "黑体";
+	font-family: "黑体";
 }
 /*搜索页面*/
 #sePage_MB{
