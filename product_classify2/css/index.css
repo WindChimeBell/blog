@@ -1,0 +1,367 @@
+
+/*设置背景图片*/
+
+.navi-background {
+	height: 502px;
+	background-image: url(../img/navi/navi-background.jpg);
+	background-size: auto 502px;
+}
+.navi-background-jz{
+	width: 1210px;
+	margin: 0px auto;
+}
+
+/*广告的翻页栏样式开始*/
+.background-skip-ju{
+	width: 1210px;
+	height: 0;
+	margin: 0px auto;
+}
+.background-skip{
+	position: relative;
+	top: -50px;
+	width: 122px;
+	height: 23px;
+	background-color: #CDCDCD;
+	margin: 0px auto;
+	border-radius: 23px;
+}
+.background-skip ul{
+	float: left;
+	width: 100px;
+	height: 15px;
+	margin-top:4px;
+	margin-left: 6px;
+}
+.background-skip li{
+	float: left;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.background-skip-dot{
+	width: 13px;
+	height: 13px;
+	border: 1px solid white;
+	background-color: #CDCDCD;
+	border-radius: 13px;
+}
+/*广告的翻页栏样式结束*/
+
+/*免费预约浮动框开始*/
+
+/*外包大层*/
+
+.navi-book {
+	float: right;
+	height: 502px;
+	width: 255px;
+	background-color: white;
+}
+
+
+/*免费预约字样*/
+
+.navi-book-bt {
+	height: 45px;
+	text-align: center;
+	font: 26px "黑体";
+	color: red;
+	line-height: 45px;
+	margin-top: 20px;
+}
+
+
+/*真实姓名层*/
+
+.navi-book-name {
+	height: 30px;
+	width: 218px;
+	margin: 0px auto;
+}
+
+
+/*真实姓名输入层*/
+
+.navi-book-name input {
+	height: 30px;
+	width: 218px;
+}
+
+
+/*联系电话层*/
+
+.navi-book-tel {
+	width: 218px;
+	height: 30px;
+	margin: 10px auto;
+}
+
+
+/*联系电话输入层*/
+
+.navi-book-tel input {
+	height: 30px;
+	width: 218px;
+}
+
+.navi-book-sf {
+	margin: 0px auto;
+	height: 26px;
+	width: 218px;
+}
+
+
+/*省份层*/
+
+.navi-book-province {
+	height: 26px;
+	width: 100px;
+	margin: 0px auto;
+	float: left;
+}
+
+.navi-book-province select {
+	height: 26px;
+	width: 100px;
+}
+
+.navi-book-city {
+	height: 26px;
+	width: 100px;
+	margin: 0px auto;
+	float: right;
+}
+
+.navi-book-city select {
+	height: 26px;
+	width: 100px;
+}
+
+
+/*立即提交*/
+
+.navi-book-submit {
+	width: 218px;
+	height: 30px;
+	margin: 15px auto;
+	font: 18px "黑体";
+	color: white;
+	background-color: red;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+}
+
+
+/*成功预约用户大框*/
+
+.navi-book-success {
+	border-top: 2px solid #397E83;
+	border-bottom: 2px solid #397E83;
+	height: 138px;
+}
+
+.navi-book-success-font{
+	font: 13px "宋体";
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	color: #767676;
+}
+
+
+/*成功预约客户详情*/
+
+.navi-book-success-details {
+	font: 13px "宋体";
+	height: 78px;
+	line-height: 20px;
+	text-align: center;
+	overflow: hidden;
+	color: #767676;
+}
+
+.navi-book-success-details ul {
+	list-style: none;
+}
+
+.navi-book-success-details1 li {
+	list-style-type: none;
+	height: 22px;
+	background: url() no-repeat left center;
+	text-align: center;
+	text-indent: 15px;
+}
+
+
+
+/*实用工具*/
+.navi-book-tool{
+	height: 120px;
+	
+}
+.navi-book-tool-font {
+	width: 218px;
+	height: 30px;
+	font: 18px "黑体";
+	color: white;
+	background-color: red;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+	margin:18px auto 10px auto ;
+}
+.navi-book-tool-one{
+	float: left;
+	margin-left: 30px;
+}
+.navi-book-tool-icon-font{
+	text-align: center;
+	
+}
+
+.navi-book-tool-icon-font a{
+	font: 13px "宋体";
+	color: red;
+	text-decoration: none;
+}
+
+
+/*免费预约浮动框结束*/
+
+
+/*主体部分*/
+
+.main {
+	height: auto;
+}
+
+
+/*大理石层*/
+
+.main-dls-bg {
+	background-color: #ECECEC;
+	height: 260px;
+}
+
+
+/*固定宽度，居中*/
+
+.main-dls {
+	width: 1210px;
+	height: 260px;
+	margin: 0px auto;
+}
+
+
+/*图片浮动*/
+.main-dls-img{
+	width: 320px;
+	height: 200px;
+	margin-top: 30px;
+	
+}
+.main-dls-img img{
+	width: 320px;
+	height: 200px;
+}
+.dls-left {
+	float: left;
+	
+}
+.dls-middle {
+	float: left;
+	margin-left: 128px;
+}
+.dls-right {
+	float: right;
+}
+
+/*热卖产品*/
+
+.main-hotsell {
+	width: 1210px;
+	height: 465px;
+	margin: 10px auto;
+}
+.main-hotsell img{
+	width: 1210px;
+}
+
+/*设置热卖产品字体，背景颜色，上下居中，前面空15个PX*/
+
+.main-hotsell-top {
+	height: 30px;
+	background-color: #464646;
+	font: 16px "宋体";
+	color: white;
+	line-height: 30px;
+	text-indent: 15px;
+	font-weight: bolder;
+}
+
+
+/*楼层*/
+
+.main-floor-f {
+	height: 430px;
+	margin: 30px auto;
+	width: 1210px;
+}
+
+
+/*楼层下所有a标签*/
+
+.main-floor-f a {
+	text-decoration: none;
+	font: 15px "宋体";
+	color: black;
+	text-align: center;
+}
+
+
+/*楼层下所有td标签*/
+
+.main-floor-f td {
+	text-align: center;
+}
+
+
+/*设置楼层背景条*/
+
+.main-floor-f-top {
+	height: 30px;
+	background-color: #464646;
+}
+
+
+/*设置楼层号码样式,1F*/
+
+.main-floor-f-top-0 {
+	width: 40px;
+	height: 30px;
+	font: 20px "宋体";
+	background-color: #743A38;
+	font-weight: bolder;
+	line-height: 30px;
+	text-align: center;
+	float: left;
+	color: white;
+}
+
+
+/*设置楼层字体样式 ，东鹏瓷砖*/
+
+.main-floor-f-top-1 {
+	height: 30px;
+	font: 16px "宋体";
+	font-weight: bolder;
+	line-height: 30px;
+	text-align: center;
+	float: left;
+	color: white;
+	text-indent: 5px;
+}
+
+
+/*底部*/

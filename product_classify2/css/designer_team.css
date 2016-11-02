@@ -1,0 +1,662 @@
+
+/*背景广告*/
+
+.navi-background {
+	width: 1920px;
+	height: 500px;
+	background-color: #F7F7F7;
+}
+/*广告的翻页栏样式开始*/
+.background-skip-ju{
+	width: 1210px;
+	height: 0;
+	margin: 0px auto;
+}
+.background-skip{
+	position: relative;
+	top: -50px;
+	width: 122px;
+	height: 23px;
+	background-color: #CDCDCD;
+	margin: 0px auto;
+	border-radius: 23px;
+}
+.background-skip ul{
+	float: left;
+	width: 100px;
+	height: 15px;
+	margin-top:4px;
+	margin-left: 6px;
+}
+.background-skip li{
+	float: left;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.background-skip-dot{
+	width: 13px;
+	height: 13px;
+	border: 1px solid white;
+	background-color: #CDCDCD;
+	border-radius: 13px;
+}
+/*广告的翻页栏样式结束*/
+/*设计团队开始*/
+
+.designer-team {
+	height: 645px;
+	width: 1210px;
+	margin-top: 18px;
+}
+
+.designer-team-top {
+	height: 64px;
+	width: 1210px;
+}
+
+.designer-team-top-fir {
+	font: 24px "黑体";
+	line-height: 38px;
+	text-align: center;
+	color: #686868;
+}
+
+.designer-team-top-desc {
+	font: 14px "宋体";
+	line-height: 26px;
+	text-align: center;
+	color: #7C7C7C;
+}
+
+.designer-team-table {
+	margin-top: 20px;
+	height: 560px;
+	width: 1210px;
+	background-color: #F8F8F8;
+}
+
+.designer-team-table-left {
+	float: left;
+	width: 930px;
+	height: 542px;
+	margin-top: 3px;
+	margin-left: 4px;
+}
+
+.designer-team-table-left ul li {
+	float: left;
+	width: 175px;
+	height: 175px;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.designer-team-table-introduce-bg {
+	float: left;
+	width: 185px;
+	height: 175px;
+	background-color: #FF6565;
+}
+/*先隐藏右边所有设计师描述*/
+.designer-team-table-introduce {
+	width: 145px;
+	height: 100px;
+	margin: 32px auto 0 auto;
+	font: 14px "宋体";
+	color: white;
+	line-height: 20px;
+	display: none;
+}
+
+.designer-team-table-introduce p {
+	font: 14px "宋体";
+	font-weight: bolder;
+	color: white;
+	line-height: 30px;
+}
+
+.designer-team-table-right {
+	float: left;
+	margin-top: 5px;
+	width: 264px;
+	height: 540px;
+	background-color: white;
+	border: 3px solid #FF6565;
+}
+/*先隐藏右边所有设计师图片*/
+.designer-team-table-img-big {
+	text-align: center;
+	line-height: 540px;
+	display: none;
+}
+
+
+/*案例展示开始*/
+
+.designer-showtime {
+	margin-top: 38px;
+	width: 1210px;
+	height: 556px;
+}
+
+.designer-showtime-left {
+	float: left;
+	width: 298px;
+	height: 554px;
+	border: 1px solid #C4C4C4;
+}
+
+.designer-showtime-left-title {
+	font: 14px "微软雅黑";
+	height: 60px;
+	line-height: 60px;
+	width: 298px;
+	text-align: center;
+}
+
+.designer-showtime-left-plan {
+	height: 224px;
+	width: 298px;
+	text-align: center;
+	line-height: 224px;
+	border-top: 1px solid #C4C4C4;
+	border-bottom: 1px solid #C4C4C4;
+}
+
+.designer-showtime-left-designer {
+	height: 268px;
+	width: 298px;
+	text-align: center;
+}
+
+.designer-showtime-left-designer img {
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+
+.designer-showtime-left-button {
+	float: left;
+	width: 145px;
+	height: 30px;
+}
+
+.designer-showtime-left-b1 {
+	width: 116px;
+	height: 28px;
+	background-color: #D7000F;
+	margin: 0 auto;
+}
+
+.designer-showtime-left-b1 a {
+	font: 14px "微软雅黑";
+	color: white;
+	line-height: 28px;
+	padding: 2px 25px;
+}
+
+.designer-showtime-left-b1 a:hover {
+	color: white;
+}
+
+.designer-showtime-navi {
+	float: left;
+	width: 164px;
+	height: 556px;
+	margin-left: 15px;
+}
+
+.designer-showtime-navi li {
+	width: 139px;
+	height: 58px;
+	font: 18px "微软雅黑";
+	color: #A4A4A4;
+	background-color: #EEEEEE;
+	text-align: center;
+	line-height: 60px;
+	margin-top: 1px;
+	margin-left: 9px;
+	cursor: pointer;
+}
+
+
+/*720*/
+
+.designer-showtime-img {
+	float: left;
+	width: 720px;
+	height: 556px;
+}
+
+.designer-showtime-img img {
+	width: 720px;
+	height: 556px;
+}
+
+.designer-showtime-img-position {
+	width: 720px;
+	height: 556px;
+	position: absolute;
+	z-index: 5px;
+}
+
+.designer-showtime-img-lef {
+	float: left;
+	width: 62px;
+	height: 556px;
+	font-size: 60px;
+	line-height: 556px;
+	text-align: center;
+	color: #E2E1DF;
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+.designer-showtime-img-lef:hover {
+	background-color: black;
+	opacity: 0.5;
+}
+
+.designer-showtime-img-rig {
+	float: right;
+	width: 62px;
+	height: 556px;
+	font-size: 60px;
+	line-height: 556px;
+	text-align: center;
+	color: #E2E1DF;
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+.designer-showtime-img-rig:hover {
+	background-color: black;
+	opacity: 0.5;
+}
+
+.designer-showtime-img-rigtop {
+	float: right;
+	width: 116px;
+	height: 55px;
+	font: 14px "微软雅黑";
+	text-align: center;
+	line-height: 55px;
+	background-color: #F24450;
+	color: white;
+}
+
+
+/*案例展示结束*/
+
+
+/*案例赏析开始*/
+
+.designer-case {
+	height: 1377px;
+	width: 1210px;
+	margin-top: 25px;
+}
+
+.designer-case-top {
+	height: 64px;
+	width: 1210px;
+}
+
+.designer-case-top-fir {
+	font: 24px "黑体";
+	line-height: 38px;
+	text-align: center;
+	color: #686868;
+}
+
+.designer-case-top-desc {
+	font: 14px "宋体";
+	line-height: 26px;
+	text-align: center;
+	color: #7C7C7C;
+}
+
+.designer-case-list {
+	width: 1210px;
+	height: 1299px;
+	margin-top: 5px;
+	border: 1px solid #EAEAEA;
+}
+
+.designer-case-list-one {
+	float: left;
+	margin: 27px 0px 0px 27px;
+	width: 370px;
+	height: 608px;
+	background-image: url(../img/designer_team/designer-border.png);
+}
+
+.designer-case-list-one-inner {
+	float: left;
+	width: 355px;
+	height: 595px;
+	margin-top: 7px;
+	margin-left: 7.5px;
+	background-color: white;
+}
+
+.designer-case-list-one-img {
+	width: 355px;
+	height: 267px;
+}
+
+.designer-case-list-one-img img {
+	width: 355px;
+	height: 267px;
+}
+
+.designer-case-list-one-descript {
+	height: 71px;
+	width: 338px;
+	border-bottom: 1px solid #DDDCDC;
+	margin: 0px auto;
+}
+
+.designer-case-list-one-descript-area {
+	float: left;
+	font: 14px "微软雅黑";
+	font-weight: bolder;
+	line-height: 30px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.designer-case-list-one-descript-name {
+	float: left;
+	font: 14px "微软雅黑";
+	font-weight: bolder;
+	line-height: 30px;
+	margin-left: 75px;
+	margin-top: 10px;
+}
+
+.designer-case-list-one-descript-de {
+	float: left;
+	font: 14px "微软雅黑";
+	color: #7C7C7C;
+	line-height: 25px;
+	margin-left: 10px;
+}
+
+.designer-case-list-one-demand {
+	height: 55px;
+	width: 338px;
+	border-bottom: 1px solid #DDDCDC;
+	margin: 0px auto;
+}
+
+.designer-case-list-one-demand-top {
+	margin-top: 5px;
+	font: 15px "微软雅黑";
+	font-weight: bolder;
+	color: #DA1F30;
+	margin-left: 10px;
+	line-height: 25px;
+}
+
+.designer-case-list-one-demand-de {
+	font: 14px "微软雅黑";
+	color: #7C7C7C;
+	margin-left: 10px;
+	line-height: 20px;
+}
+
+.designer-case-list-one-solve {
+	height: 158px;
+	width: 338px;
+	margin: 0px auto;
+}
+
+.designer-case-list-one-solve-left {
+	float: left;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+
+.designer-case-list-one-solve-left-top {
+	font: 15px "微软雅黑";
+	font-weight: bolder;
+	color: #DA1F30;
+	line-height: 35px;
+}
+
+.designer-case-list-one-solve-left-name {
+	font: 15px "微软雅黑";
+	color: #7C7C7C;
+	text-align: center;
+	line-height: 35px;
+}
+
+.designer-case-list-one-solve-right {
+	float: left;
+	width: 235px;
+	font: 12px "微软雅黑";
+	color: #7C7C7C;
+	margin-top: 40px;
+	margin-left: 10px;
+}
+
+.designer-case-list-one-love {
+	float: right;
+	font: 14px "微软雅黑";
+	color: #DA1F30;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+
+/*案例赏析结束*/
+
+
+/*对话设计师开始*/
+
+.designer-chat {
+	height: 580px;
+	width: 1210px;
+	margin-top: 10px;
+	margin-bottom: 195px;
+}
+
+.designer-chat-border {
+	height: 509px;
+	width: 1210px;
+	border: 1px solid #EAEAEA;
+	margin-top: 23px;
+}
+
+
+/*border的一半width 605*/
+
+.designer-chat-border-half {
+	float: left;
+	height: 435px;
+	width: 600px;
+}
+/*中间的虚线*/
+.designer-chat-border-half-wire{
+	float: left;
+	margin-top: 17px;
+	width: 0.5px;
+	height: 406px;
+	border: 1px dashed #D4D4D4;
+}
+
+/*居中*/
+
+.designer-chat-left {
+	float: left;
+	width: 525px;
+	height: 427px;
+	margin-left: 45px;
+}
+
+.designer-chat-border-question {
+	height: 90px;
+	width: 525px;
+	margin-top: 20px;
+}
+
+.designer-chat-border-question-time {
+	font: 13px "宋体";
+	color: #8E8E8E;
+	text-align: center;
+	line-height: 26px;
+}
+
+.designer-chat-border-question-head {
+	float: left;
+	width: 60px;
+	height: 60px;
+}
+
+.designer-chat-border-question-head img {
+	width: 60px;
+	height: 60px;
+}
+
+
+/*聊天气泡框*/
+
+.designer-chat-border-question-chat-border {
+	float: left;
+	width: 432px;
+	height: 62px;
+	background: #FF6565;
+	/* 圆角 */
+	border-radius: 5px;
+}
+
+
+/*聊天气泡框的角*/
+
+.question-arrow {
+	/* 圆角的位置需要细心调试哦 */
+	float: left;
+	margin-top: 18px;
+	margin-left: -5px;
+	/*做一个三角形*/
+	width: 0px;
+	height: 0px;
+	font-size: 0;
+	/* 三角形大小 */
+	border:12px solid;
+	/* 四个三角形的颜色transparent是透明 */
+	border-color: transparent #FF6565 transparent transparent;
+}
+
+.designer-chat-border-question-chat {
+	height: 42px;
+	width: 383px;
+	font: 14px "宋体";
+	line-height: 20px;
+	margin-left: 15px;
+	margin-top: 10px;
+	color: white;
+}
+.designer-chat-border-answer{
+	margin-top:30px ;
+	height: 62px;
+	width:525px ;
+}
+.designer-chat-border-answer-chat-border{
+	float: left;
+	width: 432px;
+	height: 62px;
+	/* 圆角 */
+	border-radius: 5px;
+	border: 1px solid #D2D2D2;
+}
+.answer-arrow{
+	/* 圆角的位置需要细心调试哦 */
+	float: left;
+	margin-top: 18px;
+	margin-right:-5px;
+	/*做一个三角形*/
+	width: 0;
+	height: 0px;
+	font-size: 0;
+	/* 三角形大小 */
+	border:12px solid;
+	/* 四个三角形的颜色transparent是透明 */
+	border-color: transparent transparent transparent #D2D2D2;
+}
+/*做一个白色的角放在上面形成线*/
+.answer-arrow-bg{
+	/* 圆角的位置需要细心调试哦 */
+	float: left;
+	position: relative;
+	margin-top: 19px;
+	margin-right:-22px;
+	right: 20px;
+	/*做一个三角形*/
+	width: 0;
+	height: 0px;
+	font-size: 0;
+	/* 三角形大小 */
+	border:11px solid;
+	/* 四个三角形的颜色transparent是透明 */
+	border-color: transparent transparent transparent white;
+}
+.designer-chat-border-answer-chat{
+	height: 42px;
+	width: 383px;
+	font: 14px "宋体";
+	line-height: 20px;
+	margin-left: 35px;
+	margin-top: 10px;
+	color: black;
+}
+.designer-chat-border-answer-head{
+	float: left;
+	width: 60px;
+	height: 60px;
+}
+.designer-chat-border-answer-head img {
+	width: 60px;
+	height: 60px;
+}
+
+/*页码栏*/
+.designer-chat-page{
+	height: 31px;
+	width: 385px;
+	margin: 15px auto 0px auto;
+}
+.designer-chat-page ul{
+}
+.designer-chat-page li{
+	float: left;
+}
+.chat-page{
+	width: 26px;
+	height: 24px;
+	font: 13px "微软雅黑";
+	text-align: center;
+	line-height: 24px;
+	margin: 2px;
+	
+}
+.chat-page a{
+	text-decoration: none;
+	color: #949494;
+	padding: 2px 6px;
+}
+.chat-page a:hover{
+	text-decoration: none;
+	color: #949494;
+}
+.page-button{
+	background-color: #EBEBEB;
+}
+.page-next{
+	font-weight: bolder;
+}
+/*对话设计师结束*/
+
+
+/*设计团队结束*/

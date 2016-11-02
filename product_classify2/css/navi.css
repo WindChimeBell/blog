@@ -1,0 +1,285 @@
+/*导航栏部分开始*/
+
+.navi {
+	height: auto;
+	margin: 0px auto;
+}
+
+
+/*设置导航栏上面的部分*/
+
+.navi-top {
+	width: 1210px;
+	height: 42px;
+	margin: 0px auto;
+}
+
+.navi-top-border {
+	border-top: 3px solid #D7000F;
+}
+
+
+/*浮动使导航栏在同一行*/
+
+.navi-top-all {
+	width: 246px;
+	height: 42px;
+	float: left;
+	background-color: #303030;
+	color: white;
+	font: 18px "微软雅黑";
+	text-align: center;
+	line-height: 42px;
+	cursor: pointer;
+}
+
+
+/*浮动使导航栏在同一行*/
+
+.navi-top-n {
+	height: 42px;
+}
+
+
+/*修改字体样式*/
+
+.navi-top-n a {
+	text-align: center;
+	text-decoration: none;
+	font: 16px "宋体";
+	color: black;
+	font-weight: bolder;
+}
+
+
+/*取消ul标签前面的点*/
+
+.navi-top-n ul {
+	margin-left: 5px;
+	list-style: none;
+}
+
+
+/*取消li标签的换行，前面加一条线,上下居中*/
+
+.navi-top-n li {
+	line-height: 42px;
+	display: inline;
+	padding: 0px 9px;
+}
+
+
+/*鼠标移动到字体变红*/
+
+.navi-top-n li a:hover {
+	color: red;
+}
+
+
+/*设置背景图片*/
+
+.navi-main-bg {
+	display: none;
+	float: left;
+	height: 502px;
+	width: 100%;
+	position: absolute;
+	z-index: 5px;
+}
+
+
+/*使一二级模块居中*/
+
+.navi-main-jz {
+	height: 502px;
+	width: 1210px;
+	margin: 0px auto;
+}
+
+
+/*界面上的8个模块*/
+
+.navi-main-all {
+	float: left;
+	width: 246px;
+	height: 502px;
+}
+
+.navi-main-all-one {
+	width: 246px;
+	height: 60px;
+	background-color: #303030;
+	margin: 2px 0px;
+	cursor: pointer;
+	color: white;
+	font: 16px "微软雅黑";
+	line-height: 60px;
+}
+
+.navi-main-all-one:hover {
+	background-color: #D51111;
+}
+
+.navi-main-all-img {
+	width: 50px;
+	float: left;
+	margin-left: 35px;
+	text-align: center;
+}
+
+.navi-main-all-border {
+	float: left;
+	margin-left: 20px;
+}
+
+.navi-main-all-font {
+	float: left;
+	text-indent: 20px;
+}
+
+.navi-main-all-angle {
+	float: right;
+	display: none;
+	margin-right: -1px;
+}
+
+
+/*一开始隐藏地相关类目，背景白色，长宽384*415*/
+
+
+/*设置高度和一条下划线*/
+
+.navi-main-detail {
+	height: 85px;
+	width: 381px;
+	margin-left: 35px;
+	border-bottom: 1px solid #CDCDCD;
+}
+
+
+/*二级导航栏的详情*/
+
+.navi-main-detail-0 {
+	margin-top: 10px;
+	height: 30px;
+	font: 16px "微软雅黑";
+	font-weight: bolder;
+	line-height: 30px;
+}
+
+.navi-main-detail-1 {
+	height: 50px;
+}
+
+
+/*取消ul标签前面的点*/
+
+.navi-main-detail-1 ul {
+	margin-top: 5px;
+	list-style: none;
+}
+
+
+/*取消li标签的换行，前面加一条线*/
+
+.navi-main-detail-1 li {
+	display: inline;
+	padding-right: 15px;
+}
+
+
+/*修改字体样式*/
+
+.navi-main-detail a {
+	text-align: center;
+	text-decoration: none;
+	font: 14px "宋体";
+	color: black;
+}
+
+.navi-main-detail a:hover {
+	color: red;
+}
+
+
+/*二级页面样式*/
+
+.navi-main-detail-border {
+	float: left;
+	height: 495px;
+	width: 445px;
+	background-color: white;
+	display: none;
+}
+
+
+/*二级页面的动画效果*/
+
+.navi-main-detail-border{
+	-webkit-animation: animation1 0.35s linear;
+	-moz-animation: animation1 0.35s linear;
+	-o-animation: animation1 0.35s linear;
+	animation: animation1 0.35s linear;
+}
+
+@-webkit-keyframes animation1 {
+	from {
+		opacity: 1;
+		width: 0px;
+	}
+	0% {
+		transform: translate(0);
+	}
+	100% {
+		transform: translate(445px);
+	}
+	to {
+		opacity: 1;
+		width: 445px;
+	}
+}
+
+@-moz-keyframes animation1 {
+	from {
+		opacity: 1;
+		width: 0px;
+	}
+	0% {
+		transform: translate(0);
+	}
+	100% {
+		transform: translate(445px);
+	}
+	to {
+		opacity: 1;
+		width: 445px;
+	}
+}
+
+@-o-keyframes animation1 {
+	from {
+		opacity: 1;
+		width: 0px;
+	}
+	0% {
+		transform: translate(0);
+	}
+	100% {
+		transform: translate(445px);
+	}
+	to {
+		opacity: 1;
+		width: 445px;
+	}
+}
+
+@keyframes animation1 {
+	from {
+		width: 0px;
+	}
+	
+	to {
+		width: 445px;
+	}
+}
+/*导航栏部分结束*/

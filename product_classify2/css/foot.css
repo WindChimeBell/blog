@@ -1,0 +1,153 @@
+/*底层样式开始*/
+/*底部样式*/
+.foot{
+	border-top: 1px solid #C7C7C7;
+	height: 600px;
+}
+.footwid{
+	width: 1210px;
+	height: 100px;
+	margin: 0px auto;
+}
+.foot-pic{
+	box-sizing: border-box;
+	float: left;
+	height: 100px;
+	width: 302px;
+}
+
+.foot-pic-img{
+	box-sizing: border-box;
+	float: left;
+	width: 90px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+}
+.foot-pic-font{
+	float: left;
+	font: 24px "微软雅黑";
+	color: #7E7E7E;
+	line-height: 100px;
+}
+/*底部二维码样式*/
+.footWXcode-bg{
+	width: 1210px;
+	margin: 0px auto;
+}
+.footWXcode-bg-pic{
+	width: 100px;
+	text-align: center;
+	margin-left: 520px;
+	height: 0;
+}
+.footWXcode1-height{
+	width: 80px;
+	height: 80px;
+}
+.footWXcode1 {
+	display: none;
+}
+.footWXcode1 img{
+	width: 80px;
+	height: 80px;
+	
+}
+.footWXcode2{
+	display: none;
+}
+.footWXcode2 img{
+	width: 80px;
+	height: 80px;
+}
+.foot-wx1{
+	cursor: pointer;
+}
+.foot-wx2{
+	cursor: pointer;
+}
+/*底部链接样式*/
+.footlink{
+	height: 500px;
+	background-color: #242424;
+	padding-top:35px ;
+}
+.footlink-l{
+	height: 500px;
+	width: 1210px;
+	margin: 0px auto;
+	text-align: center;
+	font: 14px "微软雅黑";
+	color: white;
+}
+.footlink-l table{
+	width: 1210px;
+}
+
+.footlink-l td{
+	width: 35px;
+	text-align: center;	
+	font: 14px "微软雅黑";
+	color: white;
+}
+/*撑开td，兼容火狐*/
+.footlink-td{
+	width: 102px;
+}
+.footlink-l a{
+	text-decoration: none;
+	font: 14px "微软雅黑";
+	color: white;
+	
+}
+.footlink-l a:hover{
+	color: red;
+	
+}
+.footyqlj{
+	margin-top: 30px;
+	padding: 30px 0px;
+	border-top: 1px solid white;	
+}
+.footyqlj-one{
+	margin-top:2px ;
+}
+.footyqlj ul li{
+	display: inline;
+	padding: 0px 7px;
+	border-left: 1px solid white;
+	
+}
+.footyqlj a{
+	text-decoration: none;
+	font: 14px "微软雅黑";
+	color: white;
+}
+.footyqlj a:hover{
+	color: red;
+}
+
+.footgw{
+	padding: 20px 0px;
+}
+.footgw ul li{
+	display: inline;
+	padding: 0px 7px;
+	border-left: 1px solid white;
+	
+}
+.footgw a{
+	text-decoration: none;
+	font: 14px "微软雅黑";
+	color: white;
+}
+.footgw a:hover{
+	color: red;
+}
+
+.footbq{
+	padding: 20px 0px;
+	font: 14px "微软雅黑";
+	color: white;
+}
+/*底层样式结束*/

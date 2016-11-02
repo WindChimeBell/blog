@@ -1,0 +1,167 @@
+/*搜索栏部分*/
+
+.search {
+	height: 117px;
+	margin: 0px auto;
+}
+
+
+/*搜索栏下所有a标签*/
+
+.search a {
+	text-decoration: none;
+	font: 14px "宋体";
+	color: black;
+	text-align: center;
+}
+
+
+/*鼠标移动到字体变红*/
+
+.search a:hover {
+	color: red;
+}
+
+.search-s {
+	width: 1210px;
+	margin: 0px auto;
+}
+
+
+/*logo样式调整*/
+
+.search-s-logo {
+	float: left;
+	margin-top: 40px;
+}
+
+.search-s-logo img {
+	padding-right: 5px;
+	width: 200px;
+	height: 32px;
+}
+
+.search-s-border{
+	float: left;
+	margin-top: 47px;
+	font: 24px simsun;
+	color: #797979;
+	font-weight: bolder;
+}
+
+.search-s-city {
+	float: left;
+	margin-top: 55px;
+}
+
+
+/*城市*/
+
+.search-s-city-one {
+	float: left;
+	font-size: 14px;
+	font-family: simsun,"arial narrow";
+	color: #D7000F;
+	font-weight: bolder;
+}
+
+
+/*切换城市*/
+
+.search-s-city-cut {
+	padding-left: 8px;
+	float: left;
+}
+
+.search-s-city-cut a {
+	text-decoration: none;
+	float: left;
+	font: 14px simsun;
+	color: #0099D2;
+}
+
+
+.search-border{
+	float: left;
+	margin-top: 40px;
+	margin-left: 90px;
+	width: 400px;
+}
+
+/*搜索栏样式,填充颜色*/
+
+.search-s-search {
+	float: left;
+	box-sizing: border-box;
+	background-color: #D7000F;
+	width: 400px;
+}
+
+
+/*搜索栏调整input标签，定长宽*/
+.search-input{
+	float: left;
+	box-sizing: border-box;
+	width: 335px;
+	height: 35px;
+}
+
+.search-s-search input {
+	float: left;
+	margin-top: 2px;
+	margin-left: 2px;
+	box-sizing: border-box;
+	height: 31px;
+	width: 333px;
+	border-color:transparent ;
+	font: 14px simsun;
+	/*（轮廓）取消默认样式*/
+	outline: none;
+	padding-left: 9px;
+}
+
+
+/*搜索栏取消图片下面的间隙，bottom/middle*/
+.search-mirror{
+	float: left;
+	box-sizing: border-box;
+	width: 64px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+}
+.search-s-search img {
+	vertical-align: middle;
+}
+
+/**ul**/
+.search-ul{
+	float: left;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+.search-ul li{
+	display: inline;
+	margin-right: 5px;
+}
+.search-ul a{
+	font-size: 12px;
+	font-family: simsun,"arial narrow";
+	color: #7C7C7C;
+}
+.search-ul a:hover{
+	color: #D7000F;
+}
+/*gif位置*/
+
+.search-s-gif {
+	float: right;
+	margin-top: 17px;
+	width: 200px;
+	height: 80px;
+}
+
+.search-s-gif img {
+	width: 200px;
+	height: 80px;
+}
