@@ -53,7 +53,7 @@ function siftT(){
 	$(".CT_arrowT").click(function(){
 		var Cindex = $(this).attr("data-index");
 		siftCtrl = ($(this).attr("data-ctrl") == "0")? false : true;
-		$(".cplb-main-m-lb-one-1").eq(Cindex).find("li:gt(2)").stop().slideToggle();
+		$(".cplb-main-m-lb-one-1").eq(Cindex).find("li:gt(2)").toggle();
 		if(siftCtrl){
 			siftCtrl = false;
 			$(this).attr("data-ctrl","0");
