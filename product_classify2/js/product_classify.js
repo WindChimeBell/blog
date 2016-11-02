@@ -7,6 +7,7 @@ screenChange();
 
 //当html页面加载完成触发
 $(window).on("load",function(){
+	screenChange();
 	//头部弹窗
 	setTimeout(function(){
 		$("#product-banner").slideToggle(1000);
