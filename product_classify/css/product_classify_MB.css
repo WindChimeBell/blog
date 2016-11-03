@@ -1,5 +1,5 @@
 /*移动端和PC端的切换*/
-#container,.foot,#advertise,.productes-top-rightm,.productes-bottom,.cplb-main-m-lb-one-0,.cplb-main-m-b,.productes-top-right,.banBox{
+#container,.foot,#advertise,.productes-top-rightm,.productes-bottom,.cplb-main-m-lb-one-0,.cplb-main-m-b,.productes-top-right{
 	display: none;
 }
 #container_MB{
@@ -39,9 +39,10 @@
 #search_MB{
 	float: left;
 	position: relative;
-	width: calc(74% - 34px);
+	width: 74%;
 	height: 27px;
 	padding-left: 30px;
+	box-sizing: border-box;
 	background-color: #E4E4E4;
 	border-radius: 4px;
 	margin-top: 7.5px;
@@ -280,15 +281,15 @@
 	z-index: 10;
 }
 .filtrate_head{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
 	border-bottom: 2px solid #E8E8E8;
 	padding: 8px 5px 6px;
+	overflow: hidden;
 }
 .filtrate_head li{
-	flex: 0 0 28.7%;
-	padding: 7px 0; 
+	float: left;
+	width: 28.7%;
+	padding: 7px 0;
+	margin: 0 2.3%;
 	background-color: #E8E8E8;
 	text-align: center;
 }
@@ -426,20 +427,6 @@
 	background-color: #000;
 	opacity: 0.4;
 	filter: alpha(opacity=40);
-}
-.banner-roll{
-	position: relative;
-}
-#product-banner{
-	float: right;
-	position: relative;
-}
-.banner-roll-mid{
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 3;
-	background-color: #fff;
 }
 /*产品类别结束*/
 @media only screen and (min-width: 500px) and (max-width: 700px) {
