@@ -1,0 +1,313 @@
+/*导航栏部分开始*/
+
+.navi {
+	height: auto;
+	margin: 0px auto;
+}
+
+
+/*设置导航栏上面的部分*/
+
+.navi-top {
+	width: 1210px;
+	height: 45px;
+	margin: 0px auto;
+}
+
+.navi-top-border {
+	border-top: 3px solid #B1181A;
+}
+
+
+/*浮动使导航栏在同一行*/
+
+.navi-top-all {
+	float: left;
+	box-sizing: border-box;
+	width: 226px;
+	height: 45px;
+	background-color: #B1181A;
+	color: white;
+	font-size: 16px;
+	font-family: "microsoft yahei";
+	text-align: center;
+	line-height: 45px;
+}
+
+
+/*浮动使导航栏在同一行*/
+
+.navi-top-n {
+	float: left;
+	height: 45px;
+	margin-left: 20px;
+}
+
+/*取消ul标签前面的点*/
+
+.navi-top-n ul {}
+
+
+/*取消li标签的换行，前面加一条线,上下居中*/
+
+.navi-top-n li {
+	line-height: 45px;
+	display: inline;
+	margin-right: 32px;
+}
+
+
+/*修改字体样式*/
+
+.navi-top-n a {
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: "microsoft yahei";
+	color: black;
+}
+
+/*鼠标移动到字体变红*/
+
+.navi-top-n a:hover {
+	color: #B1181A;
+}
+
+/*设置背景图片*/
+
+.navi-main-bg {
+	float: left;
+	height: 490px;
+	width: 100%;
+	position: absolute;
+	z-index: 5;
+}
+
+
+/*使一二级模块居中*/
+
+.navi-main-jz {
+	height: 490px;
+	width: 1210px;
+	margin: 0px auto;
+}
+
+
+/*4个一级导航*/
+
+.navi-main-one-border {
+	float: left;
+	width: 226px;
+	height: 490px;
+}
+
+.navi-main-one {
+	box-sizing: border-box;
+	width: 226px;
+	height: 122px;
+	background-color: #D7000F;
+}
+
+.navi-main-sec {
+	box-sizing: border-box;
+	width: 226px;
+	height: 123px;
+	background-color: #C40C14;
+}
+
+.navi-one-top {
+	height: 30px;
+	margin-left: 24px;
+	padding-top: 7px;
+}
+
+.navi-one-title {
+	float: left;
+	height: 30px;
+	font-size: 16px;
+	font-family: "microsoft yahei";
+	line-height: 30px;
+	color: white;
+}
+
+/**改变border-color获取一个三角形
+ * border-color: transparent #F8F8F8 transparent transparent**/
+.navi-one-triangle {
+	float: right;
+	width: 0;
+	height: 0px;
+	font-size: 0;
+	border-top: 10px;
+	border-bottom: 10px;
+	border-left: 15px;
+	border-right: 15px;
+	border-style: solid;
+	border-color: transparent;
+	margin-top: 5.5px;
+}
+
+.navi-one-gt {
+	float: right;
+	font-size: 17px;
+	font-family: "microsoft yahei";
+	font-weight: bolder;
+	line-height: 30px;
+	color: white;
+	margin-right: -10px;
+}
+
+.navi-one-ul {
+	margin-left: 24px;
+}
+
+.navi-one-ul li {
+	display: inline;
+	color: white;
+	font-size: 14px;
+	font-family: "microsoft yahei";
+	line-height: 24px;
+}
+
+.navi-one-ul a {
+	font-size: 14px;
+	font-family: "microsoft yahei";
+	color: white;
+}
+
+.navi-one-ul a:hover {
+	color: white;
+	border-bottom: 1px solid white;
+}
+
+
+/*二级导航*/
+
+.navi-main-detail-border {
+	float: left;
+	box-sizing: border-box;
+	margin-top: 9px;
+	height: 481px;
+	width: 446px;
+	background-color: #F8F8F8;
+	display: none;
+}
+
+
+/*设置高度和一条下划线*/
+
+.navi-main-detail {
+	box-sizing: border-box;
+	height: 90px;
+	width: 380px;
+	margin-left: 35px;
+	border-bottom: 2px solid #C2C2C2;
+}
+
+
+/*二级导航栏的详情*/
+.detail-fir-marginTop{
+	margin-top:8px ;
+}
+.navi-main-detail-0 {
+	padding-top: 8px;
+	height: 28px;
+	font: 16px simsun;
+	font-weight: bolder;
+	line-height: 28px;
+}
+
+
+/*取消li标签的换行，前面加一条线*/
+
+.navi-main-detail-1 li {
+	display: inline;
+	padding-right: 18px;
+	line-height: 24px;
+}
+
+
+/*修改字体样式*/
+
+.navi-main-detail a {
+	text-decoration: none;
+	font: 14px simsun;
+	color: black;
+}
+
+.navi-main-detail a:hover {
+	color: #D7000F;
+}
+
+
+/*二级页面的动画效果*/
+
+.navi-main-detail-border {
+	-webkit-animation: animation1 0.35s linear;
+	-moz-animation: animation1 0.35s linear;
+	-o-animation: animation1 0.35s linear;
+	animation: animation1 0.35s linear;
+}
+
+@-webkit-keyframes animation1 {
+	from {
+		opacity: 1;
+		width: 0px;
+	}
+	0% {
+		transform: translate(0);
+	}
+	100% {
+		transform: translate(445px);
+	}
+	to {
+		opacity: 1;
+		width: 445px;
+	}
+}
+
+@-moz-keyframes animation1 {
+	from {
+		opacity: 1;
+		width: 0px;
+	}
+	0% {
+		transform: translate(0);
+	}
+	100% {
+		transform: translate(445px);
+	}
+	to {
+		opacity: 1;
+		width: 445px;
+	}
+}
+
+@-o-keyframes animation1 {
+	from {
+		opacity: 1;
+		width: 0px;
+	}
+	0% {
+		transform: translate(0);
+	}
+	100% {
+		transform: translate(445px);
+	}
+	to {
+		opacity: 1;
+		width: 445px;
+	}
+}
+
+@keyframes animation1 {
+	from {
+		width: 0px;
+	}
+	to {
+		width: 445px;
+	}
+}
+
+
+/*导航栏部分结束*/
+

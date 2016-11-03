@@ -1,0 +1,53 @@
+/*头部最顶处,定高话一条底线*/
+.menu {
+	height: 35px;
+	background-color: #ECECEC;
+	border-bottom: 1px solid #BBB;
+}
+/*定长宽*/
+.menu-m{
+	width: 1210px;
+	height: 35px;
+	margin: 0px auto;
+	font-size: 14px;
+	font-family:simsun ;
+	color: black;
+}
+/*menu下的所有a标签，设置字体颜色大小*/
+.menu-m a{
+	text-decoration: none;
+	font-size: 14px;
+	font-family:simsun ;
+	color: black;
+}
+/*鼠标移动到字体变红*/
+.menu-m a:hover{
+	color: #D7000F;
+}
+/*头部左侧部分,设置向左侧浮动，行高35px*/
+.menu-m-hi{
+	float: left;
+	line-height: 35px;
+}
+/*头部右侧部分，设置向右侧浮动，行高35px*/
+.menu-m-ul{
+	float: right;
+	line-height: 35px;
+}
+/*取消ul标签前面的点*/
+.menu-m-ul ul{
+	list-style: none;
+}
+/*取消li标签的换行，前面加一条线*/
+.menu-m-ul li{
+	display: inline;
+	border-left: 1px solid black;
+	padding-left: 5px;
+}
+
+.head-cart-img{
+	float: left;
+}
+.head-cart-img img{
+	margin-top: -4px;
+}

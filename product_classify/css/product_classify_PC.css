@@ -1,0 +1,389 @@
+/*移动端和PC端的切换*/
+#container,.foot,#advertise,.productes-top-rightm,.productes-bottom,.cplb-main-m-lb-one-0,.cplb-main-m-b{
+	display: block;
+}
+#container_MB,.filtrate_head,#seMask{
+	display: none;
+}
+
+/*container*/
+img{
+	vertical-align: top;
+}
+#container,.productes,#advertise{
+	width: 1210px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+#cplb{
+	width: 1210px;
+	margin: 0 auto;
+	position: relative;
+}
+/*产品类别开始*/
+.head-cart-img img,.foot-pic-img img{
+	vertical-align: middle;
+}
+#cplb-dh{
+	font-size: 14px;
+}
+#cplb{
+	margin: 19px auto 31px;
+}
+.cplb-dh-main-t {
+	margin:10px 0px ;
+	height: 30px;
+	background-color: #ECECEC;
+	line-height: 30px;
+}
+.cplb-dh-main-font{
+	color: #717171;
+	text-indent: 1em;
+}
+.cplb-dh-main-font a{
+	text-decoration: none;
+	color: #717171;
+}
+.cplb-dh-main-font a:hover{
+	color: red;
+}
+.cplb-main-m{
+	height: 200px;
+}
+.cplb-main-m-b{
+	float: left;
+	width: 355px;
+	height: 200px;
+	background-color: #A0C9D2;	
+}
+.cplb-main-m-lb{
+	float: right;
+	width: 835px;
+	border-bottom: 1px solid #D1D1D1;
+}
+.cplb-main-m-lb-one{
+	height: 38px;
+	border: 1px solid #D1D1D1;
+}
+.cplb-main-m-lb-one-0{
+	float: left;
+	width: 150px;
+	height: 38px;
+	background-color: #F2F2F2;
+	text-align: center;
+	line-height: 38px;
+	font: 13px "宋体";
+	line-height: 38px;
+	font-weight: bolder;
+}
+.cplb-main-m-lb-one-0 img{
+	vertical-align: middle;
+}
+.cplb-main-m-lb-one-1{
+	float: left;
+	width: 680px;
+	height: 38px;
+}
+.cplb-main-m-lb-one-1 ul{
+	line-height: 38px;
+	list-style: none;
+	margin-left: 5px;
+}
+.cplb-main-m-lb-one-1 ul li{
+	display: inline;
+	padding: 5px 10px;
+	font: 13px "宋体";
+	color: #6B6B6B;
+	cursor: pointer;
+}
+.cplb-main-m-lb-one-1 ul li:hover{
+	color: red;
+}
+.classify_Title{
+	display: none;
+}
+.select_btn{
+	display: none;
+}
+/*产品类别结束*/
+
+/*商品分类中坚层开始*/
+.productes{
+	font-size: 14px;
+}
+.productes-top{
+	overflow: hidden;
+	border-bottom: 2px solid #DBDBDB;
+	padding-bottom: 5px;
+}
+
+/*左侧的功能栏*/
+.productes-top-left{
+	float: left;
+	overflow: hidden;
+}
+.productes-top-left li{
+	float: left;
+	width: 67px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin-right: 2px;
+	padding-left: 10px;
+	background-color: #F6EFE9;
+	cursor: pointer;
+}
+.productes-top-left li:hover{
+	background-color: #DBDBDB;
+}
+.productes-top-left1{
+	background: url(../img/product/H.png) 6px 9px no-repeat;
+}
+.productes-top-left2{
+	background: #F6EFE9 url(../img/product/N.png) 6px 9px no-repeat;
+}
+.productes-top-left .productes-top-left3{
+	padding: 0 10px 0 0;
+	background: #F6EFE9 url(../img/product/arrow.png) 57px 9px no-repeat;
+}
+.productes-top-left .productes-top-left4{
+	padding: 0 5px;
+}
+
+/*右侧的分页栏*/
+/*取消ul标签前面的点*/
+.productes-top-right{
+	float: right;	
+}
+#productes_arrowL,#productes_arrowR{
+	display: inline-block;
+	padding: 2px 5px;
+	cursor: pointer;
+	font-weight: bold;
+	vertical-align: middle;
+}
+.productes-top-right ul li{
+	vertical-align: middle;
+	display: inline-block;
+	margin: 0px 3px;
+}
+.productes-top-right a{
+	text-decoration: none;
+	font-size: 16px;
+	padding: 2px 5px;
+}
+/*鼠标移动到字体变红*/
+.productes-top-right a:hover,.productes-top-right span:hover{
+	color: white;
+	background-color: red;
+}
+
+/*产品样式开始*/
+.productes-main{
+	margin: 12px 0 46px;
+}
+.productes-main ul{
+	overflow: hidden;
+	width: 100%;
+	margin-bottom: 18px;
+}
+.productes-main ul li{
+	float: left;
+	border: 1px solid transparent;
+	padding: 5px;
+	width: 230px;
+	height: 328px;
+}
+.productes-main ul li:hover{
+	border-color: #afafaf;
+}
+
+/*单个产品*/
+/*先预设一个透明的边框*/
+.product-right{
+	position: relative;
+}
+.productes-main-one{
+	overflow: hidden;
+}
+.productes-main-one-price{
+	color: #D50A00;
+	font: 20px "微软雅黑";
+	margin: 10px 0 6px;
+}
+.productes-main-one-price span{
+	font-size: 15px;
+	color: #8E8E8E;
+	margin-left:20px;
+}
+.productes-main-one-describe{
+	margin-top: 10px;
+	height: 60px;
+	overflow: hidden;
+	line-height: 1.5em;
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+.productes-main-one-describe a{
+	text-decoration: none;
+	font-size: 14px;
+	color: black;
+}
+.productes-main-one-describe a:hover{
+	color: red;
+	border-bottom: 1px solid red;
+}
+.situation{
+	margin: 10px 0 5px;
+	overflow: hidden;
+	font-size: 14px;
+}
+.productes-main-one-sale{
+	float: left;
+	color: #666;
+	margin-right: 20px;
+}
+.productes-main-one-sale span{
+	color: #D50A00;
+	font-weight: bolder;
+}
+.productes-main-one-evaluate{
+	float: left;
+	color: #0084E1;
+	border-left: 2px solid gray;
+	padding-left: 4px;
+}
+.productes-main-one-compare{
+	position: absolute;
+	right: 0px;
+	bottom: 20px;
+	width: 36px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	color: #fff;
+	border-radius: 4px;
+	background-color: #D50A00;
+}
+.productes-main-one-compare:hover{
+	color: #fff;
+}
+.productes-main-one-store a{
+	color: #8E8E8E;
+	font: 15px "宋体";
+}
+/*产品样式结束*/
+
+/*产品下面的分页栏*/
+.productes-bottom{
+	margin-top:15px ;
+}
+.productes-bottom ul{
+	list-style: none;
+	overflow: hidden;
+	text-align: center;
+}
+.productes-bottom ul li{
+	display: inline-block;
+	width: 53px;
+	height: 32px;
+	line-height: 32px;
+	border: 1px solid #949494;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.productes-bottom ul .PCB_li1{
+	background-color: #D22B34;
+	color: #fff;
+}
+.productes-bottom a{
+	text-decoration: none;
+	color: black;
+}
+#PCB_page li:hover{
+	background-color: #D22B34;
+	color: white;
+}
+/*商品分类中坚层结束*/
+/*底层广告开始*/
+#advertise{
+	overflow: hidden;
+	margin: 54px auto;
+}
+#advertise a{
+	float: left;
+	width: 380px;
+	height: 240px;
+	margin-right: 35px;
+	position: relative;
+}
+#advertise a:hover div{
+	opacity: 1;
+	display: block \9;
+}
+#advertise a div{
+	transition: opacity 0.4s linear;
+	display: none \9;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	font-size: 22px;
+	color: #fff;
+	font-family: "microsoft yahei";
+	font-style: italic;
+	margin: auto;
+	text-align: center;
+	width: 380px;
+	height: 62px;
+	line-height: 62px;
+}
+#advertise a div p{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+#advertise a div span{
+	position: relative;
+	z-index: 5;
+}
+/*底层广告结束*/
+.banner-roll{
+	overflow: hidden;
+}
+#product-banner{
+	float: right;
+	position: relative;
+}
+.banner-roll-mid{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	width: 0px;
+	background-color: #fff;
+}
+.banBox{
+	display: none;
+	cursor: pointer;
+	width: 100px;
+	height: 50px;
+	position: absolute;
+	right: 45%;
+	top: -60px;
+	border: 1px solid skyblue;
+}
+.banBox img{
+	width: 100px;
+	height: 100%;
+}

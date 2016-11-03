@@ -1,0 +1,35 @@
+/*	WindChimes	*/
+
+/*@font-face {
+  font-family: 'iconfonts';
+
+  src: url('../fonts/num.eot');
+  src: url('../fonts/num.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/num.woff') format('woff'),
+  url('../fonts/num.ttf') format('truetype'), 
+  url('../fonts/num.svg#num') format('svg');
+}*/
+/*====================Reset_start=================*/
+@charset "utf-8";
+body,h1,h2,h3,h4,h5,h6,div,p,dl,dt,dd,ol,ul,li,form,table,th,td,a,img,span,
+strong,var,em,input,textarea,select,option{margin: 0;padding: 0;}
+body{font:14px/1 helvetica,"microsoft yahei","Droid Sans","Helvetica Neue","Droid Sans Fallback",Simsun,sans-serif,"\5B8B\4F53";}
+img{border: 0;vertical-align: top;width: 100%;}
+a{text-decoration: none;color: #000;}
+ul,ol,li{list-style: none;}
+input,select,textarea{outline: 0;}
+strong,var,em,i{font-weight: normal;font-style: normal;}
+.clearfix{zoom: 1;}
+.clearfix:after{
+	display: block;
+	overflow: hidden;
+	clear: both;
+	height: 0;
+	visibility: hidden; 
+	content: ".";
+}
+/*===================Reset_End===================*/
+/*	要默认y方向滚动条，否则当一开始设置的高度超出一屏的时候，用百分比的宽度会相应发生改变	*/
+/*body{
+	overflow-y: scroll;
+}*/
