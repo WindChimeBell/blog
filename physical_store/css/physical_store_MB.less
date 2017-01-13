@@ -1,0 +1,213 @@
+/*初始化变量*/
+@colorP: #d21e2f;
+@colorF1: #e5e5e5;
+@colorF2: #a2a2a2;
+@colorF3: #7c7c7c;
+@colorH: #930c0c;
+@colorQ3: #333333;
+
+/*常用整合*/
+.floatBox(@d,@w){
+    float: @d;
+    width: @w;
+}
+//相对定位
+.relativeTL(@top,@left){
+    position: relative;
+    top: @top;
+    left: @left;
+}
+.posTL(@m,@top,@left){
+    position: @m;
+    top: @top;
+    left: @left;
+}
+//绝对定位垂直居中
+.poaCen(@t,@b,@w,@h,@c){
+    position: absolute;
+    top: @t;
+    bottom: @b;
+    width: @w;
+    height: @h;
+    line-height: @h;
+    text-align: center;
+    color: @c;
+    margin: auto 0;
+}
+//图标
+.iconS(@w,@h,@url,@pos){
+    display: inline-block;
+    width: @w;
+    height: @h;
+    background: @url @pos no-repeat;
+}
+//三角
+.trangle(@pos,@t,@l,@bw,@bc){
+    position: @pos;
+    top: @t;
+    left: @l;
+    width: 0;
+    height: 0;
+    border-width: @bw;
+    border-color: @bc;
+    border-style: solid;
+}
+
+/*reset*/
+/*PC端的移动端的设置*/
+
+#seMask,.send_box,.succ_box,.footer,#header,#nav,.nearBy_store,.hot_goods,.hotCity,.AD_title,.AD_sp1,.AD_sp2,.AD_sp4,.AD_sp6,.AD_sp7{
+    display: none;
+}
+img{width: 100%;}
+html,body,#container{
+    min-width: 320px;
+}
+#container,body{
+    width: 640px;
+    margin: 0;
+}
+body{
+    font: 14px simhei,"microsoft yahei","Helvetica Neue","Droid Sans Fallback",sans-serif,"\5B8B\4F53";
+    background-color: #ECECEC;
+    color: #333;
+}
+
+/*  移动端头部   */
+#MB_head{
+    min-width: 640px;
+    height: 74px;
+    line-height: 74px;
+    text-align: center;
+    position: relative;
+    border-bottom: 1px solid #CFCFCF;
+    background-color: #fff;
+}
+#MB_head h2{
+    font-weight: normal;
+    font-size: 28px;
+}
+#MB_head .back{
+    .posTL(absolute,0,0);
+    width: 95px;
+    height: 74px;
+    color: #333;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+//下拉筛选
+.placeBox{
+    float: left;
+    overflow: hidden;
+    width: 66.666666%;
+    
+    .form-group{
+        float: left;
+        width: 50%;
+        height: 76px;
+        box-sizing: border-box;
+        position: relative;
+        
+        span{
+            border-right: 1px solid @colorF1;
+        }
+    }
+}
+.formG3{
+    float: left;
+    width: 33.333333%;
+    position: relative;
+}
+.form-group,.formG3{
+    span{
+        text-align: center;
+        display: block;
+        font-size: 24px;
+        height: 76px;
+        line-height: 76px;
+        box-sizing: border-box;
+        background-color: #fff;
+        border-bottom: 1px solid @colorF1;
+        border-top: 1px solid @colorF1;
+        position: relative;
+        
+        i{
+            display: inline-block;
+            background: url(../img/physicalSimg/arrowB.png) 0 center no-repeat;
+            width: 20px;
+            height: 76px;
+            margin-left: 14px;
+            vertical-align: top;
+        }
+    }
+    
+    select{
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        height: 76px;
+        width: 100%;
+        font-family: simhei;
+        font-size: 24px;
+        border: none;
+    }
+}
+
+//实体店列表
+.AD_main{
+    padding: 0 20px;
+    background-color: #fff;
+    
+    li{
+        overflow: hidden;
+        
+        .AD_img{
+            float: left;
+            width: 135px;
+            height: 135px;
+            margin-top: 25px;
+        }
+        
+        .AD_box{
+            padding: 25px 0 11px;
+            float: right;
+            width: 429px;
+            border-bottom: 1px solid @colorF1;
+            
+            .AD_sp3{
+                font-size: 24px;
+                font-weight: bold;
+            }
+            
+            .AD_sp5{
+                display: block;
+                margin-top: 10px;
+                font-size: 20px;
+                color: @colorF3;
+                line-height: 1.75em;
+                
+                p{
+                    overflow: hidden;
+                }
+                
+                .MBcity{
+                    float: left;
+                }
+                
+                .sp5_le{
+                    float: left;
+                    width: 74px;
+                    overflow: hidden;
+                }
+                
+                .sp5_right{
+                    float: left;
+                    width: 340px;
+                }
+            }
+        }
+    }
+    
+}
