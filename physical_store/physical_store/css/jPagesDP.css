@@ -1,0 +1,40 @@
+/*产品下面的分页栏*/
+.productes-bottom{
+	margin-top:15px;
+	margin-bottom: 60px;
+}
+.productes-bottom div{
+	list-style: none;
+	overflow: hidden;
+	text-align: center;
+}
+.productes-bottom div a{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+	border: 1px solid #949494;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	margin-left: 9px;
+	vertical-align: middle;
+	text-align: center;
+}
+.productes-bottom div a:hover{
+	color: #fff;
+	background-color: #333;
+	border-color: #333;
+}
+.holder a.jp-current{
+	color: #fff;
+	background-color: #333;
+	border-color: #333;
+}
+.holder span { margin: 0 5px; }
+.jp-previous,.jp-next{
+	font-family: simsun;
+}
+.holder a.jp-disabled{
+	color: #bbb;
+}

@@ -1,0 +1,562 @@
+#s_county,
+.AD_img,
+#MB_head,
+.form-group span,
+.formG3 span {
+  display: none;
+}
+.cenBox {
+  width: 1210px;
+  margin: 0 auto;
+}
+img {
+  width: 100%;
+}
+.ban {
+  margin: 30px auto 24px;
+}
+.nearBy_store {
+  overflow: hidden;
+}
+.nearBy_store .NS_search {
+  float: left;
+  width: 375px;
+  height: 354px;
+}
+.nearBy_store .NS_search h3 {
+  height: 26px;
+  line-height: 26px;
+  padding-left: 11px;
+  background-color: #d21e2f;
+  color: #fff;
+  font-weight: normal;
+  font-size: 16px;
+}
+.nearBy_store .NS_search .NSS_box {
+  height: 326px;
+  border: 1px solid #e5e5e5;
+}
+.nearBy_store .NS_search .NSS_ser {
+  margin: 0 14px;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 18px 0 10px;
+  overflow: hidden;
+  height: 92px;
+  box-sizing: border-box;
+}
+.nearBy_store .NS_search .NSS_ser .NSS_icon {
+  float: left;
+  vertical-align: middle;
+  width: 60px;
+  height: 63px;
+  margin: 0 32px 0 26px;
+}
+.nearBy_store .NS_search .NSS_ser .NSS_icon a {
+  display: block;
+  height: 47px;
+  width: 100%;
+  background: url(../img/physicalSimg/psIcons.png) 13.5px 0px no-repeat;
+}
+.nearBy_store .NS_search .NSS_ser .NSS_icon span {
+  display: block;
+  width: 60px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #fff;
+  background-color: #d21e2f;
+  border-radius: 7px;
+  font-size: 12px;
+}
+.nearBy_store .NS_search .NSS_ser .NSS_icon:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.nearBy_store .NS_search .NSS_ser label {
+  float: left;
+  margin-top: 12px;
+  vertical-align: baseline;
+  height: 63px;
+  position: relative;
+}
+.nearBy_store .NS_search .NSS_ser label input {
+  width: 198px;
+  height: 38px;
+  line-height: 38px;
+  border: 1px solid #d21e2f;
+  font-size: 18px;
+  padding-left: 9px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.nearBy_store .NS_search .NSS_ser label i {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  right: 0px;
+  top: 0;
+  background: url(../img/physicalSimg/ser.jpg) 0 0 no-repeat;
+  cursor: pointer;
+}
+.nearBy_store .NS_search .NSS_ser label i:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.nearBy_store .NS_search .NSS_ser label span {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  height: 38px;
+  line-height: 38px;
+  color: #a2a2a2;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+.nearBy_store .NS_search .addr_box {
+  overflow: auto;
+  height: 234px;
+  position: relative;
+}
+.nearBy_store .NS_search .addr_box .scroll_box {
+  position: absolute;
+  right: 0px;
+  top: 0;
+  height: 100%;
+  box-sizing: border-box;
+  width: 19px;
+  border: 1px solid #D2D2D2;
+}
+.nearBy_store .NS_search .addr_box .scroll_box .bar {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 50px;
+  background-color: #e5e5e5;
+}
+.nearBy_store .NS_search .NSS_addr {
+  padding: 0px 0 24px;
+}
+.nearBy_store .NS_search .NSS_addr li {
+  overflow: hidden;
+  margin-top: 18px;
+  cursor: pointer;
+}
+.nearBy_store .NS_search .NSS_addr li .numBG {
+  float: left;
+  display: inline-block;
+  width: 21px;
+  height: 27px;
+  background: url(../img/physicalSimg/psIcons.png) 0px -130px no-repeat;
+  text-align: center;
+  line-height: 23px;
+  color: #fff;
+  margin: 8px 10px 0 25px;
+}
+.nearBy_store .NS_search .NSS_addr li .addr_txt {
+  float: left;
+  width: 248px;
+  line-height: 1.375em;
+}
+.nearBy_store .NS_search .NSS_addr li .addr_txt h4 {
+  font-weight: normal;
+  color: #d21e2f;
+  font-size: 14px;
+}
+.nearBy_store .NS_search .NSS_addr li .telIcon {
+  float: left;
+  cursor: pointer;
+  display: inline-block;
+  width: 14px;
+  height: 23px;
+  background: url(../img/physicalSimg/psIcons.png) -86px -244px no-repeat;
+  margin-top: 17px;
+  margin-left: 10px;
+}
+.nearBy_store .NS_search .NSS_addr li .telIcon:hover {
+  background-position: 0px -244px;
+}
+.nearBy_store .NS_map {
+  float: right;
+  width: 829px;
+  height: 352px;
+  border: 1px solid #e5e5e5;
+}
+.nearBy_store .NS_map img {
+  width: auto;
+}
+.CB_box {
+  width: 1210px;
+  margin: 8px auto 0;
+  background-color: #d21e2f;
+  height: 52px;
+  line-height: 52px;
+  position: relative;
+}
+.CB_box .placeBox {
+  display: inline-block;
+  position: relative;
+  z-index: 6;
+}
+.CB_box .form-group {
+  display: inline-block;
+  margin-right: 4px;
+}
+.CB_box .form-group select {
+  height: 37px;
+  font-family: "microsoft yahei";
+  font-size: 14px;
+  padding-left: 9px;
+  padding-right: 6px;
+}
+.CB_box .formG1 {
+  margin-left: 8px;
+}
+.CB_box .formG3 {
+  display: inline-block;
+  position: relative;
+  z-index: 6;
+}
+.CB_box .formG3 select {
+  height: 37px;
+  font-family: "microsoft yahei";
+  font-size: 14px;
+  padding-left: 9px;
+  padding-right: 15px;
+}
+.CB_box .hotCity {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+}
+.CB_box .hotCity a {
+  color: #fff;
+  margin-right: 5px;
+}
+.CB_box .hotCity a:hover {
+  text-decoration: underline;
+}
+.city_box .addr_details .AD_sp1 {
+  border-left: none;
+}
+.addr_details {
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
+}
+.addr_details .AD_title {
+  overflow: hidden;
+}
+.addr_details .AD_main {
+  overflow: hidden;
+  font-size: 12px;
+}
+.addr_details span {
+  float: left;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.addr_details .AD_sp5 {
+  text-align: left;
+  line-height: 18px;
+  padding-left: 19px;
+  padding-top: 2px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.addr_details .AD_sp5 p var {
+  display: inline-block;
+  vertical-align: bottom;
+}
+.addr_details .AD_sp5 p .sp5_le {
+  line-height: 20px;
+}
+.addr_details .AD_sp5 p .sp5_right {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 330px;
+  white-space: nowrap;
+}
+.addr_details .AD_spt5 {
+  text-align: center;
+  line-height: 42px;
+}
+.addr_details .AD_sp1,
+.addr_details .AD_sp2 {
+  width: 141px;
+}
+.addr_details .AD_sp3 {
+  width: 174px;
+}
+.addr_details .AD_sp4 {
+  width: 119px;
+}
+.addr_details .AD_sp5 {
+  width: 405px;
+}
+.addr_details .AD_sp5 {
+  height: 43px;
+}
+.addr_details .AD_spt5 {
+  line-height: 33px;
+}
+.addr_details .AD_sp6,
+.addr_details .AD_sp7 {
+  width: 111px;
+  position: relative;
+}
+.addr_details .AD_tel,
+.addr_details .AD_con {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-image: url(../img/physicalSimg/psIcons.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.addr_details .AD_tel {
+  width: 14px;
+  height: 23px;
+  background-position: -86px -244px;
+}
+.addr_details .AD_con {
+  width: 20px;
+  height: 19px;
+  background-position: -80px -381px;
+}
+.addr_details .AD_tel:hover {
+  background-position: 0px -244px;
+}
+.addr_details .AD_con:hover {
+  background-position: 0px -381px;
+}
+.productes-bottom {
+  margin: 28px auto 22px;
+}
+.hot_goods h5 {
+  font-size: 16px;
+  font-weight: normal;
+  padding-left: 11px;
+}
+.hot_goods .HG_main {
+  margin-top: 12px;
+  border: 1px solid #e5e5e5;
+  overflow: hidden;
+}
+.hot_goods .HG_main li {
+  float: left;
+  width: 222.8px;
+  border-left: 1px solid #e5e5e5;
+  padding: 9px 9px 0;
+}
+.hot_goods .HG_main li .HGM_img {
+  width: 223px;
+  height: 223px;
+}
+.hot_goods .HG_main li p {
+  line-height: 1.5em;
+  height: 3em;
+  overflow: hidden;
+  margin: 10px 0 8px;
+}
+#container {
+  margin-bottom: 30px;
+}
+#seMask {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 60;
+}
+.send_box {
+  display: none;
+  position: fixed;
+  width: 360px;
+  height: 305px;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 70;
+  border: 5px solid #aaa;
+}
+.send_box h4 {
+  height: 38px;
+  line-height: 38px;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  background-color: #D7000F;
+  position: relative;
+}
+.send_box h4 .close {
+  position: absolute;
+  right: 0px;
+  font-size: 34px;
+  width: 38px;
+  height: 38px;
+  line-height: 1em;
+  text-align: center;
+  cursor: pointer;
+}
+.send_box h4 .close:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.send_box .send_main {
+  padding: 14px 25px 0;
+}
+.send_box .send_main p {
+  color: #7C7C7C;
+  margin-top: 14px;
+}
+.send_box .send_main p span {
+  color: #333;
+}
+.send_box .send_main .tele,
+.send_box .send_main .checkCode {
+  height: 36px;
+  position: relative;
+  margin-top: 14px;
+}
+.send_box .send_main .tele span,
+.send_box .send_main .checkCode span {
+  position: absolute;
+  top: 0;
+  left: 14px;
+  height: 36px;
+  line-height: 36px;
+  color: #a2a2a2;
+  z-index: 5;
+}
+.send_box .send_main .tele input,
+.send_box .send_main .checkCode input {
+  height: 36px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 14px;
+  border: 1px solid #e5e5e5;
+}
+.send_box .send_main .vertify {
+  display: inline-block;
+  margin-left: 8px;
+}
+.send_box .send_main .vertify span {
+  display: inline-block;
+  width: 73px;
+  height: 36px;
+  background-color: #E5E5E5;
+  vertical-align: middle;
+}
+.send_box .send_main .vertify span img {
+  height: 100%;
+}
+.send_box .send_main .vertify .cgOther {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8px;
+  color: #7C7C7C;
+  cursor: pointer;
+}
+.send_box .send_main .vertify .cgOther:hover {
+  color: #d21e2f;
+}
+.send_box .send_main .send_btn {
+  display: block;
+  width: 114px;
+  height: 38px;
+  line-height: 38px;
+  margin: 12px auto 0;
+  background-color: #d21e2f;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+.send_box .send_main .send_btn:hover {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+.tele {
+  display: block;
+}
+.tele input {
+  width: 100%;
+}
+.checkCode {
+  display: inline-block;
+}
+.checkCode input {
+  width: 126px;
+}
+.succ_box {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  z-index: 60;
+  width: 337px;
+  height: 173px;
+  background-color: #fff;
+}
+.succ-p {
+  height: 38px;
+  line-height: 38px;
+  background-color: #d21e2f;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+}
+.succ-del {
+  position: absolute;
+  right: 0px;
+  font-size: 34px;
+  cursor: pointer;
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  line-height: 1em;
+}
+.succ-del:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.succ-d {
+  text-align: center;
+  margin-top: 35px;
+}
+.succ-d span {
+  font-size: 18px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+.succ_img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 65px;
+  height: 65px;
+}
+/*# sourceMappingURL=physical_store_PC.css.map */

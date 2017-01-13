@@ -1,0 +1,103 @@
+/*reset*/
+img {
+  width: 100%;
+}
+html,
+body,
+#container {
+  min-width: 320px;
+}
+#container{
+	width: 640px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+body {
+  font: 14px simhei, "microsoft yahei", "Helvetica Neue", "Droid Sans Fallback", sans-serif, "\5B8B\4F53";
+  background-color: #ECECEC;
+  color: #333;
+}
+
+/*  移动端头部   */
+#MB_head {
+  width: 640px;
+  margin: 0 auto;
+  height: 74px;
+  line-height: 74px;
+  text-align: center;
+  position: relative;
+  border-bottom: 1px solid #CFCFCF;
+  background-color: #fff;
+}
+#MB_head h2 {
+  font-weight: normal;
+  font-size: 28px;
+}
+#MB_head .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95px;
+  height: 74px;
+  color: #333;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+/*container*/
+.map_details{
+	padding: 35px 20px 25px;
+	border-bottom: 1px solid #E5E5E5;
+}
+.map_details h3{
+	font-size: 24px;
+}
+.map_details p{
+	line-height: 1.75em;
+	font-size: 20px;
+	color: #7C7C7C;
+	overflow: hidden;
+	margin-top: 6px;
+}
+.sp5_le{
+	float: left;
+	width: 74px;
+   	overflow: hidden;
+}
+.sp5_right{
+    float: left;
+    width: 500px;
+}
+.map_nav{
+	overflow: hidden;
+}
+.map_nav span{
+	height: 37px;
+	line-height: 37px;
+	float: left;
+	width: 50%;
+	text-align: center;
+	margin: 10px 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 22px;
+}
+.map_nav span i{
+	display: inline-block;
+	width: 24px;
+	height: 37px;
+	vertical-align: top;
+	margin-right: 8px;
+}
+.MN_sp1{
+	border-right: 1px solid #E5E5E5;
+}
+.MN_sp1 i{
+	margin-top: -1px;
+	background: url(../img/physicalSimg/mn1.png) 0 center no-repeat;
+}
+.MN_sp2 i{
+	background: url(../img/physicalSimg/mn2.png) 0 center no-repeat;
+}

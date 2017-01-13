@@ -1,0 +1,161 @@
+/*reset*/
+/*PC端的移动端的设置*/
+#seMask,
+.send_box,
+.succ_box,
+.footer,
+#header,
+#nav,
+.nearBy_store,
+.hot_goods,
+.hotCity,
+.AD_title,
+.AD_sp1,
+.AD_sp2,
+.AD_sp4,
+.AD_sp6,
+.AD_sp7 {
+  display: none;
+}
+img {
+  width: 100%;
+}
+html,
+body,
+#container {
+  min-width: 320px;
+}
+#container,
+body {
+  width: 640px;
+  margin: 0;
+}
+body {
+  font: 14px simhei, "microsoft yahei", "Helvetica Neue", "Droid Sans Fallback", sans-serif, "\5B8B\4F53";
+  background-color: #ECECEC;
+  color: #333;
+}
+/*  移动端头部   */
+#MB_head {
+  min-width: 640px;
+  height: 74px;
+  line-height: 74px;
+  text-align: center;
+  position: relative;
+  border-bottom: 1px solid #CFCFCF;
+  background-color: #fff;
+}
+#MB_head h2 {
+  font-weight: normal;
+  font-size: 28px;
+}
+#MB_head .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95px;
+  height: 74px;
+  color: #333;
+  font-weight: bold;
+  font-size: 36px;
+}
+.placeBox {
+  float: left;
+  overflow: hidden;
+  width: 66.666666%;
+}
+.placeBox .form-group {
+  float: left;
+  width: 50%;
+  height: 76px;
+  box-sizing: border-box;
+  position: relative;
+}
+.placeBox .form-group span {
+  border-right: 1px solid #e5e5e5;
+}
+.formG3 {
+  float: left;
+  width: 33.333333%;
+  position: relative;
+}
+.form-group span,
+.formG3 span {
+  text-align: center;
+  display: block;
+  font-size: 24px;
+  height: 76px;
+  line-height: 76px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
+  position: relative;
+}
+.form-group span i,
+.formG3 span i {
+  display: inline-block;
+  background: url(../img/physicalSimg/arrowB.png) 0 center no-repeat;
+  width: 20px;
+  height: 76px;
+  margin-left: 14px;
+  vertical-align: top;
+}
+.form-group select,
+.formG3 select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  height: 76px;
+  width: 100%;
+  font-family: simhei;
+  font-size: 24px;
+  border: none;
+}
+.AD_main {
+  padding: 0 20px;
+  background-color: #fff;
+}
+.AD_main li {
+  overflow: hidden;
+}
+.AD_main li .AD_img {
+  float: left;
+  width: 135px;
+  height: 135px;
+  margin-top: 25px;
+}
+.AD_main li .AD_box {
+  padding: 25px 0 11px;
+  float: right;
+  width: 429px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.AD_main li .AD_box .AD_sp3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.AD_main li .AD_box .AD_sp5 {
+  display: block;
+  margin-top: 10px;
+  font-size: 20px;
+  color: #7c7c7c;
+  line-height: 1.75em;
+}
+.AD_main li .AD_box .AD_sp5 p {
+  overflow: hidden;
+}
+.AD_main li .AD_box .AD_sp5 .MBcity {
+  float: left;
+}
+.AD_main li .AD_box .AD_sp5 .sp5_le {
+  float: left;
+  width: 74px;
+  overflow: hidden;
+}
+.AD_main li .AD_box .AD_sp5 .sp5_right {
+  float: left;
+  width: 340px;
+}
+/*# sourceMappingURL=physical_store_MB.css.map */
