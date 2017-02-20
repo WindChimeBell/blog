@@ -36,10 +36,33 @@ $(window).load(function(){
 	
 	if(dw <= 640){
 		getCityName();
-	}else{
-		
+		selCGtxt();//0220
 	}
 });
+
+//0220地区select选择完之后span跟着改变
+function selCGtxt(){
+	$(".form-control").on("change",function(){
+		var txt = $(this).val();
+		var IDname = $(this).prop("id");
+		console.log(IDname)
+		switch (IDname){
+			case "province3":
+				var baseA = $(".form-group").eq(1).find("select").val();
+				$(".form-group").eq(1).find("span").html(baseA + "<i></i>");
+				var baseB = $(".form-group").eq(2).find("select").val();
+				$(".form-group").eq(2).find("span").html(baseB + "<i></i>");
+				break;
+			case "city3":
+				var baseB = $(".form-group").eq(2).find("select").val();
+				$(".form-group").eq(2).find("span").html(baseB + "<i></i>");
+				break;
+			default:
+				break;
+		}
+		$(this).parents(".form-group").find("span").html(txt + "<i></i>");
+	});
+}
 
 //添加跳转链接
 function addHrefT(obj,objT){
