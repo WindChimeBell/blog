@@ -1,13 +1,17 @@
 #s_county,
 .AD_img,
 #MB_head,
-.form-group span,
-.formG3 span {
+.form-group span {
   display: none;
 }
 .cenBox {
   width: 1210px;
   margin: 0 auto;
+}
+#container {
+  width: 100%;
+  min-width: 1210px;
+  margin: 0px auto 68px;
 }
 img {
   width: 100%;
@@ -191,9 +195,12 @@ img {
   background-color: #d21e2f;
   height: 52px;
   line-height: 52px;
+  position: relative;
 }
 .CB_box .placeBox {
   display: inline-block;
+  position: relative;
+  z-index: 6;
 }
 .CB_box .form-group {
   display: inline-block;
@@ -209,20 +216,11 @@ img {
 .CB_box .formG1 {
   margin-left: 8px;
 }
-.CB_box .formG3 {
-  display: inline-block;
-}
-.CB_box .formG3 select {
-  height: 37px;
-  font-family: "microsoft yahei";
-  font-size: 14px;
-  padding-left: 9px;
-  padding-right: 15px;
-}
 .CB_box .hotCity {
+  margin-left: 36px;
+  text-align: center;
   display: inline-block;
   vertical-align: middle;
-  margin-left: 39px;
   color: #fff;
 }
 .CB_box .hotCity a {
@@ -254,6 +252,8 @@ img {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
   border-left: 1px solid #e5e5e5;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .addr_details .AD_sp5 {
   text-align: left;
@@ -457,6 +457,9 @@ img {
   background-color: #E5E5E5;
   vertical-align: middle;
 }
+.send_box .send_main .vertify span img {
+  height: 100%;
+}
 .send_box .send_main .vertify .cgOther {
   display: inline-block;
   vertical-align: middle;
@@ -544,5 +547,16 @@ img {
   vertical-align: middle;
   width: 65px;
   height: 65px;
+}
+/*0217*/
+.addr_details .AD_sp1,
+.addr_details .AD_sp2 {
+  width: 108px;
+}
+.addr_details .AD_sp3 {
+  width: 130px;
+}
+.addr_details .AD_sp8 {
+  width: 109px;
 }
 /*# sourceMappingURL=physical_store_PC.css.map */

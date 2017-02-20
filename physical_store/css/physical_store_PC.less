@@ -49,12 +49,17 @@
 }
 
 //reset
-#s_county,.AD_img,#MB_head,.form-group span,.formG3 span{
+#s_county,.AD_img,#MB_head,.form-group span{
     display: none;
 }
 .cenBox{
     width: 1210px;
     margin: 0 auto;
+}
+#container {
+  width: 100%;
+  min-width: 1210px;
+  margin: 0px auto 68px;
 }
 img{ width: 100%;}
 
@@ -264,9 +269,12 @@ img{ width: 100%;}
     background-color: @colorP;
     height: 52px;
     line-height: 52px;
+    position: relative;
     
     .placeBox{
         display: inline-block;
+        position: relative;
+        z-index: 6;
     }
     
     .form-group{
@@ -286,23 +294,12 @@ img{ width: 100%;}
         margin-left: 8px;
     }
     
-    .formG3{
-        display: inline-block;
-        
-        select{
-            height: 37px;
-            font-family: "microsoft yahei";
-            font-size: 14px;
-            padding-left: 9px;
-            padding-right: 15px;
-        }
-    }
-    
     //热门城市
     .hotCity{
+        margin-left: 36px;
+        text-align: center;
         display: inline-block;
         vertical-align: middle;
-        margin-left: 39px;
         color: #fff;
         
         a{
@@ -340,6 +337,8 @@ img{ width: 100%;}
         text-align: center;
         border-bottom: 1px solid @colorF1;
         border-left: 1px solid @colorF1;
+        overflow: hidden;
+        white-space: nowrap;
     }
     
     .AD_sp5{
@@ -551,6 +550,10 @@ img{ width: 100%;}
                 height: 36px;
                 background-color: #E5E5E5;
                 vertical-align: middle;
+                
+                img{
+                    height: 100%;
+                }
             }
             
             .cgOther{
@@ -643,4 +646,15 @@ img{ width: 100%;}
     vertical-align: middle;
     width: 65px;
     height: 65px;
+}
+
+/*0217*/
+.addr_details .AD_sp1, .addr_details .AD_sp2{
+    width: 108px;
+}
+.addr_details .AD_sp3{
+    width: 130px;
+}
+.addr_details .AD_sp8{
+    width: 109px;
 }

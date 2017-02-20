@@ -158,4 +158,11 @@ body {
   float: left;
   width: 340px;
 }
+/*0217*/
+.CB_box .placeBox {
+  width: 100%;
+}
+.placeBox .form-group {
+  width: 33.3333%;
+}
 /*# sourceMappingURL=physical_store_MB.css.map */

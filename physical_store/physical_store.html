@@ -36,7 +36,7 @@
 				<p><span>商铺电话：</span><em class="SMtel">0757-82267598</em></p>
 				<label class="tele"><span class="phTXT">请输入电话号码</span><input type="text" /></label>
 				<label class="checkCode"><span class="phTXT">验证码</span><input type="text" /></label>
-				<div class="vertify"><span></span><em class="cgOther">换一张</em></div>
+				<div class="vertify"><span><img src="img/physicalSimg/code_ggC.jpg"/></span><em class="cgOther">换一张</em></div>
 				<div class="send_btn">免费发送</div>
 			</div>
 		</div>
@@ -160,7 +160,6 @@
 								<label><span class="phTXT">搜索城市</span><input type="text" /><i></i></label>
 							</div>
 							<div class="addr_box">
-								<!--<div class="scroll_box"><span class="bar"></span></div>-->
 								<ul class="NSS_addr">
 									<li>
 										<i class="numBG">1</i>
@@ -224,27 +223,11 @@
 					        	<span>佛山市<i></i></span>
 					          	<select class="form-control  r-width" id="city3" data-city="佛山市"></select>
 					        </div>
+					        <div class="form-group">
+					        	<span>禅城区<i></i></span>
+					          	<select class="form-control  r-width" id="district3" data-district="禅城区"></select>
+					        </div>
 				      	</div>
-				        <div class="formG3">
-				        	<span>全部分类<i></i></span>
-				        	<select>
-				        		<option>全部分类</option>
-				        		<option>瓷砖</option>
-				        		<option>背景墙</option>
-				        		<option>木地板</option>
-				        		<option>洁具</option>
-				        		<option>卫浴用品</option>
-				        		<option>厨房用品</option>
-				        		<option>智能卫浴</option>
-				        		<option>基础建材</option>
-				        		<option>家居饰品</option>
-				        		<option>装修</option>
-				        		<option>设计</option>
-				        		<option>安装</option>
-				        		<option>监理</option>
-				        		<option>家居套餐</option>
-				        	</select>
-				        </div>
 				        <div class="hotCity">
 				        	<span>热门城市：</span>
 				        	<a href="javascript:void(0)">广州</a>
@@ -259,6 +242,9 @@
 						<div class="AD_title">
 							<span class="AD_sp1">省份</span>
 							<span class="AD_sp2">城市</span>
+							<!--0217-->
+							<span class="AD_sp8">区县</span>
+							<!--0217end-->
 							<span class="AD_sp3">商铺名称</span>
 							<span class="AD_sp4">分类</span>
 							<span class="AD_sp5 AD_spt5">地址</span>
@@ -267,484 +253,582 @@
 						</div>
 						<ul class="AD_main" id="itemContainer">
 							<li>
-								<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
-								<div class="AD_box clearfix">
-									<span class="AD_sp1">广东省</span>
-									<span class="AD_sp2">佛山市</span>
-									<span class="AD_sp3">东鹏瓷砖</span>
-									<span class="AD_sp4">瓷砖</span>
-									<span class="AD_sp5">
-										<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A212号</em></var></p>
-										<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
-									</span>
-									<span class="AD_sp6"><i class="AD_tel"></i></span>
-									<span class="AD_sp7"><i class="AD_con"></i></span>
-								</div>
+								<a href="javascript:void(0)" class="MBhref">
+									<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
+									<div class="AD_box clearfix">
+										<span class="AD_sp1">广东省</span>
+										<span class="AD_sp2">佛山市</span>
+										<!--0217-->
+										<span class="AD_sp8">禅城区</span>
+										<!--0217end-->
+										<span class="AD_sp3">东鹏瓷砖</span>
+										<span class="AD_sp4">瓷砖</span>
+										<span class="AD_sp5">
+											<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A212号</em></var></p>
+											<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
+										</span>
+										<span class="AD_sp6"><i class="AD_tel"></i></span>
+										<span class="AD_sp7"><i class="AD_con"></i></span>
+									</div>
+								</a>
 							</li>
 							<li>
-								<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
-								<div class="AD_box clearfix">
-									<span class="AD_sp1">广东省</span>
-									<span class="AD_sp2">广州市</span>
-									<span class="AD_sp3">东鹏瓷砖</span>
-									<span class="AD_sp4">瓷砖</span>
-									<span class="AD_sp5">
-										<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
-										<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
-									</span>
-									<span class="AD_sp6"><i class="AD_tel"></i></span>
-									<span class="AD_sp7"><i class="AD_con"></i></span>
-								</div>
+								<a href="javascript:void(0)" class="MBhref">
+									<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
+									<div class="AD_box clearfix">
+										<span class="AD_sp1">广东省</span>
+										<span class="AD_sp2">佛山市</span>
+										<span class="AD_sp8">禅城区</span>
+										<span class="AD_sp3">东鹏瓷砖</span>
+										<span class="AD_sp4">瓷砖</span>
+										<span class="AD_sp5">
+											<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
+											<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
+										</span>
+										<span class="AD_sp6"><i class="AD_tel"></i></span>
+										<span class="AD_sp7"><i class="AD_con"></i></span>
+									</div>
+								</a>
 							</li>
 							<li>
-								<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
-								<div class="AD_box clearfix">
-									<span class="AD_sp1">广东省</span>
-									<span class="AD_sp2">佛山市</span>
-									<span class="AD_sp3">东鹏瓷砖</span>
-									<span class="AD_sp4">瓷砖</span>
-									<span class="AD_sp5">
-										<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
-										<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
-									</span>
-									<span class="AD_sp6"><i class="AD_tel"></i></span>
-									<span class="AD_sp7"><i class="AD_con"></i></span>
-								</div>
+								<a href="javascript:void(0)" class="MBhref">
+									<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
+									<div class="AD_box clearfix">
+										<span class="AD_sp1">广东省</span>
+										<span class="AD_sp2">佛山市</span>
+										<span class="AD_sp8">禅城区</span>
+										<span class="AD_sp3">东鹏瓷砖</span>
+										<span class="AD_sp4">瓷砖</span>
+										<span class="AD_sp5">
+											<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
+											<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
+										</span>
+										<span class="AD_sp6"><i class="AD_tel"></i></span>
+										<span class="AD_sp7"><i class="AD_con"></i></span>
+									</div>
+								</a>
 							</li>
 							<li>
-								<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
-								<div class="AD_box clearfix">
-									<span class="AD_sp1">广东省</span>
-									<span class="AD_sp2">佛山市</span>
-									<span class="AD_sp3">东鹏瓷砖</span>
-									<span class="AD_sp4">瓷砖</span>
-									<span class="AD_sp5">
-										<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
-										<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
-									</span>
-									<span class="AD_sp6"><i class="AD_tel"></i></span>
-									<span class="AD_sp7"><i class="AD_con"></i></span>
-								</div>
+								<a href="javascript:void(0)" class="MBhref">
+									<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
+									<div class="AD_box clearfix">
+										<span class="AD_sp1">广东省</span>
+										<span class="AD_sp2">佛山市</span>
+										<span class="AD_sp8">禅城区</span>
+										<span class="AD_sp3">东鹏瓷砖</span>
+										<span class="AD_sp4">瓷砖</span>
+										<span class="AD_sp5">
+											<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
+											<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
+										</span>
+										<span class="AD_sp6"><i class="AD_tel"></i></span>
+										<span class="AD_sp7"><i class="AD_con"></i></span>
+									</div>
+								</a>
 							</li>
 							<li>
-								<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
-								<div class="AD_box clearfix">
-									<span class="AD_sp1">广东省</span>
-									<span class="AD_sp2">佛山市</span>
-									<span class="AD_sp3">东鹏瓷砖</span>
-									<span class="AD_sp4">瓷砖</span>
-									<span class="AD_sp5">
-										<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
-										<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
-									</span>
-									<span class="AD_sp6"><i class="AD_tel"></i></span>
-									<span class="AD_sp7"><i class="AD_con"></i></span>
-								</div>
+								<a href="javascript:void(0)" class="MBhref">
+									<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
+									<div class="AD_box clearfix">
+										<span class="AD_sp1">广东省</span>
+										<span class="AD_sp2">佛山市</span>
+										<span class="AD_sp8">禅城区</span>
+										<span class="AD_sp3">东鹏瓷砖</span>
+										<span class="AD_sp4">瓷砖</span>
+										<span class="AD_sp5">
+											<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
+											<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
+										</span>
+										<span class="AD_sp6"><i class="AD_tel"></i></span>
+										<span class="AD_sp7"><i class="AD_con"></i></span>
+									</div>
+								</a>
 							</li>
 							<li>
-								<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
-								<div class="AD_box clearfix">
-									<span class="AD_sp1">广东省</span>
-									<span class="AD_sp2">佛山市</span>
-									<span class="AD_sp3">东鹏瓷砖</span>
-									<span class="AD_sp4">瓷砖</span>
-									<span class="AD_sp5">
-										<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
-										<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
-									</span>
-									<span class="AD_sp6"><i class="AD_tel"></i></span>
-									<span class="AD_sp7"><i class="AD_con"></i></span>
-								</div>
+								<a href="javascript:void(0)" class="MBhref">
+									<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
+									<div class="AD_box clearfix">
+										<span class="AD_sp1">广东省</span>
+										<span class="AD_sp2">佛山市</span>
+										<span class="AD_sp8">禅城区</span>
+										<span class="AD_sp3">东鹏瓷砖</span>
+										<span class="AD_sp4">瓷砖</span>
+										<span class="AD_sp5">
+											<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
+											<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
+										</span>
+										<span class="AD_sp6"><i class="AD_tel"></i></span>
+										<span class="AD_sp7"><i class="AD_con"></i></span>
+									</div>
+								</a>
 							</li>
 							<li>
-								<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
-								<div class="AD_box clearfix">
-									<span class="AD_sp1">广东省</span>
-									<span class="AD_sp2">佛山市</span>
-									<span class="AD_sp3">东鹏瓷砖</span>
-									<span class="AD_sp4">瓷砖</span>
-									<span class="AD_sp5">
-										<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
-										<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
-									</span>
-									<span class="AD_sp6"><i class="AD_tel"></i></span>
-									<span class="AD_sp7"><i class="AD_con"></i></span>
-								</div>
+								<a href="javascript:void(0)" class="MBhref">
+									<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
+									<div class="AD_box clearfix">
+										<span class="AD_sp1">广东省</span>
+										<span class="AD_sp2">佛山市</span>
+										<span class="AD_sp8">禅城区</span>
+										<span class="AD_sp3">东鹏瓷砖</span>
+										<span class="AD_sp4">瓷砖</span>
+										<span class="AD_sp5">
+											<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
+											<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
+										</span>
+										<span class="AD_sp6"><i class="AD_tel"></i></span>
+										<span class="AD_sp7"><i class="AD_con"></i></span>
+									</div>
+								</a>
 							</li>
 							<li>
-								<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
-								<div class="AD_box clearfix">
-									<span class="AD_sp1">广东省</span>
-									<span class="AD_sp2">佛山市</span>
-									<span class="AD_sp3">东鹏瓷砖</span>
-									<span class="AD_sp4">瓷砖</span>
-									<span class="AD_sp5">
-										<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
-										<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
-									</span>
-									<span class="AD_sp6"><i class="AD_tel"></i></span>
-									<span class="AD_sp7"><i class="AD_con"></i></span>
-								</div>
+								<a href="javascript:void(0)" class="MBhref">
+									<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
+									<div class="AD_box clearfix">
+										<span class="AD_sp1">广东省</span>
+										<span class="AD_sp2">佛山市</span>
+										<span class="AD_sp8">禅城区</span>
+										<span class="AD_sp3">东鹏瓷砖</span>
+										<span class="AD_sp4">瓷砖</span>
+										<span class="AD_sp5">
+											<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
+											<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
+										</span>
+										<span class="AD_sp6"><i class="AD_tel"></i></span>
+										<span class="AD_sp7"><i class="AD_con"></i></span>
+									</div>
+								</a>
 							</li>
 							<li>
-								<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
-								<div class="AD_box clearfix">
-									<span class="AD_sp1">广东省</span>
-									<span class="AD_sp2">佛山市</span>
-									<span class="AD_sp3">东鹏瓷砖</span>
-									<span class="AD_sp4">瓷砖</span>
-									<span class="AD_sp5">
-										<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
-										<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
-									</span>
-									<span class="AD_sp6"><i class="AD_tel"></i></span>
-									<span class="AD_sp7"><i class="AD_con"></i></span>
-								</div>
+								<a href="javascript:void(0)" class="MBhref">
+									<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
+									<div class="AD_box clearfix">
+										<span class="AD_sp1">广东省</span>
+										<span class="AD_sp2">佛山市</span>
+										<span class="AD_sp8">禅城区</span>
+										<span class="AD_sp3">东鹏瓷砖</span>
+										<span class="AD_sp4">瓷砖</span>
+										<span class="AD_sp5">
+											<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
+											<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
+										</span>
+										<span class="AD_sp6"><i class="AD_tel"></i></span>
+										<span class="AD_sp7"><i class="AD_con"></i></span>
+									</div>
+								</a>
 							</li>
 							<li>
-								<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
-								<div class="AD_box clearfix">
-									<span class="AD_sp1">广东省</span>
-									<span class="AD_sp2">佛山市</span>
-									<span class="AD_sp3">东鹏瓷砖</span>
-									<span class="AD_sp4">瓷砖</span>
-									<span class="AD_sp5">
-										<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
-										<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
-									</span>
-									<span class="AD_sp6"><i class="AD_tel"></i></span>
-									<span class="AD_sp7"><i class="AD_con"></i></span>
-								</div>
+								<a href="javascript:void(0)" class="MBhref">
+									<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
+									<div class="AD_box clearfix">
+										<span class="AD_sp1">广东省</span>
+										<span class="AD_sp2">佛山市</span>
+										<span class="AD_sp8">禅城区</span>
+										<span class="AD_sp3">东鹏瓷砖</span>
+										<span class="AD_sp4">瓷砖</span>
+										<span class="AD_sp5">
+											<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
+											<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
+										</span>
+										<span class="AD_sp6"><i class="AD_tel"></i></span>
+										<span class="AD_sp7"><i class="AD_con"></i></span>
+									</div>
+								</a>
 							</li>
 							<li>
-								<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
-								<div class="AD_box clearfix">
-									<span class="AD_sp1">广东省</span>
-									<span class="AD_sp2">佛山市</span>
-									<span class="AD_sp3">东鹏瓷砖</span>
-									<span class="AD_sp4">瓷砖</span>
-									<span class="AD_sp5">
-										<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
-										<p><var class="sp5_le">电 话：</var><em class="telO"><em class="telO">0757-82267598</em></em></p>
-									</span>
-									<span class="AD_sp6"><i class="AD_tel"></i></span>
-									<span class="AD_sp7"><i class="AD_con"></i></span>
-								</div>
+								<a href="javascript:void(0)" class="MBhref">
+									<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
+									<div class="AD_box clearfix">
+										<span class="AD_sp1">广东省</span>
+										<span class="AD_sp2">佛山市</span>
+										<span class="AD_sp8">禅城区</span>
+										<span class="AD_sp3">东鹏瓷砖</span>
+										<span class="AD_sp4">瓷砖</span>
+										<span class="AD_sp5">
+											<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
+											<p><var class="sp5_le">电 话：</var><em class="telO"><em class="telO">0757-82267598</em></em></p>
+										</span>
+										<span class="AD_sp6"><i class="AD_tel"></i></span>
+										<span class="AD_sp7"><i class="AD_con"></i></span>
+									</div>
+								</a>
 							</li>
 							<li>
-								<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
-								<div class="AD_box clearfix">
-									<span class="AD_sp1">广东省</span>
-									<span class="AD_sp2">佛山市</span>
-									<span class="AD_sp3">东鹏瓷砖</span>
-									<span class="AD_sp4">瓷砖</span>
-									<span class="AD_sp5">
-										<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
-										<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
-									</span>
-									<span class="AD_sp6"><i class="AD_tel"></i></span>
-									<span class="AD_sp7"><i class="AD_con"></i></span>
-								</div>
+								<a href="javascript:void(0)" class="MBhref">
+									<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
+									<div class="AD_box clearfix">
+										<span class="AD_sp1">广东省</span>
+										<span class="AD_sp2">佛山市</span>
+										<span class="AD_sp8">禅城区</span>
+										<span class="AD_sp3">东鹏瓷砖</span>
+										<span class="AD_sp4">瓷砖</span>
+										<span class="AD_sp5">
+											<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
+											<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
+										</span>
+										<span class="AD_sp6"><i class="AD_tel"></i></span>
+										<span class="AD_sp7"><i class="AD_con"></i></span>
+									</div>
+								</a>
 							</li>
 							<li>
-								<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
-								<div class="AD_box clearfix">
-									<span class="AD_sp1">广东省</span>
-									<span class="AD_sp2">佛山市</span>
-									<span class="AD_sp3">东鹏瓷砖</span>
-									<span class="AD_sp4">洁具</span>
-									<span class="AD_sp5">
-										<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
-										<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
-									</span>
-									<span class="AD_sp6"><i class="AD_tel"></i></span>
-									<span class="AD_sp7"><i class="AD_con"></i></span>
-								</div>
+								<a href="javascript:void(0)" class="MBhref">
+									<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
+									<div class="AD_box clearfix">
+										<span class="AD_sp1">广东省</span>
+										<span class="AD_sp2">佛山市</span>
+										<span class="AD_sp8">禅城区</span>
+										<span class="AD_sp3">东鹏瓷砖</span>
+										<span class="AD_sp4">洁具</span>
+										<span class="AD_sp5">
+											<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
+											<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
+										</span>
+										<span class="AD_sp6"><i class="AD_tel"></i></span>
+										<span class="AD_sp7"><i class="AD_con"></i></span>
+									</div>
+								</a>
 							</li>
 							<li>
-								<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
-								<div class="AD_box clearfix">
-									<span class="AD_sp1">广东省</span>
-									<span class="AD_sp2">佛山市</span>
-									<span class="AD_sp3">东鹏瓷砖</span>
-									<span class="AD_sp4">洁具</span>
-									<span class="AD_sp5">
-										<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
-										<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
-									</span>
-									<span class="AD_sp6"><i class="AD_tel"></i></span>
-									<span class="AD_sp7"><i class="AD_con"></i></span>
-								</div>
+								<a href="javascript:void(0)" class="MBhref">
+									<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
+									<div class="AD_box clearfix">
+										<span class="AD_sp1">广东省</span>
+										<span class="AD_sp2">佛山市</span>
+										<span class="AD_sp8">禅城区</span>
+										<span class="AD_sp3">东鹏瓷砖</span>
+										<span class="AD_sp4">洁具</span>
+										<span class="AD_sp5">
+											<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
+											<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
+										</span>
+										<span class="AD_sp6"><i class="AD_tel"></i></span>
+										<span class="AD_sp7"><i class="AD_con"></i></span>
+									</div>
+								</a>
 							</li>
 							<li>
-								<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
-								<div class="AD_box clearfix">
-									<span class="AD_sp1">广东省</span>
-									<span class="AD_sp2">佛山市</span>
-									<span class="AD_sp3">东鹏瓷砖</span>
-									<span class="AD_sp4">洁具</span>
-									<span class="AD_sp5">
-										<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
-										<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
-									</span>
-									<span class="AD_sp6"><i class="AD_tel"></i></span>
-									<span class="AD_sp7"><i class="AD_con"></i></span>
-								</div>
+								<a href="javascript:void(0)" class="MBhref">
+									<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
+									<div class="AD_box clearfix">
+										<span class="AD_sp1">广东省</span>
+										<span class="AD_sp2">佛山市</span>
+										<span class="AD_sp8">禅城区</span>
+										<span class="AD_sp3">东鹏瓷砖</span>
+										<span class="AD_sp4">洁具</span>
+										<span class="AD_sp5">
+											<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
+											<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
+										</span>
+										<span class="AD_sp6"><i class="AD_tel"></i></span>
+										<span class="AD_sp7"><i class="AD_con"></i></span>
+									</div>
+								</a>
 							</li>
 							<li>
-								<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
-								<div class="AD_box clearfix">
-									<span class="AD_sp1">广东省</span>
-									<span class="AD_sp2">佛山市</span>
-									<span class="AD_sp3">东鹏瓷砖</span>
-									<span class="AD_sp4">洁具</span>
-									<span class="AD_sp5">
-										<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
-										<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
-									</span>
-									<span class="AD_sp6"><i class="AD_tel"></i></span>
-									<span class="AD_sp7"><i class="AD_con"></i></span>
-								</div>
+								<a href="javascript:void(0)" class="MBhref">
+									<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
+									<div class="AD_box clearfix">
+										<span class="AD_sp1">广东省</span>
+										<span class="AD_sp2">佛山市</span>
+										<span class="AD_sp8">禅城区</span>
+										<span class="AD_sp3">东鹏瓷砖</span>
+										<span class="AD_sp4">洁具</span>
+										<span class="AD_sp5">
+											<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
+											<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
+										</span>
+										<span class="AD_sp6"><i class="AD_tel"></i></span>
+										<span class="AD_sp7"><i class="AD_con"></i></span>
+									</div>
+								</a>
 							</li>
 							<li>
-								<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
-								<div class="AD_box clearfix">
-									<span class="AD_sp1">广东省</span>
-									<span class="AD_sp2">佛山市</span>
-									<span class="AD_sp3">东鹏瓷砖</span>
-									<span class="AD_sp4">洁具</span>
-									<span class="AD_sp5">
-										<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
-										<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
-									</span>
-									<span class="AD_sp6"><i class="AD_tel"></i></span>
-									<span class="AD_sp7"><i class="AD_con"></i></span>
-								</div>
+								<a href="javascript:void(0)" class="MBhref">
+									<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
+									<div class="AD_box clearfix">
+										<span class="AD_sp1">广东省</span>
+										<span class="AD_sp2">佛山市</span>
+										<span class="AD_sp8">禅城区</span>
+										<span class="AD_sp3">东鹏瓷砖</span>
+										<span class="AD_sp4">洁具</span>
+										<span class="AD_sp5">
+											<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
+											<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
+										</span>
+										<span class="AD_sp6"><i class="AD_tel"></i></span>
+										<span class="AD_sp7"><i class="AD_con"></i></span>
+									</div>
+								</a>
 							</li>
 							<li>
-								<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
-								<div class="AD_box clearfix">
-									<span class="AD_sp1">广东省</span>
-									<span class="AD_sp2">佛山市</span>
-									<span class="AD_sp3">东鹏瓷砖</span>
-									<span class="AD_sp4">洁具</span>
-									<span class="AD_sp5">
-										<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
-										<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
-									</span>
-									<span class="AD_sp6"><i class="AD_tel"></i></span>
-									<span class="AD_sp7"><i class="AD_con"></i></span>
-								</div>
+								<a href="javascript:void(0)" class="MBhref">
+									<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
+									<div class="AD_box clearfix">
+										<span class="AD_sp1">广东省</span>
+										<span class="AD_sp2">佛山市</span>
+										<span class="AD_sp8">禅城区</span>
+										<span class="AD_sp3">东鹏瓷砖</span>
+										<span class="AD_sp4">洁具</span>
+										<span class="AD_sp5">
+											<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
+											<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
+										</span>
+										<span class="AD_sp6"><i class="AD_tel"></i></span>
+										<span class="AD_sp7"><i class="AD_con"></i></span>
+									</div>
+								</a>
 							</li>
 							<li>
-								<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
-								<div class="AD_box clearfix">
-									<span class="AD_sp1">广东省</span>
-									<span class="AD_sp2">佛山市</span>
-									<span class="AD_sp3">东鹏瓷砖</span>
-									<span class="AD_sp4">洁具</span>
-									<span class="AD_sp5">
-										<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
-										<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
-									</span>
-									<span class="AD_sp6"><i class="AD_tel"></i></span>
-									<span class="AD_sp7"><i class="AD_con"></i></span>
-								</div>
+								<a href="javascript:void(0)" class="MBhref">
+									<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
+									<div class="AD_box clearfix">
+										<span class="AD_sp1">广东省</span>
+										<span class="AD_sp2">佛山市</span>
+										<span class="AD_sp8">禅城区</span>
+										<span class="AD_sp3">东鹏瓷砖</span>
+										<span class="AD_sp4">洁具</span>
+										<span class="AD_sp5">
+											<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
+											<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
+										</span>
+										<span class="AD_sp6"><i class="AD_tel"></i></span>
+										<span class="AD_sp7"><i class="AD_con"></i></span>
+									</div>
+								</a>
 							</li>
 							<li>
-								<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
-								<div class="AD_box clearfix">
-									<span class="AD_sp1">广东省</span>
-									<span class="AD_sp2">佛山市</span>
-									<span class="AD_sp3">东鹏瓷砖</span>
-									<span class="AD_sp4">洁具</span>
-									<span class="AD_sp5">
-										<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
-										<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
-									</span>
-									<span class="AD_sp6"><i class="AD_tel"></i></span>
-									<span class="AD_sp7"><i class="AD_con"></i></span>
-								</div>
+								<a href="javascript:void(0)" class="MBhref">
+									<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
+									<div class="AD_box clearfix">
+										<span class="AD_sp1">广东省</span>
+										<span class="AD_sp2">佛山市</span>
+										<span class="AD_sp8">禅城区</span>
+										<span class="AD_sp3">东鹏瓷砖</span>
+										<span class="AD_sp4">洁具</span>
+										<span class="AD_sp5">
+											<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
+											<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
+										</span>
+										<span class="AD_sp6"><i class="AD_tel"></i></span>
+										<span class="AD_sp7"><i class="AD_con"></i></span>
+									</div>
+								</a>
 							</li>
 							<li>
-								<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
-								<div class="AD_box clearfix">
-									<span class="AD_sp1">广东省</span>
-									<span class="AD_sp2">佛山市</span>
-									<span class="AD_sp3">东鹏瓷砖</span>
-									<span class="AD_sp4">洁具</span>
-									<span class="AD_sp5">
-										<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
-										<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
-									</span>
-									<span class="AD_sp6"><i class="AD_tel"></i></span>
-									<span class="AD_sp7"><i class="AD_con"></i></span>
-								</div>
+								<a href="javascript:void(0)" class="MBhref">
+									<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
+									<div class="AD_box clearfix">
+										<span class="AD_sp1">广东省</span>
+										<span class="AD_sp2">佛山市</span>
+										<span class="AD_sp8">禅城区</span>
+										<span class="AD_sp3">东鹏瓷砖</span>
+										<span class="AD_sp4">洁具</span>
+										<span class="AD_sp5">
+											<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
+											<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
+										</span>
+										<span class="AD_sp6"><i class="AD_tel"></i></span>
+										<span class="AD_sp7"><i class="AD_con"></i></span>
+									</div>
+								</a>
 							</li>
 							<li>
-								<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
-								<div class="AD_box clearfix">
-									<span class="AD_sp1">广东省</span>
-									<span class="AD_sp2">佛山市</span>
-									<span class="AD_sp3">东鹏瓷砖</span>
-									<span class="AD_sp4">洁具</span>
-									<span class="AD_sp5">
-										<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
-										<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
-									</span>
-									<span class="AD_sp6"><i class="AD_tel"></i></span>
-									<span class="AD_sp7"><i class="AD_con"></i></span>
-								</div>
+								<a href="javascript:void(0)" class="MBhref">
+									<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
+									<div class="AD_box clearfix">
+										<span class="AD_sp1">广东省</span>
+										<span class="AD_sp2">佛山市</span>
+										<span class="AD_sp8">禅城区</span>
+										<span class="AD_sp3">东鹏瓷砖</span>
+										<span class="AD_sp4">洁具</span>
+										<span class="AD_sp5">
+											<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
+											<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
+										</span>
+										<span class="AD_sp6"><i class="AD_tel"></i></span>
+										<span class="AD_sp7"><i class="AD_con"></i></span>
+									</div>
+								</a>
 							</li>
 							<li>
-								<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
-								<div class="AD_box clearfix">
-									<span class="AD_sp1">广东省</span>
-									<span class="AD_sp2">佛山市</span>
-									<span class="AD_sp3">东鹏瓷砖</span>
-									<span class="AD_sp4">洁具</span>
-									<span class="AD_sp5">
-										<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
-										<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
-									</span>
-									<span class="AD_sp6"><i class="AD_tel"></i></span>
-									<span class="AD_sp7"><i class="AD_con"></i></span>
-								</div>
+								<a href="javascript:void(0)" class="MBhref">
+									<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
+									<div class="AD_box clearfix">
+										<span class="AD_sp1">广东省</span>
+										<span class="AD_sp2">佛山市</span>
+										<span class="AD_sp8">禅城区</span>
+										<span class="AD_sp3">东鹏瓷砖</span>
+										<span class="AD_sp4">洁具</span>
+										<span class="AD_sp5">
+											<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
+											<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
+										</span>
+										<span class="AD_sp6"><i class="AD_tel"></i></span>
+										<span class="AD_sp7"><i class="AD_con"></i></span>
+									</div>
+								</a>
 							</li>
 							<li>
-								<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
-								<div class="AD_box clearfix">
-									<span class="AD_sp1">广东省</span>
-									<span class="AD_sp2">佛山市</span>
-									<span class="AD_sp3">东鹏瓷砖</span>
-									<span class="AD_sp4">洁具</span>
-									<span class="AD_sp5">
-										<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
-										<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
-									</span>
-									<span class="AD_sp6"><i class="AD_tel"></i></span>
-									<span class="AD_sp7"><i class="AD_con"></i></span>
-								</div>
+								<a href="javascript:void(0)" class="MBhref">
+									<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
+									<div class="AD_box clearfix">
+										<span class="AD_sp1">广东省</span>
+										<span class="AD_sp2">佛山市</span>
+										<span class="AD_sp8">禅城区</span>
+										<span class="AD_sp3">东鹏瓷砖</span>
+										<span class="AD_sp4">洁具</span>
+										<span class="AD_sp5">
+											<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
+											<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
+										</span>
+										<span class="AD_sp6"><i class="AD_tel"></i></span>
+										<span class="AD_sp7"><i class="AD_con"></i></span>
+									</div>
+								</a>
 							</li>
 							<li>
-								<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
-								<div class="AD_box clearfix">
-									<span class="AD_sp1">广东省</span>
-									<span class="AD_sp2">佛山市</span>
-									<span class="AD_sp3">东鹏瓷砖</span>
-									<span class="AD_sp4">洁具</span>
-									<span class="AD_sp5">
-										<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
-										<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
-									</span>
-									<span class="AD_sp6"><i class="AD_tel"></i></span>
-									<span class="AD_sp7"><i class="AD_con"></i></span>
-								</div>
+								<a href="javascript:void(0)" class="MBhref">
+									<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
+									<div class="AD_box clearfix">
+										<span class="AD_sp1">广东省</span>
+										<span class="AD_sp2">佛山市</span>
+										<span class="AD_sp8">禅城区</span>
+										<span class="AD_sp3">东鹏瓷砖</span>
+										<span class="AD_sp4">洁具</span>
+										<span class="AD_sp5">
+											<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
+											<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
+										</span>
+										<span class="AD_sp6"><i class="AD_tel"></i></span>
+										<span class="AD_sp7"><i class="AD_con"></i></span>
+									</div>
+								</a>
 							</li>
 							<li>
-								<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
-								<div class="AD_box clearfix">
-									<span class="AD_sp1">广东省</span>
-									<span class="AD_sp2">佛山市</span>
-									<span class="AD_sp3">东鹏瓷砖</span>
-									<span class="AD_sp4">洁具</span>
-									<span class="AD_sp5">
-										<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
-										<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
-									</span>
-									<span class="AD_sp6"><i class="AD_tel"></i></span>
-									<span class="AD_sp7"><i class="AD_con"></i></span>
-								</div>
+								<a href="javascript:void(0)" class="MBhref">
+									<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
+									<div class="AD_box clearfix">
+										<span class="AD_sp1">广东省</span>
+										<span class="AD_sp2">佛山市</span>
+										<span class="AD_sp8">禅城区</span>
+										<span class="AD_sp3">东鹏瓷砖</span>
+										<span class="AD_sp4">洁具</span>
+										<span class="AD_sp5">
+											<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
+											<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
+										</span>
+										<span class="AD_sp6"><i class="AD_tel"></i></span>
+										<span class="AD_sp7"><i class="AD_con"></i></span>
+									</div>
+								</a>
 							</li>
 							<li>
-								<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
-								<div class="AD_box clearfix">
-									<span class="AD_sp1">广东省</span>
-									<span class="AD_sp2">佛山市</span>
-									<span class="AD_sp3">东鹏瓷砖</span>
-									<span class="AD_sp4">洁具</span>
-									<span class="AD_sp5">
-										<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
-										<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
-									</span>
-									<span class="AD_sp6"><i class="AD_tel"></i></span>
-									<span class="AD_sp7"><i class="AD_con"></i></span>
-								</div>
+								<a href="javascript:void(0)" class="MBhref">
+									<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
+									<div class="AD_box clearfix">
+										<span class="AD_sp1">广东省</span>
+										<span class="AD_sp2">佛山市</span>
+										<span class="AD_sp8">禅城区</span>
+										<span class="AD_sp3">东鹏瓷砖</span>
+										<span class="AD_sp4">洁具</span>
+										<span class="AD_sp5">
+											<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
+											<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
+										</span>
+										<span class="AD_sp6"><i class="AD_tel"></i></span>
+										<span class="AD_sp7"><i class="AD_con"></i></span>
+									</div>
+								</a>
 							</li>
 							<li>
-								<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
-								<div class="AD_box clearfix">
-									<span class="AD_sp1">广东省</span>
-									<span class="AD_sp2">佛山市</span>
-									<span class="AD_sp3">东鹏瓷砖</span>
-									<span class="AD_sp4">洁具</span>
-									<span class="AD_sp5">
-										<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
-										<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
-									</span>
-									<span class="AD_sp6"><i class="AD_tel"></i></span>
-									<span class="AD_sp7"><i class="AD_con"></i></span>
-								</div>
+								<a href="javascript:void(0)" class="MBhref">
+									<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
+									<div class="AD_box clearfix">
+										<span class="AD_sp1">广东省</span>
+										<span class="AD_sp2">佛山市</span>
+										<span class="AD_sp8">禅城区</span>
+										<span class="AD_sp3">东鹏瓷砖</span>
+										<span class="AD_sp4">洁具</span>
+										<span class="AD_sp5">
+											<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
+											<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
+										</span>
+										<span class="AD_sp6"><i class="AD_tel"></i></span>
+										<span class="AD_sp7"><i class="AD_con"></i></span>
+									</div>
+								</a>
 							</li>
 							<li>
-								<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
-								<div class="AD_box clearfix">
-									<span class="AD_sp1">广东省</span>
-									<span class="AD_sp2">佛山市</span>
-									<span class="AD_sp3">东鹏瓷砖</span>
-									<span class="AD_sp4">洁具</span>
-									<span class="AD_sp5">
-										<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
-										<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
-									</span>
-									<span class="AD_sp6"><i class="AD_tel"></i></span>
-									<span class="AD_sp7"><i class="AD_con"></i></span>
-								</div>
+								<a href="javascript:void(0)" class="MBhref">
+									<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
+									<div class="AD_box clearfix">
+										<span class="AD_sp1">广东省</span>
+										<span class="AD_sp2">佛山市</span>
+										<span class="AD_sp8">禅城区</span>
+										<span class="AD_sp3">东鹏瓷砖</span>
+										<span class="AD_sp4">洁具</span>
+										<span class="AD_sp5">
+											<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
+											<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
+										</span>
+										<span class="AD_sp6"><i class="AD_tel"></i></span>
+										<span class="AD_sp7"><i class="AD_con"></i></span>
+									</div>
+								</a>
 							</li>
 							<li>
-								<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
-								<div class="AD_box clearfix">
-									<span class="AD_sp1">广东省</span>
-									<span class="AD_sp2">佛山市</span>
-									<span class="AD_sp3">东鹏瓷砖</span>
-									<span class="AD_sp4">洁具</span>
-									<span class="AD_sp5">
-										<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
-										<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
-									</span>
-									<span class="AD_sp6"><i class="AD_tel"></i></span>
-									<span class="AD_sp7"><i class="AD_con"></i></span>
-								</div>
+								<a href="javascript:void(0)" class="MBhref">
+									<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
+									<div class="AD_box clearfix">
+										<span class="AD_sp1">广东省</span>
+										<span class="AD_sp2">佛山市</span>
+										<span class="AD_sp8">禅城区</span>
+										<span class="AD_sp3">东鹏瓷砖</span>
+										<span class="AD_sp4">洁具</span>
+										<span class="AD_sp5">
+											<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
+											<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
+										</span>
+										<span class="AD_sp6"><i class="AD_tel"></i></span>
+										<span class="AD_sp7"><i class="AD_con"></i></span>
+									</div>
+								</a>
 							</li>
 							<li>
-								<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
-								<div class="AD_box clearfix">
-									<span class="AD_sp1">广东省</span>
-									<span class="AD_sp2">佛山市</span>
-									<span class="AD_sp3">东鹏瓷砖</span>
-									<span class="AD_sp4">洁具</span>
-									<span class="AD_sp5">
-										<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
-										<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
-									</span>
-									<span class="AD_sp6"><i class="AD_tel"></i></span>
-									<span class="AD_sp7"><i class="AD_con"></i></span>
-								</div>
+								<a href="javascript:void(0)" class="MBhref">
+									<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
+									<div class="AD_box clearfix">
+										<span class="AD_sp1">广东省</span>
+										<span class="AD_sp2">佛山市</span>
+										<span class="AD_sp8">禅城区</span>
+										<span class="AD_sp3">东鹏瓷砖</span>
+										<span class="AD_sp4">洁具</span>
+										<span class="AD_sp5">
+											<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></var></p>
+											<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
+										</span>
+										<span class="AD_sp6"><i class="AD_tel"></i></span>
+										<span class="AD_sp7"><i class="AD_con"></i></span>
+									</div>
+								</a>
 							</li>
 							<li>
-								<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
-								<div class="AD_box clearfix">
-									<span class="AD_sp1">广东省</span>
-									<span class="AD_sp2">佛山市</span>
-									<span class="AD_sp3">东鹏瓷砖</span>
-									<span class="AD_sp4">洁具</span>
-									<span class="AD_sp5">
-										<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO"><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></em></var></p>
-										<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
-									</span>
-									<span class="AD_sp6"><i class="AD_tel"></i></span>
-									<span class="AD_sp7"><i class="AD_con"></i></span>
-								</div>
+								<a href="javascript:void(0)" class="MBhref">
+									<div class="AD_img"><img class="loadImg" data-srcm="img/physicalSimg/ADimg_03.png" /></div>
+									<div class="AD_box clearfix">
+										<span class="AD_sp1">广东省</span>
+										<span class="AD_sp2">佛山市</span>
+										<span class="AD_sp8">禅城区</span>
+										<span class="AD_sp3">东鹏瓷砖</span>
+										<span class="AD_sp4">洁具</span>
+										<span class="AD_sp5">
+											<p><var class="sp5_le">地 址：</var><var class="sp5_right"><em class="MBcity"></em><em class="cityO"><em class="cityO">江湾三路2号中国陶瓷城二楼A210号</em></em></var></p>
+											<p><var class="sp5_le">电 话：</var><em class="telO">0757-82267598</em></p>
+										</span>
+										<span class="AD_sp6"><i class="AD_tel"></i></span>
+										<span class="AD_sp7"><i class="AD_con"></i></span>
+									</div>
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -760,31 +844,31 @@
 					<h5>热销商品</h5>
 					<ul class="HG_main">
 						<li style="border: none;">
-							<a href="###">
+							<a href="product-details.html">
 								<div class="HGM_img"><img src="img/physicalSimg/HGimg1.jpg"/></div>
 								<p>东鹏瓷砖 云海玉800地板砖客厅全抛釉地砖FG605301釉面砖FG805300</p>
 							</a>
 						</li>
 						<li>
-							<a href="###">
+							<a href="product-details.html">
 								<div class="HGM_img"><img src="img/physicalSimg/HGimg1.jpg"/></div>
 								<p>东鹏瓷砖 云海玉800地板砖客厅全抛釉地砖FG605301釉面砖FG805300</p>
 							</a>
 						</li>
 						<li>
-							<a href="###">
+							<a href="product-details.html">
 								<div class="HGM_img"><img src="img/physicalSimg/HGimg1.jpg"/></div>
 								<p>东鹏瓷砖 云海玉800地板砖客厅全抛釉地砖FG605301釉面砖FG805300</p>
 							</a>
 						</li>
 						<li>
-							<a href="###">
+							<a href="product-details.html">
 								<div class="HGM_img"><img src="img/physicalSimg/HGimg1.jpg"/></div>
 								<p>东鹏瓷砖 云海玉800地板砖客厅全抛釉地砖FG605301釉面砖FG805300</p>
 							</a>
 						</li>
 						<li>
-							<a href="###">
+							<a href="product-details.html">
 								<div class="HGM_img"><img src="img/physicalSimg/HGimg1.jpg"/></div>
 								<p>东鹏瓷砖 云海玉800地板砖客厅全抛釉地砖FG605301釉面砖FG805300</p>
 							</a>

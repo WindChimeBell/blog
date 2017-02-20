@@ -7,8 +7,12 @@ $(function(){
 	dw = $(window).width() || $("body").width();
 	
 	if(dw <= 640){
+		addHrefT(".MBhref","phyStore_map.html");
 		resetIMG(".loadImg","data-srcm");
 	}else{
+		txtTipsT(".AD_sp2");//赋予位置title属性0217
+		txtTipsT(".AD_sp8");
+		
 		sendTel(".AD_tel",".AD_box");//发送地址到手机
 		sendTel(".telIcon",".NSS_addr li");//发送地址到手机
 		txtTipsT(".cityO");//赋予地址title属性
@@ -36,6 +40,11 @@ $(window).load(function(){
 		
 	}
 });
+
+//添加跳转链接
+function addHrefT(obj,objT){
+	$(obj).prop("href",objT);
+}
 
 //发送到手机效果
 function sendTel(obj,objP){
