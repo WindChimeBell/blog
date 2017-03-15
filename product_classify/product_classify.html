@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!--强制让文档的宽度与设备的宽度保持1:1，并且文档最大的宽度比例是1.0-->
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>产品分类页</title>
+		<link rel="stylesheet" type="text/css" href="css/initialize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/idangerous.swiper2.7.6.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jPagesDP.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common2.css"/>
+		<link rel="stylesheet" type="text/css" href="css/product_classify_PC.css" id="class_link"/>
+		<script type="text/javascript">
+			/*判断移动和PC端，切换对应的CSS*/
+			(function(){
+				var dw = document.documentElement.clientWidth;//屏幕宽度
+				var class_link = document.getElementById("class_link");
+				var sUserAgent = navigator.userAgent.toLowerCase();
+				var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+				var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+				var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+				var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+				var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+				var bIsAndroid = sUserAgent.match(/android/i) == "android";
+				var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+				var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+				if(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM || (dw <= 640)) {
+					class_link.setAttribute("href","css/product_classify_MB.css");
+				}else{
+					class_link.setAttribute("href","css/product_classify_PC.css");
+				}
+			})();
+			
+			window.onresize = function(){
+				var dw = document.documentElement.clientWidth;
+				var class_link = document.getElementById("class_link");
+				(dw <= 640)? class_link.setAttribute("href","css/product_classify_MB.css") : class_link.setAttribute("href","css/product_classify_PC.css");
+			}
+		</script>
+	</head>
+	<body>
+		<!--移动端底部0121-->
+		<div class="mb-footer">
+			<a href="index.html" class="mb-footbox bp1 mb-active">首页</a>
+			<a href="classify-MB.html" class="mb-footbox bp2">分类</a>
+			<a href="###" class="mb-footbox bp3">购物车</a>
+			<a href="###" class="mb-footbox bp4">我的</a>
+		</div>
+		
+		<!--筛选蒙版-->
+		<div id="seMask"></div>
+		<!--移动端头部搜索-->
+		<div id="head_MB">
+			<a href="javascript:history.back(-1)" class="head_back">&lt;</a>
+			<a href="classify-MB.html" class="head_search"><p></p><input type="text" id="search_MB" placeholder="搜索" /></a>
+		</div>
+		
+		<div id="container">
+			<!--头部0306-->
+			<div id="header">
+				<div class="head_nav clearfix">
+					<ul class="Hnav_posi"><span>当前城市：</span><span>佛山市</span><i></i></ul>
+					<ul class="Hnav_left clearfix">
+						<li style="border-left: none;"><a href="index.html">东鹏商城</a></li>
+						<li class="DP_group">
+							<a href="javascript:void(0)">东鹏集团<i class="TrangleD"></i></a>
+							<div class="DP_group_list">
+								<em class="Trangle"></em>
+								<span><a href="http://www.dongpeng.net/">东鹏瓷砖</a></span>
+								<span><a href="http://www.dongpengjieju.com/">东鹏洁具</a></span>
+								<span><a href="http://www.dongpengfloor.net/">东鹏木地板</a></span>
+								<span><a href="http://www.dongpengkeji.net/">东鹏绿家</a></span>
+								<span><a href="http://www.dyty.com.cn/">东鹏华盛昌</a></span>
+								<span><a href="http://www.dpo2o.com/">东鹏家居</a></span>
+								<span><a href="http://www.innoci.com.cn/">innoci艺耐</a></span>
+								<span><a href="http://www.dpicn.net/">REX锐思</a></span>
+							</div>
+						</li>
+						<li><a href="###">产品说明</a></li>
+						<li><a href="###">实体门店</a></li>
+						<li><a href="http://www.dongpeng.com/">国际版</a></li>
+						<li><a href="###">企业采购</a></li>
+						<li class="noAfter"><a href="###">经销商专区</a></li>
+					</ul>
+					<ul class="Hnav_right">
+						<li style="border-left: none;"><a href="###">请登录</a></li>
+						<li><a href="###">免费注册</a></li>
+						<li class="noAfter"><a href="###">消息通知</a></li>
+						<li class="shopCat"><a href="###"><i class="shopCi"></i>购物车（12）</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<!--导航栏-->
+			<div id="nav" class="clearfix">
+				<div class="nav_box clearfix">
+					<div class="logo"><img src="img/commonImg/logo.jpg"/></div>
+					<div class="gifImg"><img src="img/commonImg/flashO.jpg"/></div>
+					<ul class="nav_list">
+						<li><a href="###" style="color: #D21E2F;">首页</a></li>
+						<li><a href="###">样板房</a></li>
+						<li><a href="###">建材馆</a></li>
+						<li><a href="###">东鹏团购</a></li>
+						<li><a href="###">找设计师</a></li>
+						<li><a href="###">找施工队</a></li>
+						<li><a href="###">装修知识</a></li>
+						<li><a href="###">新品频道</a></li>
+					</ul>
+					<div class="search">
+						<label><input type="text" placeholder="瓷砖" /><i></i></label>
+					</div>
+				</div>
+			</div>
+			
+			<!-- 自动收缩banner -->
+			<div class="banner-roll">
+				<div id="product-banner">
+					<img src="img/product_classify_MB/navi-background.jpg" class="banImg"/>
+				</div>
+			</div>
+		
+			<!-- 产品类别  -->
+			<!--首页>全部分类>东鹏陶瓷-->
+			<div id="cplb-dh">
+				<div class="cplb-dh-main">
+					<div class="cplb-dh-main-t">
+						<div class="cplb-dh-main-font">
+							<a href="javascript:void(0);"><em>首页</em> &gt;</a>
+							<a href="javascript:void(0);"><em>全部分类</em> &gt;</a>
+							<span class="search_word"><var>&gt; </var>"东鹏陶瓷"</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="cplb">
+			<!--筛选框0306-->
+			<div class="screen">
+				<ul class="screen_box clearfix">
+					<li class="clearfix">
+						<div class="scr_title"><p><var class="titleM">类型</var><span>TYPE</span><i class="selArrowB"></i></p></div>
+						<div class="scr_select">
+							<div class="SSBox">
+								<a href="###">全抛釉</a>
+								<a href="###">玻化砖</a>
+								<a href="###">仿古砖</a>
+								<a href="###">背景墙</a>
+								<a href="###">全抛釉</a>
+								<a href="###">玻化砖</a>
+								<a href="###">仿古砖</a>
+								<a href="###">背景墙</a>
+								<a href="###">全抛釉</a>
+								<a href="###">玻化砖</a>
+								<a href="###">仿古砖</a>
+								<a href="###">背景墙</a>
+								<a href="###">全抛釉</a>
+								<a href="###">玻化砖</a>
+								<a href="###">仿古砖</a>
+								<a href="###">背景墙</a>
+								<a href="###">其他</a>
+							</div>
+							<div class="CT_ALL_SP" data-ctrl="0"><em>更多</em><i></i></div>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div class="scr_title"><p><var class="titleM">尺寸</var><span>SIZE</span><i class="selArrowB"></i></p></div>
+						<div class="scr_select">
+							<div class="SSBox">
+								<a href="###">300*300</a>
+								<a href="###">400*400</a>
+								<a href="###">500*500</a>
+								<a href="###">600*600</a>
+								<a href="###">700*700</a>
+								<a href="###">800*800</a>
+							</div>
+							<div class="CT_ALL_SP" data-ctrl="0"><em>更多</em><i></i></div>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div class="scr_title"><p><var class="titleM">空间</var><span>SPACE</span><i class="selArrowB"></i></p></div>
+						<div class="scr_select">
+							<div class="SSBox">
+								<a href="###">客厅</a>
+								<a href="###">厨房</a>
+								<a href="###">餐厅</a>
+								<a href="###">客厅</a>
+								<a href="###">厨房</a>
+								<a href="###">餐厅</a>
+								<a href="###">客厅</a>
+								<a href="###">厨房</a>
+								<a href="###">餐厅</a>
+								<a href="###">客厅</a>
+								<a href="###">厨房</a>
+								<a href="###">餐厅</a>
+							</div>
+							<div class="CT_ALL_SP" data-ctrl="0"><em>更多</em><i></i></div>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div class="scr_title"><p><var class="titleM">风格</var><span>STYLE</span><i class="selArrowB"></i></p></div>
+						<div class="scr_select">
+							<div class="SSBox">
+								<a href="###">简约</a>
+								<a href="###">地中海</a>
+								<a href="###">田园</a>
+								<a href="###">欧式</a>
+								<a href="###">简约</a>
+								<a href="###">地中海</a>
+								<a href="###">田园</a>
+								<a href="###">欧式</a>
+								<a href="###">简约</a>
+								<a href="###">地中海</a>
+								<a href="###">田园</a>
+								<a href="###">欧式</a>
+								<a href="###">简约</a>
+								<a href="###">地中海</a>
+								<a href="###">田园</a>
+								<a href="###">欧式</a>
+								<a href="###">简约</a>
+								<a href="###">地中海</a>
+								<a href="###">田园</a>
+								<a href="###">欧式</a>
+								<a href="###">简约</a>
+								<a href="###">地中海</a>
+								<a href="###">田园</a>
+								<a href="###">欧式</a>
+							</div>
+							<div class="CT_ALL_SP" data-ctrl="0"><em>更多</em><i></i></div>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div class="scr_title"><p><var class="titleM">价格</var><span>PRICE</span><i class="selArrowB"></i></p></div>
+						<div class="scr_select">
+							<div class="SSBox">
+								<a href="###">50以下</a>
+								<a href="###">100-200</a>
+								<a href="###">200-300</a>
+								<a href="###">50以下</a>
+								<a href="###">100-200</a>
+								<a href="###">200-300</a>
+							</div>
+							<div class="CT_ALL_SP" data-ctrl="0"><em>更多</em><i></i></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+			
+		<!--0119搜索结果-->
+		<p class="search_result"><span>您搜索的<em>“瓷砖”</em>相关商品共找到<em>163</em>件</span></p>
+		
+		<!-- 中间产品部分  -->
+		<div class="productes">
+			<!--产品顶部的排序功能按钮和右边的分页-->
+			<div class="productes-top">
+				<ul class="productes-top-left">
+					<li class="productes-top-left1">按销量<span></span></li>
+					<li class="productes-top-left2">按人气<span></span></li>
+					<li class="productes-top-left3">按价格<span></span></li>
+					<li class="productes-top-left4">最新上架</li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+			<!--主要产品信息分类层-->
+			<div class="productes-main">
+				<ul id="itemContainer" class="data_box">
+					
+				</ul>
+			</div>
+
+			<!--产品底下的分页样式 -->
+			<div class="productes-bottom">
+				<div class="holder"></div>
+			</div>
+		</div>
+		
+		<!-- 大理石层 -->
+		<div id="advertise">
+			<a href="javascript:void(0);">
+				<img src="img/product_classify_MB/ad1.jpg"/>
+				<div class="AD_tipsImg">
+					<p></p>
+					<img src="img/product_classify_MB/ci1.jpg"/>
+				</div>
+			</a>
+			<a href="javascript:void(0);">
+				<img src="img/product_classify_MB/ad2.jpg"/>
+				<div class="AD_tipsImg">
+					<p></p>
+					<img src="img/product_classify_MB/ci1.jpg"/>
+				</div>
+			</a>
+			<a href="javascript:void(0);">
+				<img src="img/product_classify_MB/ad3.jpg"/>
+				<div class="AD_tipsImg">
+					<p></p>
+					<img src="img/product_classify_MB/ci1.jpg"/>
+				</div>
+			</a>
+		</div>
+		
+		<!--加载更多-->
+		<div class="load_more" data-numo="1">加载更多</div>
+
+		<!--底部-->
+		<div class="footer">
+			<div class="footer-box">
+				<div class="foot-up">
+					<div class="up-div">
+						<div class="up-img">
+							<img src="img/commonImg/y-footer1.png"/>
+						</div>
+						<div class="up-txt">
+							<p class="txt-p1">知名品牌</p>
+							<p class="txt-p2">选我就没错的</p>
+						</div>
+					</div>	
+					<div class="up-div">
+						<div class="up-img">
+							<img src="img/commonImg/y-footer2.png"/>
+						</div>
+						<div class="up-txt">
+							<p class="txt-p1">专注建材44年</p>
+							<p class="txt-p2">选我就没错的</p>
+						</div>
+					</div>
+					<div class="up-div">
+						<div class="up-img">
+							<img src="img/commonImg/y-footer3.png"/>
+						</div>
+						<div class="up-txt">
+							<p class="txt-p1">品质保证</p>
+							<p class="txt-p2">选我就没错的</p>
+						</div>
+					</div>
+					<div class="up-div">
+						<div class="up-img">
+							<img src="img/commonImg/y-footer4.png"/>
+						</div>
+						<div class="up-txt">
+							<p class="txt-p1">环保材料</p>
+							<p class="txt-p2">选我就没错的</p>
+						</div>
+					</div>
+					<div class="up-div margin-none">
+						<div class="up-img">
+							<img src="img/commonImg/y-footer5.png"/>
+						</div>
+						<div class="up-txt">
+							<p class="txt-p1">客服电话</p>
+							<p class="txt-p2 txt-num">0757-82663173</p>
+						</div>
+					</div>
+				</div>
+				<div class="foot-mid">
+					<dl>
+						<dt>关于东鹏</dt>
+						<dd><a href="###">公司简介</a></dd>
+						<dd><a href="###">企业文化</a></dd>
+						<dd><a href="###">品牌实力</a></dd>
+						<dd><a href="###">新闻中心</a></dd>
+					</dl>
+					<dl>
+						<dt>购物指南</dt>
+						<dd><a href="###">购物流程</a></dd>
+						<dd><a href="###">优惠活动</a></dd>
+						<dd><a href="###">售后服务</a></dd>
+						<dd><a href="###">常见问题</a></dd>
+					</dl>
+					<dl>
+						<dt>装修知识</dt>
+						<dd><a href="###">安装视频</a></dd>
+						<dd><a href="###">教你选材</a></dd>
+						<dd><a href="###">精选案例</a></dd>
+						<dd><a href="###">装修流程</a></dd>
+					</dl>
+					<dl>
+						<dt>购物商城</dt>
+						<dd><a href="###">瓷砖天猫店</a></dd>
+						<dd><a href="###">洁具天猫店</a></dd>
+						<dd><a href="###">京东商城</a></dd>
+						<dd><a href="###">DP唯品会</a></dd>
+					</dl>
+					<dl class="margin-none">
+						<dt>关注我们</dt>
+						<dd class="foot-dd"><a href="###">微信公众号</a><img src="img/commonImg/y-free2.jpg"/></dd>
+						<dd><a href="###">微信商城</a></dd>
+						<dd><a href="###">新浪微博</a></dd>
+					</dl>
+				</div>
+				<div class="foot-down">
+					<p class="down-p1">
+						<span>友情链接：</span>
+						<a href="http://www.dongpeng.net/">东鹏陶瓷</a> |
+						<a href="http://www.dongpengjieju.com/">东鹏洁具</a> |
+						<a href="###">东鹏背景墙</a> |
+						<a href="###">东鹏宅一起</a> |
+						<a href="###">东鹏硅藻泥</a> |
+						<a href="http://www.dpo2o.com/">东鹏家居</a> |
+						<a href="http://www.dongpengfloor.net/">东鹏木地板</a> |
+						<a href="http://www.dongpengkeji.net/">东鹏绿家科技</a> |
+						<a href="http://www.innoci.com.cn/">innoci洁具</a> |
+						<a href="http://www.dpicn.net/">rex瓷砖</a> |
+						<a href="http://www.dyty.com.cn/">东鹏华盛昌陶艺</a> |
+						<a href="###">东鹏马拉松</a> |
+						<a href="###">东鹏微晶石</a> |
+						<a href="###">中国陶瓷城</a> |
+						<a href="http://www.baidu.com.cn/">百度</a> |
+						<a href="###" class="foot-more">更多></a>
+					</p>
+					<p class="down-p2">
+						<a href="###">关于我们</a> |
+						<a href="###">联系我们</a> |
+						<a href="###">诚聘英才</a> |
+						<a href="###">企业采购</a> |
+						<a href="###">招商加盟</a> |
+						<a href="###">设计师入驻</a> |
+						<a href="###">施工队入驻</a> |
+						<a href="###">帮助中心</a>
+					</p>
+					<p>广东东鹏控股股份有限公司©版权所有 保留所有权利 </p>
+				</div>
+			</div>
+		</div>
+		
+		<script src="js/idangerous.swiper2.7.6.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/moblie_transform.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jPages.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.lazyload.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/product_classify.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				var loadNum = 10;
+				var dw = $(window).width() || $("body").width();//屏幕宽度
+				if(dw > 640){
+					$("#itemContainer li").lazyload({
+				      	event : "turnPage",
+				      	effect : "fadeIn"
+				    });
+					$("#itemContainer li").each(function(){
+						var loadIndex = $(this).index() % loadNum;
+					});
+					$(".holder").jPages({
+						containerID : "itemContainer",
+						minHeight: true,//itemContainer的最小高度
+						previous: "〈",//上一页
+						next: "〉",//上一页
+						perPage: loadNum,//每一页显示的数量
+						midRange: 3,//中间宽度
+						keyBrowse: false,//键盘左右换页
+						scrollBrowse: false,//滚轮换页
+						pause: 0,//自动换页毫秒数
+						clickStop: false,//当自动换页的时候，点击停止
+						delay: 50,//每条数据延迟显示的毫秒数
+						callback: function( pages, items ){//懒加载
+					        /* lazy load current images */
+					        items.showing.find("img").trigger("turnPage");
+					        /* lazy load next page images */
+					        items.oncoming.find("img").trigger("turnPage");
+					    }
+					});
+				}
+			});
+		</script>
+	</body>
+</html>

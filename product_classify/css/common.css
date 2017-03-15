@@ -1,0 +1,590 @@
+/*头部最顶处,定高话一条底线*/
+.menu {
+	min-width: 1210px;
+	height: 35px;
+	background-color: #ECECEC;
+	border-bottom: 1px solid #BBB;
+}
+/*定长宽*/
+.menu-m{
+	width: 1210px;
+	height: 35px;
+	margin: 0px auto;
+	font-size: 14px;
+	font-family:simsun ;
+	color: black;
+}
+/*menu下的所有a标签，设置字体颜色大小*/
+.menu-m a{
+	text-decoration: none;
+	font-size: 14px;
+	font-family:simsun ;
+	color: black;
+}
+/*鼠标移动到字体变红*/
+.menu-m a:hover{
+	color: #D7000F;
+}
+/*头部左侧部分,设置向左侧浮动，行高35px*/
+.menu-m-hi{
+	float: left;
+	line-height: 35px;
+}
+/*头部右侧部分，设置向右侧浮动，行高35px*/
+.menu-m-ul{
+	float: right;
+	line-height: 35px;
+}
+/*取消ul标签前面的点*/
+.menu-m-ul ul{
+	list-style: none;
+}
+/*取消li标签的换行，前面加一条线*/
+.menu-m-ul li{
+	display: inline;
+	border-left: 1px solid black;
+	padding-left: 5px;
+}
+.head-cart-img{
+	float: left;
+}
+.head-cart-img img{
+	margin-top: -4px;
+}
+
+/*搜索栏部分*/
+.search {
+	min-width: 1210px;
+	height: 117px;
+	margin: 0px auto;
+}
+/*搜索栏下所有a标签*/
+.search a {
+	text-decoration: none;
+	font: 14px "宋体";
+	color: black;
+	text-align: center;
+}
+/*鼠标移动到字体变红*/
+.search a:hover {
+	color: #D7000F;
+}
+.search-s {
+	width: 1210px;
+	height: 140px;
+	margin: 0px auto;
+}
+/*logo样式调整*/
+.search-s-logo {
+	float: left;
+	margin-top: 40px;
+}
+.search-s-logo img {
+	padding-right: 5px;
+	width: 200px;
+	height: 32px;
+}
+.search-s-border{
+	float: left;
+	margin-top: 47px;
+	font: 24px simsun;
+	color: #797979;
+	font-weight: bolder;
+}
+.search-s-city {
+	float: left;
+	margin-top: 55px;
+}
+/*城市*/
+.search-s-city-one {
+	float: left;
+	font-size: 14px;
+	font-family: simsun,"arial narrow";
+	color: #D7000F;
+	font-weight: bolder;
+}
+/*切换城市*/
+.search-s-city-cut {
+	padding-left: 8px;
+	float: left;
+}
+.search-s-city-cut a {
+	text-decoration: none;
+	float: left;
+	font: 14px simsun;
+	color: #0099D2;
+}
+.search-border{
+	float: left;
+	margin-top: 40px;
+	margin-left: 90px;
+	width: 400px;
+}
+/*搜索栏样式,填充颜色*/
+.search-s-search {
+	float: left;
+	box-sizing: border-box;
+	background-color: #D7000F;
+	width: 400px;
+}
+/*搜索栏调整input标签，定长宽*/
+.search-input{
+	float: left;
+	box-sizing: border-box;
+	width: 335px;
+	height: 35px;
+}
+.search-s-search input {
+	float: left;
+	margin-top: 2px;
+	margin-left: 2px;
+	box-sizing: border-box;
+	height: 31px;
+	width: 333px;
+	border-color:transparent ;
+	font: 14px simsun;
+	/*（轮廓）取消默认样式*/
+	outline: none;
+	text-indent: 15px;
+	line-height: 31px;
+}
+/*搜索栏取消图片下面的间隙，bottom/middle*/
+.search-mirror{
+	float: left;
+	box-sizing: border-box;
+	width: 64px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+}
+.search-s-search img {
+	vertical-align: middle;
+}
+/**ul**/
+.search-ul{
+	float: left;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+.search-ul li{
+	display: inline;
+	margin-right: 5px;
+}
+.search-ul a{
+	font-size: 12px;
+	font-family: simsun,"arial narrow";
+	color: #7C7C7C;
+}
+.search-ul a:hover{
+	color: #D7000F;
+}
+/*gif位置*/
+.search-s-gif {
+	float: right;
+	margin-top: 17px;
+	width: 200px;
+	height: 80px;
+}
+.search-s-gif img {
+	width: 200px;
+	height: 80px;
+}
+
+/*导航栏部分开始*/
+.navi {
+	min-width: 1210px;
+	height: auto;
+	margin: 0px auto;
+}
+/*设置导航栏上面的部分*/
+.navi-top {
+	width: 1210px;
+	height: 45px;
+	margin: 0px auto;
+}
+.navi-top-border {
+	border-top: 3px solid #B1181A;
+}
+/*浮动使导航栏在同一行*/
+.navi-top-all {
+	float: left;
+	box-sizing: border-box;
+	width: 226px;
+	height: 45px;
+	background-color: #B1181A;
+	color: white;
+	font-size: 16px;
+	font-family: "microsoft yahei";
+	text-align: center;
+	line-height: 45px;
+}
+/*浮动使导航栏在同一行*/
+.navi-top-n {
+	float: left;
+	height: 45px;
+	margin-left: 20px;
+}
+/*取消ul标签前面的点*/
+/*取消li标签的换行，前面加一条线,上下居中*/
+.navi-top-n li {
+	line-height: 45px;
+	display: inline;
+	margin-right: 32px;
+}
+/*修改字体样式*/
+.navi-top-n a {
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: "microsoft yahei";
+	color: black;
+}
+/*鼠标移动到字体变红*/
+.navi-top-n a:hover {
+	color: #D7000F;
+}
+/*设置背景图片*/
+.navi-main-bg {
+	float: left;
+	height: 490px;
+	width: 100%;
+	position: absolute;
+	z-index: 5;
+}
+/*使一二级模块居中*/
+.navi-main-jz {
+	height: 490px;
+	width: 1210px;
+	margin: 0px auto;
+}
+/*4个一级导航*/
+.navi-main-one-border {
+	float: left;
+	width: 226px;
+	height: 490px;
+}
+.navi-main-one {
+	box-sizing: border-box;
+	width: 226px;
+	height: 122px;
+	background-color: #D7000F;
+}
+.navi-main-sec {
+	box-sizing: border-box;
+	width: 226px;
+	height: 123px;
+	background-color: #C40C14;
+}
+.navi-one-top {
+	height: 30px;
+	margin-left: 24px;
+	padding-top: 7px;
+}
+.navi-one-title {
+	float: left;
+	height: 30px;
+	font-size: 16px;
+	font-family: "microsoft yahei";
+	line-height: 30px;
+	color: white;
+}
+/**改变border-color获取一个三角形
+ * border-color: transparent #F8F8F8 transparent transparent**/
+.navi-one-triangle {
+	float: right;
+	width: 0;
+	height: 0px;
+	font-size: 0;
+	border-top: 10px;
+	border-bottom: 10px;
+	border-left: 15px;
+	border-right: 15px;
+	border-style: solid;
+	border-color: transparent;
+	margin-top: 5.5px;
+}
+.navi-one-gt {
+	float: right;
+	font-size: 17px;
+	font-family: "microsoft yahei";
+	font-weight: bolder;
+	line-height: 30px;
+	color: white;
+	margin-right: -10px;
+}
+.navi-one-ul {
+	margin-left: 24px;
+}
+.navi-one-ul li {
+	display: inline;
+	color: white;
+	font-size: 14px;
+	font-family: "microsoft yahei";
+	line-height: 24px;
+}
+.navi-one-ul a {
+	font-size: 14px;
+	font-family: "microsoft yahei";
+	color: white;
+}
+.navi-one-ul a:hover {
+	color: white;
+	border-bottom: 1px solid white;
+}
+/*二级导航*/
+.navi-main-detail-border {
+	float: left;
+	box-sizing: border-box;
+	margin-top: 9px;
+	height: 481px;
+	width: 446px;
+	background-color: #F8F8F8;
+	display: none;
+}
+/*设置高度和一条下划线*/
+.navi-main-detail {
+	box-sizing: border-box;
+	height: 90px;
+	width: 380px;
+	margin-left: 35px;
+	border-bottom: 2px solid #C2C2C2;
+}
+/*二级导航栏的详情*/
+.detail-fir-marginTop{
+	margin-top:8px ;
+}
+.navi-main-detail-0 {
+	padding-top: 8px;
+	height: 28px;
+	font: 16px simsun;
+	font-weight: bolder;
+	line-height: 28px;
+}
+/*取消li标签的换行，前面加一条线*/
+.navi-main-detail-1 li {
+	display: inline;
+	padding-right: 18px;
+	line-height: 24px;
+}
+/*修改字体样式*/
+.navi-main-detail a {
+	text-decoration: none;
+	font: 14px simsun;
+	color: black;
+}
+.navi-main-detail a:hover {
+	color: #D7000F;
+}
+
+/*二级页面的动画效果*/
+.navi-main-detail-border {
+	-webkit-animation: animation1 0.35s linear;
+	-moz-animation: animation1 0.35s linear;
+	-o-animation: animation1 0.35s linear;
+	animation: animation1 0.35s linear;
+}
+@-webkit-keyframes animation1 {
+	from {
+		opacity: 1;
+		width: 0px;
+	}
+	0% {
+		transform: translate(0);
+	}
+	100% {
+		transform: translate(445px);
+	}
+	to {
+		opacity: 1;
+		width: 445px;
+	}
+}
+@-moz-keyframes animation1 {
+	from {
+		opacity: 1;
+		width: 0px;
+	}
+	0% {
+		transform: translate(0);
+	}
+	100% {
+		transform: translate(445px);
+	}
+	to {
+		opacity: 1;
+		width: 445px;
+	}
+}
+@-o-keyframes animation1 {
+	from {
+		opacity: 1;
+		width: 0px;
+	}
+	0% {
+		transform: translate(0);
+	}
+	100% {
+		transform: translate(445px);
+	}
+	to {
+		opacity: 1;
+		width: 445px;
+	}
+}
+@keyframes animation1 {
+	from {
+		width: 0px;
+	}
+	to {
+		width: 445px;
+	}
+}
+/*导航栏部分结束*/
+
+/*底层样式开始*/
+/*底部样式*/
+.foot{
+	min-width: 1210px;
+	border-top: 1px solid #C7C7C7;
+	height: 600px;
+}
+.footwid{
+	width: 1210px;
+	height: 100px;
+	margin: 0px auto;
+}
+.foot-pic{
+	float: left;
+	height: 100px;
+	margin-left: 158px;
+}
+.foot-pic-img{
+	box-sizing: border-box;
+	float: left;
+	width: 90px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+}
+.foot-pic-font{
+	float: left;
+	font: 20px "微软雅黑";
+	color: #7E7E7E;
+	line-height: 100px;
+}
+/*底部二维码样式*/
+.footWXcode-bg{
+	width: 1210px;
+	margin: 0px auto;
+}
+.footWXcode-bg-pic{
+	width: 100px;
+	text-align: center;
+	margin-left: 520px;
+	height: 0;
+}
+.footWXcode1-height{
+	width: 80px;
+	height: 80px;
+}
+.footWXcode1 {
+	display: none;
+}
+.footWXcode1 img{
+	width: 80px;
+	height: 80px;
+}
+.footWXcode2{
+	display: none;
+}
+.footWXcode2 img{
+	width: 80px;
+	height: 80px;
+}
+.foot-wx1{
+	cursor: pointer;
+}
+.foot-wx2{
+	cursor: pointer;
+}
+/*底部链接样式*/
+.footlink{
+	height: 500px;
+	background-color: #242424;
+	padding-top:35px ;
+}
+.footlink-l{
+	height: 500px;
+	width: 1210px;
+	margin: 0px auto;
+	text-align: center;
+	font: 14px "微软雅黑";
+	color: white;
+}
+.footlink-l table{
+	width: 1210px;
+}
+.footlink-l td{
+	width: 35px;
+	text-align: center;	
+	font: 14px "微软雅黑";
+	color: white;
+}
+/*撑开td，兼容火狐*/
+.footlink-td{
+	width: 102px;
+}
+.footlink-l a{
+	text-decoration: none;
+	font: 14px "微软雅黑";
+	color: white;
+}
+.footlink-l a:hover{
+	color: #D7000F;
+}
+.footyqlj{
+	margin-top: 30px;
+	padding: 30px 0px;
+	border-top: 1px solid white;	
+}
+.footyqlj-one{
+	margin-top:2px ;
+}
+.footyqlj ul li{
+	display: inline;
+	padding: 0px 7px;
+	border-left: 1px solid white;
+}
+.footyqlj a{
+	text-decoration: none;
+	font: 14px "微软雅黑";
+	color: white;
+}
+.footyqlj a:hover{
+	color: #D7000F;
+}
+.footgw{
+	padding: 20px 0px;
+}
+.footgw ul li{
+	display: inline;
+	padding: 0px 7px;
+	border-left: 1px solid white;
+}
+.footgw a{
+	text-decoration: none;
+	font: 14px "微软雅黑";
+	color: white;
+}
+.footgw a:hover{
+	color: #D7000F;
+}
+.footbq{
+	padding: 20px 0px;
+	font: 14px "微软雅黑";
+	color: white;
+}
+/*底层样式结束*/
+.foot-pic:nth-of-type(1){
+	margin-left: 0;
+}
