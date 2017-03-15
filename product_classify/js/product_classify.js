@@ -1,7 +1,8 @@
 
 var dw = $(window).width() || $("body").width();//屏幕宽度
 var loadNumDY = 0;//对应的数据的第几条
-var loadNumOne = 10;//每一次加载的数量
+var loadNumOne = 10;//MB端每一次加载的数量
+//var loadNumOnePC = 20;//PC端每一次加载的数量
 
 //当html页面加载完成触发
 $(function(){
@@ -16,6 +17,7 @@ $(function(){
 	}else{
 		imgAdapt(".banImg");
 		screenT();//筛选PC端0306
+		ajaxGetTPC();
 		overHide(".priceL",".productes-main-one-price span",95);
 		overPrice(".sumNum",".evaluateNum");
 		txtTipsT(".tipsTXT");//商品名称title提示
@@ -33,7 +35,60 @@ $(window).resize(function(){
 	}
 });
 
-//商城列表数据ajax获取解析正在编写
+//商城列表数据ajax获取解析-PC端
+function ajaxGetTPC(){
+	$.ajax({
+		type:"get",
+		url:"json/product_classify.json",
+		dataType:"json",
+		success:function(data){
+			if(data.success == true){
+				var sum = data.data[0].children.length;
+				
+				//当需要加载的数据量没有达到一次加载的数量（10次），则加载剩下数据的数量
+				dataInput(data.data[0].children,loadNumDY,sum);
+				//触发jpage插件的字符串
+				var jPageStr = '<script type="text/javascript">\
+								$(function(){\
+									var dw = $(window).width() || $("body").width();\
+									if(dw > 640){\
+										$("#itemContainer li img").lazyload({event : "turnPage",effect : "fadeIn"});\
+										$(".holder").jPages({\
+											containerID : "itemContainer",\
+											previous: "〈",\
+											next: "〉",\
+											minHeight: false,\
+											perPage: 50,\
+											midRange: 4,\
+											keyBrowse: false,\
+											scrollBrowse: false,\
+											pause: 0,\
+											clickStop: false,\
+											delay: 30,\
+											callback: function( pages, items ){\
+										        items.showing.find("img").trigger("turnPage");\
+										        items.oncoming.find("img").trigger("turnPage");\
+										    }\
+										});\
+									}\
+								});\
+							</script>';
+							
+					$("body").append(jPageStr);
+				
+				//点击完分页之后都回到产品顶端
+				var scroH = $(".productes").offset().top;
+				$(".holder").on("click",">a",function(){
+					$("body").scrollTop(scroH);
+				});
+			}else{
+				//数据加载失败
+			}
+		}
+	});
+}
+
+//商城列表数据ajax获取解析-MB端
 function ajaxGetT(){
 	$.ajax({
 		type:"get",
@@ -42,7 +97,6 @@ function ajaxGetT(){
 		success:function(data){
 			if(data.success == true){
 				var sum = data.data[0].children.length;
-				console.log(sum);
 				
 				var DiffNum = sum - loadNumDY;
 				//当需要加载的数据量没有达到一次加载的数量（10次），则加载剩下数据的数量
@@ -54,7 +108,6 @@ function ajaxGetT(){
 				
 				//点击加载更多
 				$(".load_more").click(function(){
-					console.log(loadNumDY,sum)
 					if(loadNumDY < sum){
 						var DiffNum = sum - loadNumDY;
 						//当需要加载的数据量没有达到一次加载的数量（10次），则加载剩下数据的数量
@@ -68,7 +121,7 @@ function ajaxGetT(){
 					}
 				});
 			}else{
-				
+				//数据加载失败
 			}
 		}
 	});
@@ -88,27 +141,43 @@ function dataInput(dataN,loadnum,numOne){
 		var contrastUrl = dataN[loadnum].contrastUrl;//对比的跳转链接
 		
 		liBox = liBox + 
-					'<li>\
-						<div class="productes-main-one">\
-							<div class="productes-main-one-img"><a href="'+ proUrl +'"><img src="'+ imgSrc +'"/></a></div>\
-							<div class="product-right">\
-								<div class="productes-main-one-describe"><a href="'+ proUrl +'" class="tipsTXT">'+ titleT +'</a></div>\
-								<div class="productes-main-one-price">¥<var class="priceL">'+ priceL +'</var><span>原价：¥<var class="price_ori">'+ price_ori +'</var></span></div>\
-								<div class="situation">\
-									<div class="productes-main-one-sale">总销量：<span class="sumNum">'+ sumNum +'</span></div>\
-									<div class="productes-main-one-evaluate">评价：<span class="evaluateNum">'+ evaluateNum +'</span></div>\
-								</div>\
-								<a href="'+ contrastUrl +'" class="productes-main-one-compare">对比</a>\
+				'<li>\
+					<div class="productes-main-one">\
+						<div class="productes-main-one-img"><a href="'+ proUrl +'"><img src="img/commonImg/emptyImage500.jpg" data-original="'+ imgSrc +'"/></a></div>\
+						<div class="product-right">\
+							<div class="productes-main-one-describe"><a href="'+ proUrl +'" class="tipsTXT">'+ titleT +'</a></div>\
+							<div class="productes-main-one-price">¥<var class="priceL">'+ priceL +'</var><span>原价：¥<var class="price_ori">'+ price_ori +'</var></span></div>\
+							<div class="situation">\
+								<div class="productes-main-one-sale">总销量：<span class="sumNum">'+ sumNum +'</span></div>\
+								<div class="productes-main-one-evaluate">评价：<span class="evaluateNum">'+ evaluateNum +'</span></div>\
 							</div>\
+							<a href="'+ contrastUrl +'" class="productes-main-one-compare">对比</a>\
 						</div>\
-					</li>';
-					
-		loadnum++;
+					</div>\
+				</li>';
 		
+		loadnum++;
 	}
-//	console.log(liBox);
 	$(".data_box").append(liBox);
 	loadNumDY = loadnum;
+	
+	if(dw > 640){
+		
+	}else{
+		//当第一个的时候需要处理赋值路径
+		var xiaoS = loadNumDY - numOne - 1;//区间范围的大于的小值
+		if(xiaoS < 0){
+			xiaoS = 0;
+			var fSrc = $("#itemContainer img").eq(0).attr("data-original");
+			$("#itemContainer img").eq(0).attr("src",fSrc);
+		}
+		//已加载的数据的图片路径赋值
+		$("#itemContainer img:lt("+loadNumDY+"):gt("+xiaoS+")").each(function(){
+			var allSrc = $(this).attr("data-original");
+			$(this).attr("src",allSrc);
+		});
+	}
+	
 }
 
 //大图自动调整居中

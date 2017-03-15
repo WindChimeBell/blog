@@ -430,39 +430,5 @@
 		<script src="js/jquery.lazyload.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/common2.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/product_classify.js" type="text/javascript" charset="utf-8"></script>
-		<script type="text/javascript">
-			$(function(){
-				var loadNum = 10;
-				var dw = $(window).width() || $("body").width();//屏幕宽度
-				if(dw > 640){
-					$("#itemContainer li").lazyload({
-				      	event : "turnPage",
-				      	effect : "fadeIn"
-				    });
-					$("#itemContainer li").each(function(){
-						var loadIndex = $(this).index() % loadNum;
-					});
-					$(".holder").jPages({
-						containerID : "itemContainer",
-						minHeight: true,//itemContainer的最小高度
-						previous: "〈",//上一页
-						next: "〉",//上一页
-						perPage: loadNum,//每一页显示的数量
-						midRange: 3,//中间宽度
-						keyBrowse: false,//键盘左右换页
-						scrollBrowse: false,//滚轮换页
-						pause: 0,//自动换页毫秒数
-						clickStop: false,//当自动换页的时候，点击停止
-						delay: 50,//每条数据延迟显示的毫秒数
-						callback: function( pages, items ){//懒加载
-					        /* lazy load current images */
-					        items.showing.find("img").trigger("turnPage");
-					        /* lazy load next page images */
-					        items.oncoming.find("img").trigger("turnPage");
-					    }
-					});
-				}
-			});
-		</script>
 	</body>
 </html>
