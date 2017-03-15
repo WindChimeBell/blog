@@ -18,9 +18,6 @@ $(function(){
 		imgAdapt(".banImg");
 		screenT();//筛选PC端0306
 		ajaxGetTPC();
-		overHide(".priceL",".productes-main-one-price span",95);
-		overPrice(".sumNum",".evaluateNum");
-		txtTipsT(".tipsTXT");//商品名称title提示
 		
 		$(".swiper-wrapper").css("height",$(".cplb-main-m-b").height());
 		$(".swiper-slide").css("height",$(".cplb-main-m-b").height());
@@ -81,6 +78,10 @@ function ajaxGetTPC(){
 				$(".holder").on("click",">a",function(){
 					$("body").scrollTop(scroH);
 				});
+				
+				overHide(".priceL",".productes-main-one-price span",95);
+				overPrice(".sumNum",".evaluateNum");
+				txtTipsT(".tipsTXT");//商品名称title提示
 			}else{
 				//数据加载失败
 			}
