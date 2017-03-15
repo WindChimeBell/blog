@@ -2,6 +2,7 @@
 #head_MB,.filtrate_head,#seMask,.search_word var,.load_more{
 	display: none;
 }
+p{max-height: 99999999px;}
 /*container*/
 #container{
 	margin: 0 auto;
