@@ -151,6 +151,7 @@ body {
 }
 .IMI_inp input{
 	text-align: right;
+	line-height: 76px;
 }
 .IMI_select{
 	height: 76px;
