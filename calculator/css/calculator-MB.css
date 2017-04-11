@@ -147,7 +147,6 @@ body {
 }
 .IMI_inp em{
 	display: inline-block;
-	margin-left: 8px;
 }
 .IMI_inp input{
 	text-align: right;
