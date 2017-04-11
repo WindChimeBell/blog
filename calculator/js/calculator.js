@@ -30,7 +30,7 @@ function calInputWidth(){
 		var lenSum = thisO.width();
 		var lenA = thisO.find("span").width();
 		var lenB = thisO.find("em").width();
-		var numL = lenSum - lenA - lenB - 10;
+		var numL = lenSum - lenA - lenB - 14;
 		thisO.find("input").width(numL);
 	});
 }
