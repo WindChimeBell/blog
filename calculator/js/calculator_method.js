@@ -17,24 +17,24 @@ function tipsBox(){
 	clearTimeout(timer);
 	var numB = 0;
 	var sumB = $(".IMI_inp input").length;
-	$(".IMI_inp").each(function(){
-		var cgTXT = $(this).find("span").text();//需要提示的文字
+	$(".IMI_inp input").each(function(){
+		var cgTXT = $(this).parents(".IMI_inp").find("span").text();//需要提示的文字
 		cgTXT = cgTXT.replace("：","");
 		var topT = $(this).offset().top;//输入框到浏览器左顶点的top值
 		var leftT = $(this).offset().left;//输入框到浏览器左顶点的left值
 		
 		//如果输入为空，则弹出提示框提示
-		if($(this).find("input").val() == ""){
+		if($(this).val() == ""){
 			var baTXT = "请输入" + cgTXT;
 			appendLabel(baTXT,topT,leftT);
 			
-			$(this).find("input").focus();
+			$(this).focus();
 			return false;
 		}
 		
 		//如果输入格式错误，则弹出提示框提示
-		if(regInp($(this).find("input").val(),topT,leftT,cgTXT) == false){
-			$(this).find("input").focus();
+		if(regInp($(this).val(),topT,leftT,cgTXT) == false){
+			$(this).focus();
 			return false;
 		}
 		numB++;
@@ -87,8 +87,8 @@ function appendLabel(baTXT,topT,leftT){
 //	}
 	
 	$(".tipsT").css({
-		"top":topT - MBinpH,
-		"left":leftT + 200,
+		"top":topT,
+		"left":leftT + 126,
 	});
 	
 	$(".tipsT").addClass("bounceInT");
