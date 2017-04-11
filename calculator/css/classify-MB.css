@@ -1,0 +1,117 @@
+
+body {
+  font: 14px simhei, "microsoft yahei", "Helvetica Neue", "Droid Sans Fallback", sans-serif, "\5B8B\4F53";
+  background-color: #ECECEC;
+  color: #333;
+}
+#MBcontainer{
+	width: 640px;
+	margin: 0 auto;
+}
+input,select,textarea{font-family: simhei;}
+
+/*头部搜索*/
+.MB_search{
+	border-bottom: 1px solid #C9C9C9;
+	height: 86px;
+	line-height: 86px;
+	overflow: hidden;
+	background-color: #fff;
+}
+.back{
+	display: inline-block;
+	font-size: 36px;
+	width: 72px;
+	text-align: center;
+	vertical-align: middle;
+}
+.input_box{
+	display: inline-block;
+	width: 540px;
+	height: 50px;
+	vertical-align: middle;
+	position: relative;
+}
+.search_inp{
+	display: inline-block;
+	width: 443px;
+	height: 100%;
+	border: none;
+	background-color: #EFEFEF;
+	padding-left: 29px;
+	vertical-align: top;
+	font-size: 24px;
+	line-height: 50px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.search_inp::-webkit-input-placeholder{
+	font-family: simhei;
+	font-size: 24px;
+	line-height: 50px;
+}
+.affirm{
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 12px;
+	font-size: 22px;
+	color: #fff;
+	background-color: dodgerblue;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	cursor: pointer;
+}
+
+/*分类内容*/
+.sebox2{
+	margin-bottom: 16px;
+	background-color: #fff;
+}
+.sebox2 h2{
+	height: 70px;
+	line-height: 70px;
+	border-bottom: 1px solid #C9C9C9;
+	font-size: 22px;
+}
+.sebox2 h2 i{
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	margin: 0 11px 0 21px;
+	vertical-align: top;
+	vertical-align: middle;
+	margin-top: -6px;
+}
+.sebox2 h2 i img{
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+}
+.sebox2 ul{
+	overflow: hidden;
+}
+.sebox2 ul li{
+	float: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 25%;
+	border-bottom: 1px solid #C9C9C9;
+	border-right: 1px solid #C9C9C9;
+	text-align: center;
+	height: 68px;
+	line-height: 68px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 20px;
+}
+.sebox2 ul li:nth-of-type(4n+4){
+	border-right: none;
+}
+.sebox2 ul li a{
+	color: #A2A2A2;
+}

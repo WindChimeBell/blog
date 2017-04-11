@@ -1,0 +1,208 @@
+/*reset*/
+.MRM_tipBlack,.IMI_select em,.free-two,.main_left,#top_banner,.MR_href,.result_title,.MRM_result .IMI_result{
+	display: none;
+}
+input{
+	font-size: 24px;
+	font-family: simhei;
+}
+#container,body {
+  width: 640px;
+}
+body {
+  font: 20px simhei, "microsoft yahei", "Helvetica Neue", "Droid Sans Fallback", sans-serif, "\5B8B\4F53";
+  background-color: #fff;
+  color: #333;
+}
+
+/*移动端头部 */
+#MB_head {
+  min-width: 640px;
+  height: 74px;
+  line-height: 74px;
+  text-align: center;
+  position: relative;
+  border-bottom: 1px solid #CFCFCF;
+  background-color: #fff;
+}
+#MB_head h2 {
+  font-weight: normal;
+  font-size: 28px;
+}
+#MB_head .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95px;
+  height: 74px;
+  color: #333;
+  font-size: 36px;
+}
+
+/*移动端底部*/
+.mb-footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 30;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 640px;
+  height: 98px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #fff;
+}
+.mb-footer a.mb-footbox {
+  display: inline-block;
+  float: left;
+  width: 25%;
+  height: 100%;
+  background-color: #ccc;
+  text-align: center;
+  line-height: 147px;
+  font-size: 18px;
+  background: url(../img/Decoration-Encyclopedia/mb-foot2.png) no-repeat 0 20px;
+  color: #333333;
+}
+.mb-footer a.bp1 {
+  background-position-x: 60px;
+}
+.mb-footer a.bp2 {
+  background-position-x: -99px;
+}
+.mb-footer a.bp3 {
+  background-position-x: -259px;
+}
+.mb-footer a.bp4 {
+  background-position-x: -419px;
+}
+.mb-footer a.mb-active {
+  background-image: url(../img/Decoration-Encyclopedia/mb-foot1.png);
+  color: #D21E2F;
+}
+
+/*内容信息*/
+.IM_left h5,.IM_right h5{
+	height: 76px;
+	line-height: 76px;
+	padding-left: 20px;
+	border-bottom: 1px solid #E5E5E5;
+	font-size: 24px;
+}
+.IMI_inp{
+	height: 76px;
+	line-height: 76px;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 0 20px;
+	font-size: 24px;
+	color: #A2A2A2;
+}
+.IMI_inp input{
+	width: 456px;
+	height: 76px;
+	vertical-align: top;
+	border: none;
+	line-height: 100px;
+}
+.IM_tipColor{
+	height: 76px;
+	line-height: 76px;
+	color: #D21E2F;
+	padding-left: 20px;
+	border-bottom: 1px solid #E5E5E5;
+}
+.result_btn{
+	display: block;
+	width: 600px;
+	margin: 79px auto 20px;
+	height: 78px;
+	line-height: 78px;
+	text-align: center;
+	color: #fff;
+	text-align: center;
+	font-size: 24px;
+	background-color: #D21E2F;
+	border-radius: 4px;
+}
+.result_btn:hover{
+	color: #fff;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+.result_tip{
+	display: block;
+	width: 600px;
+	margin: 0 auto;
+	line-height: 1.375em;
+}
+.result_tip i{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/calculator/warn.png) 0 center no-repeat;
+	vertical-align: top;
+	margin-right: 10px;
+	font-size: 18px;
+	margin-top: 2px;
+}
+.IMI_inp em{
+	display: inline-block;
+	margin-left: 8px;
+}
+.IMI_inp input{
+	text-align: right;
+}
+.IMI_select{
+	height: 76px;
+	line-height: 76px;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 0 0px 0 20px;
+	font-size: 24px;
+	color: #A2A2A2;
+	overflow: hidden;
+}
+.IMI_select span{
+	float: left;
+	width: 300px;
+	border-right: 1px solid #E5E5E5;
+}
+.IMI_select select{
+	float: left;
+	width: 318px;
+	height: 76px;
+	vertical-align: top;
+	border: none;
+	box-sizing: border-box;
+	font-family: simhei;
+	font-size: 24px;
+	color: #A2A2A2;
+	padding-left: 30px;
+}
+
+/*tips层*/
+.tipsT{
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	z-index: 88;
+}
+.tipsT span{
+	display: inline-block;
+	background-color: #D21E2F;
+	color: #fff;
+	padding: 18px 24px;
+	position: relative;
+	border-radius: 4px;
+	font-size: 24px;
+}
+.tipsT i{
+	position: absolute;
+	left: 16px;
+	bottom: -16px;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	border-style: solid;
+	border-width: 16px;
+	border-color: #D21E2F transparent transparent #D21E2F;
+}

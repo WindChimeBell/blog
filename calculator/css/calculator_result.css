@@ -1,0 +1,78 @@
+/*reset*/
+body {
+  font: 20px simhei, "microsoft yahei", "Helvetica Neue", "Droid Sans Fallback", sans-serif, "\5B8B\4F53";
+  background-color: #fff;
+  color: #333;
+}
+/*移动端头部 */
+#MB_head {
+  min-width: 640px;
+  height: 74px;
+  line-height: 74px;
+  text-align: center;
+  position: relative;
+  border-bottom: 1px solid #CFCFCF;
+  background-color: #fff;
+}
+#MB_head h2 {
+  font-weight: normal;
+  font-size: 28px;
+}
+#MB_head .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95px;
+  height: 74px;
+  color: #333;
+  font-size: 36px;
+}
+
+/*计算器内容*/
+#MBcontainer,#MB_head{
+	width: 640px;
+	margin: 0 auto;
+}
+.result_box{
+	width: 462px;
+	margin: 30px auto 74px;
+	text-align: center;
+	font-size: 26px;
+}
+.tips{
+	text-align: left;
+	line-height: 1.5em;
+	font-size: 22px;
+	margin-top: 28px;
+}
+.MBresult{
+	border: 1px solid #E5E5E5;
+	border-radius: 8px;
+	overflow: hidden;
+	padding: 38px 0 42px;
+}
+.cgNum{
+	margin: 48px 0;
+}
+.cgNum span{
+	color: #D21E2F;
+	font-weight: bold;
+}
+.cgHref{
+	color: #0078E8;
+}
+.free_btn{
+	display: block;
+	border-radius: 8px;
+	width: 600px;
+	height: 78px;
+	line-height: 78px;
+	color: #fff;
+	text-align: center;
+	font-size: 24px;
+	margin: 0 auto;
+	background-color: #D21E2F;
+}
+.free_btn:hover{
+	color: #fff;
+}

@@ -1,0 +1,64 @@
+/*reset*/
+body {
+  font: 20px simhei, "microsoft yahei", "Helvetica Neue", "Droid Sans Fallback", sans-serif, "\5B8B\4F53";
+  background-color: #fff;
+  color: #333;
+}
+/*移动端头部 */
+#MB_head {
+  min-width: 640px;
+  height: 74px;
+  line-height: 74px;
+  text-align: center;
+  position: relative;
+  border-bottom: 1px solid #CFCFCF;
+  background-color: #fff;
+}
+#MB_head h2 {
+  font-weight: normal;
+  font-size: 28px;
+}
+#MB_head .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95px;
+  height: 74px;
+  color: #333;
+  font-size: 36px;
+}
+/*计算器图标*/
+#MBcontainer,#MB_head{
+	width: 640px;
+	margin: 0 auto;
+}
+.calculator_nav{
+	overflow: hidden;
+}
+.calculator_nav li{
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+	text-align: center;
+	height: 234px;
+	border-bottom: 1px solid #E5E5E5;
+	font-size: 24px;
+}
+.calculator_nav li:nth-of-type(even){
+	border-left: 1px solid #E5E5E5;
+}
+.calculator_nav li i{
+	display: block;
+	width: 131px;
+	margin: 31px auto 18px;
+	height: 131px;
+	position: relative;
+}
+.calculator_nav li i img{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}

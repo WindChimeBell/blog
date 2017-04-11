@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--iphone设备中的safari私有meta标签，它表示：允许全屏模式浏览-->
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<!--iphone的私有标签，它指定的iphone中safari顶端的状态条的样式-->
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<!--告诉设备忽略将页面中的数字识别为电话号码-->
+		<meta content="telephone=no" name="format-detection">
+		<title>计算器</title>
+		<link rel="stylesheet" type="text/css" href="css/initialize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common2.css"/>
+		<link rel="stylesheet" type="text/css" href="css/calculator_navMB.css"/>
+	</head>
+	<body>
+		<!--移动端头部-->
+		<div id="MB_head">
+			<a href="javascript:history.back(-1)" class="back">&lt;</a>
+			<h2 class="MB_title">计算器</h2>
+		</div>
+		<!--移动端底部-->
+		<div class="mb-footer">
+			<a href="index.html" class="mb-footbox bp1 mb-active">首页</a>
+			<a href="classify-MB.html" class="mb-footbox bp2">分类</a>
+			<a href="###" class="mb-footbox bp3">购物车</a>
+			<a href="###" class="mb-footbox bp4">我的</a>
+		</div>
+		
+		<div id="MBcontainer">
+			<ul class="calculator_nav">
+				<li><a href="coating_calculator.html"><i><img src="img/calculator/calNav1.png"/></i>涂料计算器</a></li>
+				<li><a href="floor_calculator.html"><i><img src="img/calculator/calNav2.png"/></i>地板计算器</a></li>
+				<li><a href="wallpaper_calculator.html"><i><img src="img/calculator/calNav3.png"/></i>壁纸计算器</a></li>
+				<li><a href="wallBrick_calculator.html"><i><img src="img/calculator/calNav4.png"/></i>墙砖计算器</a></li>
+				<li><a href="curtain_calculator.html"><i><img src="img/calculator/calNav5.png"/></i>窗帘计算器</a></li>
+				<li><a href="floorTile_calculator.html"><i><img src="img/calculator/calNav6.png"/></i>地砖计算器</a></li>
+			</ul>
+		</div>
+	
+		<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/moblie_transform.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

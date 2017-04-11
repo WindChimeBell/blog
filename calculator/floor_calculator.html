@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--iphone设备中的safari私有meta标签，它表示：允许全屏模式浏览-->
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<!--iphone的私有标签，它指定的iphone中safari顶端的状态条的样式-->
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<!--告诉设备忽略将页面中的数字识别为电话号码-->
+		<meta content="telephone=no" name="format-detection">
+		<title>地板计算器</title>
+		<link rel="stylesheet" type="text/css" href="css/initialize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common2.css"/>
+		<link rel="stylesheet" type="text/css" id="class_link"/>
+		<script type="text/javascript">
+			var class_link = document.getElementById("class_link");
+			var dw = document.documentElement.clientWidth;//屏幕宽度
+			(dw <= 640)? class_link.setAttribute("href","css/calculator-MB.css") : class_link.setAttribute("href","css/calculator-PC.css");
+			window.onresize = function(){
+				dw = document.documentElement.clientWidth;
+				(dw <= 640)? class_link.setAttribute("href","css/calculator-MB.css") : class_link.setAttribute("href","css/calculator-PC.css");
+			}
+		</script>
+	</head>
+	<body>
+		<!--移动端头部-->
+		<div id="MB_head">
+			<a href="javascript:history.back(-1)" class="back">&lt;</a>
+			<h2 class="MB_title">地板计算器</h2>
+		</div>
+		
+		<!--筛选蒙版-->
+		<div id="seMask"></div>
+		
+		<!--预约成功-->
+		<div class="free-two">
+			<div class="two-box">
+				<div class="two-title">
+					<div class="two-logo"><img src="img/calculator/two1.png" /></div>
+					<div class="two-Spokesman"><img src="img/calculator/two2.png"/></div>
+					<p class="two-text">
+						<span class="two-span1">恭喜您抢设计名额成功！</span>
+						<span class="two-span2">我们的客服人员将在24小时内以您联系，请注意接听来电哟！</span>
+					</p>
+					<span class="two-del">×</span>
+				</div>
+				<div class="two-cont">
+					<p>扫一扫，关注东鹏商城官方微信号</p>
+					<span class="two-code"><img src="img/calculator/two3.jpg"/></span>
+					<p>“您还可以在微信上找到更多装修服务”</p>
+				</div>
+			</div>
+		</div>
+		
+		<!--头部-->
+		<div id="header">
+			<div class="head_nav clearfix">
+				<ul class="Hnav_posi"><span>当前城市：</span><span>佛山市</span><i></i></ul>
+				<ul class="Hnav_left clearfix">
+					<li style="border-left: none;"><a href="index.html">东鹏商城</a></li>
+					<li class="DP_group">
+						<a href="javascript:void(0)">东鹏集团<i class="TrangleD"></i></a>
+						<div class="DP_group_list">
+							<em class="Trangle"></em>
+							<span><a href="http://www.dongpeng.net/">东鹏瓷砖</a></span>
+							<span><a href="http://www.dongpengjieju.com/">东鹏洁具</a></span>
+							<span><a href="http://www.dongpengfloor.net/">东鹏木地板</a></span>
+							<span><a href="http://www.dongpengkeji.net/">东鹏绿家</a></span>
+							<span><a href="http://www.dyty.com.cn/">东鹏华盛昌</a></span>
+							<span><a href="http://www.dpo2o.com/">东鹏家居</a></span>
+							<span><a href="http://www.innoci.com.cn/">innoci艺耐</a></span>
+							<span><a href="http://www.dpicn.net/">REX锐思</a></span>
+						</div>
+					</li>
+					<li><a href="###">产品说明</a></li>
+					<li><a href="###">实体门店</a></li>
+					<li><a href="http://www.dongpeng.com/">国际版</a></li>
+					<li><a href="###">企业采购</a></li>
+					<li class="noAfter"><a href="###">经销商专区</a></li>
+				</ul>
+				<ul class="Hnav_right">
+					<li style="border-left: none;"><a href="###">请登录</a></li>
+					<li><a href="###">免费注册</a></li>
+					<li class="noAfter"><a href="###">消息通知</a></li>
+					<li class="shopCat"><a href="###"><i class="shopCi"></i>购物车（12）</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--导航栏-->
+		<div id="nav" class="clearfix">
+			<div class="nav_box clearfix">
+				<div class="logo"><img src="img/commonImg/logo.jpg"/></div>
+				<div class="gifImg"><img src="img/commonImg/flashO.jpg"/></div>
+				<ul class="nav_list">
+					<li><a href="###">首页</a></li>
+					<li><a href="###">样板房</a></li>
+					<li><a href="###">建材馆</a></li>
+					<li><a href="###">东鹏团购</a></li>
+					<li><a href="###">找设计师</a></li>
+					<li><a href="###">找施工队</a></li>
+					<li><a href="###">装修知识</a></li>
+					<li><a href="###">新品频道</a></li>
+				</ul>
+				<div class="search">
+					<label><input type="text" placeholder="瓷砖" /><i></i></label>
+				</div>
+			</div>
+		</div>
+		
+		<div id="container" data-num="2">
+			<div id="top_banner"><img src="img/calculator/banner.jpg"/></div>
+			<div id="main">
+				<div class="main_left">
+					<!--免费预约-->
+					<div class="appoint_box">
+						<h4>免费预约</h4>
+						<div class="send_main">
+							<label class="phBox"><span class="phTXT">您的称呼</span><input type="text" /></label>
+							<label class="phBox"><span class="phTXT">手机号码</span><input type="text" /></label>
+							<div data-toggle="distpicker" class="placeBox">
+					           	<div class="form-group formG1">
+					          		<select class="form-control r-width" id="province3" data-province="广东省"></select>
+					        	</div>
+						        <div class="form-group formG2">
+						          	<select class="form-control  r-width" id="city3" data-city="佛山市"></select>
+						        </div>
+					      	</div>
+						</div>
+						<h4 class="AB_submit">提 交</h4>
+					</div>
+					
+					<!--资讯信息-->
+					<div class="informationL">
+						<h4>资讯信息</h4>
+						<ul>
+							<li><i>· </i><a href="###">东鹏集团董事长何新明携新品霸气亮相陶博会</a></li>
+							<li><i>· </i><a href="###">东鹏集团董事长何新明携新品霸气亮相陶博会</a></li>
+							<li><i>· </i><a href="###">东鹏集团董事长何新明携新品霸气亮相陶博会</a></li>
+							<li><i>· </i><a href="###">东鹏集团董事长何新明携新品霸气亮相陶博会</a></li>
+							<li><i>· </i><a href="###">东鹏集团董事长何新明携新品霸气亮相陶博会</a></li>
+							<li><i>· </i><a href="###">东鹏集团董事长何新明携新品霸气亮相陶博会</a></li>
+							<li><i>· </i><a href="###">东鹏集团董事长何新明携新品霸气亮相陶博会</a></li>
+						</ul>
+					</div>
+					
+					<!--免费报价申请-->
+					<div class="appoint_box quote_box">
+						<h4>免费报价申请</h4>
+						<div class="send_main">
+							<label class="phBox"><span class="phTXT">建筑面积</span><input type="text" /><em>m²</em></label>
+							<label class="phBox"><span class="phTXT">手机号码</span><input type="text" /></label>
+							<div class="placeBox clearfix">
+					           	<div class="QB_selA QB_select">
+					           		<select>
+					           			<option>-- 室 --</option>
+					           			<option selected="selected">一室</option>
+					           			<option>两室</option>
+					           			<option>三室</option>
+					           		</select>
+					        	</div>
+					        	<div class="QB_selB QB_select">
+					           		<select>
+					           			<option>-- 厅 --</option>
+					           			<option selected="selected">一厅</option>
+					           			<option>两厅</option>
+					           			<option>三厅</option>
+					           		</select>
+					        	</div>
+					        	<div class="QB_selC QB_select">
+					           		<select>
+					           			<option>-- 卫 --</option>
+					           			<option selected="selected">一卫</option>
+					           			<option>两卫</option>
+					           			<option>三卫</option>
+					           		</select>
+					        	</div>
+					      	</div>
+						</div>
+						<a href="###" class="immedGet">立即获取</a>
+					</div>
+				</div>
+				
+				<!--右边内容板块-->
+				<div class="main_right">
+					<!--头部跳转-->
+					<div class="MR_href">
+						<p class="MRH_title">常用装修工具</p>
+						<ul class="MRH_icons">
+							<li class="MRH_i1"><a href="coating_calculator.html"><i></i>涂料计算器</a></li>
+							<li class="MRH_i2 MRHI_Active"><a href="floor_calculator.html"><i></i>地板计算器</a></li>
+							<li class="MRH_i3"><a href="wallpaper_calculator.html"><i></i>壁纸计算器</a></li>
+							<li class="MRH_i4"><a href="wallBrick_calculator.html"><i></i>墙砖计算器</a></li>
+							<li class="MRH_i5"><a href="curtain_calculator.html"><i></i>窗帘计算器</a></li>
+							<li class="MRH_i6"><a href="floorTile_calculator.html"><i></i>地砖计算器</a></li>
+						</ul>
+					</div>
+					
+					<!--计算器内容-->
+					<div class="MR_main">
+						<p class="MRM_tipBlack">根据房屋信息及地板规格，算出所需地板数量</p>
+						<div class="input_main">
+							<div class="IM_left">
+								<h5>请输入居室信息</h5>
+								<div class="IM_input">
+									<p class="IMI_inp"><span>房间长度：</span><input type="text" id="room_long"/><em>米</em></p>
+									<p class="IMI_inp"><span>房间宽度：</span><input type="text" id="room_width"/><em>米</em></p>
+								</div>
+								<h5>请输入地板信息</h5>
+								<div class="IM_input">
+									<p class="IMI_inp"><span>地板长度：</span><input type="text" id="floor_long"/><em>毫米</em></p>
+									<p class="IMI_inp"><span>地板宽度：</span><input type="text" id="floor_width"/><em>毫米</em></p>
+									<p class="IMI_select">
+										<span>或选择标准规格的地板：</span>
+										<select id="select_num">
+											<option>600*90*18</option>
+											<option>750*90*18</option>
+											<option>900*90*18</option>
+											<option>1285*192*8</option>
+										</select>
+										<em>毫米</em>
+									</p>
+									<p class="IMI_select">
+										<span>地板类型：</span>
+										<select id="select_type">
+											<option>复合地板</option>
+											<option>实木地板</option>
+										</select>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="MRM_result">
+							<p class="result_title">计算结果：</p>
+							<p class="IMI_result"><span>您需要的地板数量是：</span><input type="text" id="floorNum"/><em>块</em></p>
+							<a href="javascript:void(0)" class="result_btn" data-href="calculator_result.html?CalRE=2">开始计算</a>
+							<span class="result_tip"><i></i>郑重说明：该计算器提供的结果仅供参考。购买时请以专业厂商的数据为准。</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--底部-->
+		<div class="footer">
+			<div class="footer-box">
+				<div class="foot-up">
+					<div class="up-div">
+						<div class="up-img">
+							<img src="img/commonImg/y-footer1.png"/>
+						</div>
+						<div class="up-txt">
+							<p class="txt-p1">知名品牌</p>
+							<p class="txt-p2">选我就没错的</p>
+						</div>
+					</div>	
+					<div class="up-div">
+						<div class="up-img">
+							<img src="img/commonImg/y-footer2.png"/>
+						</div>
+						<div class="up-txt">
+							<p class="txt-p1">专注建材44年</p>
+							<p class="txt-p2">选我就没错的</p>
+						</div>
+					</div>
+					<div class="up-div">
+						<div class="up-img">
+							<img src="img/commonImg/y-footer3.png"/>
+						</div>
+						<div class="up-txt">
+							<p class="txt-p1">品质保证</p>
+							<p class="txt-p2">选我就没错的</p>
+						</div>
+					</div>
+					<div class="up-div">
+						<div class="up-img">
+							<img src="img/commonImg/y-footer4.png"/>
+						</div>
+						<div class="up-txt">
+							<p class="txt-p1">环保材料</p>
+							<p class="txt-p2">选我就没错的</p>
+						</div>
+					</div>
+					<div class="up-div margin-none">
+						<div class="up-img">
+							<img src="img/commonImg/y-footer5.png"/>
+						</div>
+						<div class="up-txt">
+							<p class="txt-p1">客服电话</p>
+							<p class="txt-p2 txt-num">0757-82663173</p>
+						</div>
+					</div>
+				</div>
+				<div class="foot-mid">
+					<dl>
+						<dt>关于东鹏</dt>
+						<dd><a href="###">公司简介</a></dd>
+						<dd><a href="###">企业文化</a></dd>
+						<dd><a href="###">品牌实力</a></dd>
+						<dd><a href="###">新闻中心</a></dd>
+					</dl>
+					<dl>
+						<dt>购物指南</dt>
+						<dd><a href="###">购物流程</a></dd>
+						<dd><a href="###">优惠活动</a></dd>
+						<dd><a href="###">售后服务</a></dd>
+						<dd><a href="###">常见问题</a></dd>
+					</dl>
+					<dl>
+						<dt>装修知识</dt>
+						<dd><a href="###">安装视频</a></dd>
+						<dd><a href="###">教你选材</a></dd>
+						<dd><a href="###">精选案例</a></dd>
+						<dd><a href="###">装修流程</a></dd>
+					</dl>
+					<dl>
+						<dt>购物商城</dt>
+						<dd><a href="###">瓷砖天猫店</a></dd>
+						<dd><a href="###">洁具天猫店</a></dd>
+						<dd><a href="###">京东商城</a></dd>
+						<dd><a href="###">DP唯品会</a></dd>
+					</dl>
+					<dl class="margin-none">
+						<dt>关注我们</dt>
+						<dd class="foot-dd"><a href="###">微信公众号</a><img src="img/commonImg/y-free2.jpg"/></dd>
+						<dd><a href="###">微信商城</a></dd>
+						<dd><a href="###">新浪微博</a></dd>
+					</dl>
+				</div>
+				<div class="foot-down">
+					<p class="down-p1">
+						<span>友情链接：</span>
+						<a href="http://www.dongpeng.net/">东鹏陶瓷</a> |
+						<a href="http://www.dongpengjieju.com/">东鹏洁具</a> |
+						<a href="###">东鹏背景墙</a> |
+						<a href="###">东鹏宅一起</a> |
+						<a href="###">东鹏硅藻泥</a> |
+						<a href="http://www.dpo2o.com/">东鹏家居</a> |
+						<a href="http://www.dongpengfloor.net/">东鹏木地板</a> |
+						<a href="http://www.dongpengkeji.net/">东鹏绿家科技</a> |
+						<a href="http://www.innoci.com.cn/">innoci洁具</a> |
+						<a href="http://www.dpicn.net/">rex瓷砖</a> |
+						<a href="http://www.dyty.com.cn/">东鹏华盛昌陶艺</a> |
+						<a href="###">东鹏马拉松</a> |
+						<a href="###">东鹏微晶石</a> |
+						<a href="###">中国陶瓷城</a> |
+						<a href="http://www.baidu.com.cn/">百度</a> |
+						<a href="###" class="foot-more">更多></a>
+					</p>
+					<p class="down-p2">
+						<a href="###">关于我们</a> |
+						<a href="###">联系我们</a> |
+						<a href="###">诚聘英才</a> |
+						<a href="###">企业采购</a> |
+						<a href="###">招商加盟</a> |
+						<a href="###">设计师入驻</a> |
+						<a href="###">施工队入驻</a> |
+						<a href="###">帮助中心</a>
+					</p>
+					<p>广东东鹏控股股份有限公司©版权所有 保留所有权利 </p>
+				</div>
+			</div>
+		</div>
+		
+		
+		<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/distpicker.data.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/distpicker.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/moblie_transform.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/calculator_method.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/calculator.js" type="text/javascript" charset="utf-8"></script>
+		
+		<!--当版本低于ie8时，提醒更新浏览器，或者推荐浏览器-->
+		<!--[if lte IE 8]>
+			<script type="text/javascript">
+				var bodys = document.body;
+				bodys.innerHTML = "你的浏览器版本太低，已经和时代脱轨了 :(<br>" + "推荐使用：<a href='https://www.baidu.com/s?ie=UTF-8&wd=%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8' target='_blank' style='color:#d21e2f'>谷歌浏览器，</a>" + "<a href='https://www.baidu.com/s?ie=UTF-8&wd=%E7%81%AB%E7%8B%90%E6%B5%8F%E8%A7%88%E5%99%A8' target='_blank' style='color:#d21e2f'>火狐浏览器，</a>" + "<a href='https://www.baidu.com/s?ie=UTF-8&wd=%E7%8C%8E%E8%B1%B9%E6%B5%8F%E8%A7%88%E5%99%A8' target='_blank' style='color:#d21e2f'>猎豹</a>";
+				bodys.style.margin = "30px 30px 0";
+				bodys.style.fontSize = "18px";
+				bodys.style.lineHeight = "1.5em";
+				document.execCommand("Stop");
+			</script>
+		<![endif]-->
+	</body>
+</html>

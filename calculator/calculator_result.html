@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--iphone设备中的safari私有meta标签，它表示：允许全屏模式浏览-->
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<!--iphone的私有标签，它指定的iphone中safari顶端的状态条的样式-->
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<!--告诉设备忽略将页面中的数字识别为电话号码-->
+		<meta content="telephone=no" name="format-detection">
+		<title>计算器计算结果</title>
+		<link rel="stylesheet" type="text/css" href="css/initialize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common2.css"/>
+		<link rel="stylesheet" type="text/css" href="css/calculator_result.css"/>
+	</head>
+	<body>
+		<!--移动端头部-->
+		<div id="MB_head">
+			<a href="javascript:history.back(-1)" class="back">&lt;</a>
+			<h2 class="MB_title"><em>壁纸</em>计算器</h2>
+		</div>
+		<!--移动端底部-->
+		<div class="mb-footer">
+			<a href="index.html" class="mb-footbox bp1 mb-active">首页</a>
+			<a href="classify-MB.html" class="mb-footbox bp2">分类</a>
+			<a href="###" class="mb-footbox bp3">购物车</a>
+			<a href="###" class="mb-footbox bp4">我的</a>
+		</div>
+		
+		<div id="MBcontainer">
+			<div class="result_box">
+				<div class="public_person"><img src="img/calculator/calReimg.png"/></div>
+				<div class="MBresult">
+					<p class="cgName">您需要的<em>壁纸</em>数量是：</p>
+					<p class="cgNum"><span>120</span><em>卷</em></p>
+					<a href="javascript:void(0)" class="cgHref">重新计算</a>
+				</div>
+				<p class="tips">此计算结果与实际用量有所差入，仅供参考，如需计算精准用量，可选择预约量房设计。</p>
+			</div>
+			<a href="mb-bespeak.html" class="free_btn">立即预约免费量房</a>
+		</div>
+	
+		<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/moblie_transform.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/calculator_result.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
