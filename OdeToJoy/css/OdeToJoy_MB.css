@@ -1,0 +1,358 @@
+@charset "utf-8";
+*{margin: 0;padding: 0;}
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary {display: block;}
+button,html input[type=button],input[type=submit] {-webkit-apperance: button;cursor: pointer;}
+button[disabled],html input[disabled] {cursor: default;}
+ol,ul,li {list-style: none;}
+img {border: 0;vertical-align: middle;width: 100%;}
+table {border-collapse: collapse;border-spacing: 0;}
+a{text-decoration: none;color: #000;}
+input,select,textarea{outline: 0;}
+strong,var,em,i,u{font-weight: normal;font-style: normal;}
+strong,var,em,input,textarea,select,option{margin: 0;padding: 0;}
+body {font: 16px "microsoft yahei", "Arial Narrow", HELVETICA;}
+.clearfix{zoom: 1;}
+.clearfix:after{
+	display: block;
+	overflow: hidden;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+	content: ".";
+}
+html,body{
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+/*reset*/
+/*链接Begin*/
+/*欢乐五美送*/
+#OdeToJoy_box{
+	width: 640px;
+	margin: 0 auto;
+	position: relative;
+}
+#OdeToJoy_box a{
+	display: block;
+	z-index: 10;
+	background:url(about:blank);
+}
+#OdeToJoy_box span{
+	display: none;
+}
+.top_href1{
+	position: absolute;
+	top: 882px;
+	left: 46px;
+	width: 153px;
+	height: 89px;
+}
+.top_href2{
+	position: absolute;
+	top: 882px;
+	left: 204px;
+	width: 202px;
+	height: 90px;
+}
+.top_href3{
+	position: absolute;
+	top: 882px;
+	left: 411px;
+	width: 179px;
+	height: 89px;
+}
+.top_href4{
+	position: absolute;
+	top: 979px;
+	left: 46px;
+	width: 273px;
+	height: 95px;
+}
+.top_href5{
+	position: absolute;
+	top: 979px;
+	left: 325px;
+	width: 263px;
+	height: 95px;
+}
+/*立即参与*/
+.immediately_join{
+	position: absolute;
+	top: 1412px;
+	left: 133px;
+	width: 368px;
+	height: 74px;
+}
+/*产品链接*/
+.product_href1{
+	position: absolute;
+	top: 1953px;
+	left: 27px;
+	width: 189px;
+	height: 308px;
+}
+.product_href2{
+	position: absolute;
+	top: 1916px;
+	left: 429px;
+	width: 159px;
+	height: 331px;
+}
+.product_href3{
+	position: absolute;
+	top: 2509px;
+	left: 375px;
+	width: 213px;
+	height: 325px;
+}
+/*更多爆款*/
+.more_href{
+	position: absolute;
+	top: 2859px;
+	left: 375px;
+	width: 213px;
+	height: 48px;
+}
+/*特权定金链接*/
+.privilege_href{
+	position: absolute;
+	top: 2869px;
+	left: 38px;
+	width: 321px;
+	height: 489px;
+}
+/*甜蜜照链接*/
+.photo_href{
+	position: absolute;
+	top: 7124px;
+	left: 42px;
+	width: 520px;
+	height: 172px;
+}
+/*立即参与链接2*/
+.immediately_join2{
+	position: absolute;
+	top: 8287px;
+	left: 106px;
+	width: 420px;
+	height: 84px;
+}
+/*链接End*/
+
+/*添加动画Begin*/
+/*五个环节动画*/
+.part1{
+	position: absolute;
+	top: 1884px;
+	left: 40px;
+	width: 182px;
+	height: 57px;
+}
+.part2{
+	position: absolute;
+	top: 3300px;
+	left: 383px;
+	width: 214px;
+	height: 73px;
+}
+.part3{
+	position: absolute;
+	top: 4157px;
+	left: 454px;
+	width: 170px;
+	height: 171px;
+}
+.part4{
+	position: absolute;
+	top: 5737px;
+	left: 40px;
+	width: 204px;
+	height: 53px;
+}
+.part5{
+	position: absolute;
+	top: 6599px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 231px;
+	height: 83px;
+}
+
+/*产品优惠动画*/
+.favorable1_ani{
+	position: absolute;
+	top: 1989px;
+	left: 145px;
+	width: 92px;
+	height: 92px;
+}
+.favorable2_ani{
+	position: absolute;
+	top: 1963px;
+	left: 525px;
+	width: 85px;
+	height: 94px;
+}
+.favorable3_ani{
+	position: absolute;
+	top: 2496px;
+	left: 511px;
+	width: 105px;
+	height: 102px;
+}
+
+/*照相机动画*/
+.photo_ani{
+	position: absolute;
+	top: 1145px;
+	left: 40px;
+	width: 150px;
+	height: 137px;
+}
+
+/*相框动画*/
+.photoFrame_ani{
+	position: absolute;
+	top: 6686px;
+	left: 141px;
+	width: 215px;
+	height: 178px;
+}
+
+/*火箭动画*/
+.rocket_ani{
+	position: absolute;
+	top: 4618px;
+	left: 124px;
+	width: 177px;
+	height: 318px;
+	-webkit-animation-duration: 1.8s;
+	animation-duration: 1s;
+}
+
+/*手指提醒动画*/
+.hand_ani{
+	position: absolute;
+	top: 2128px;
+	left: 184px;
+	width: 87px;
+	height: 87px;
+}
+.hand_ani2{
+	position: absolute;
+	top: 3318px;
+	left: 260px;
+	width: 87px;
+	height: 87px;
+}
+.hand_ani3{
+	position: absolute;
+	top: 8346px;
+	left: 436px;
+	width: 87px;
+	height: 87px;
+}
+
+.handAni_key{
+	-webkit-animation: handClick 1s linear infinite;
+	-moz-animation: handClick 1s linear infinite;
+	-ms-animation: handClick 1s linear infinite;
+	animation: handClick 1s linear infinite;
+}
+@-webkit-keyframes handClick{
+	0%{
+		-webkit-transform: translateX(0) translateY(0);
+		-moz-transform: translateX(0) translateY(0);
+		-ms-transform: translateX(0) translateY(0);
+		-o-transform: translateX(0) translateY(0);
+		transform: translateX(0) translateY(0);
+	}
+	50%{
+		-webkit-transform: translateX(-10px) translateY(-10px);
+		-moz-transform: translateX(-10px) translateY(-10px);
+		-ms-transform: translateX(-10px) translateY(-10px);
+		-o-transform: translateX(-10px) translateY(-10px);
+		transform: translateX(-10px) translateY(-10px);
+	}
+	100%{
+		-webkit-transform: translateX(0) translateY(0);
+		-moz-transform: translateX(0) translateY(0);
+		-ms-transform: translateX(0) translateY(0);
+		-o-transform: translateX(0) translateY(0);
+		transform: translateX(0) translateY(0);
+	}
+}
+@-moz-keyframes handClick{
+	0%{
+		-webkit-transform: translateX(0) translateY(0);
+		-moz-transform: translateX(0) translateY(0);
+		-ms-transform: translateX(0) translateY(0);
+		-o-transform: translateX(0) translateY(0);
+		transform: translateX(0) translateY(0);
+	}
+	50%{
+		-webkit-transform: translateX(-10px) translateY(-10px);
+		-moz-transform: translateX(-10px) translateY(-10px);
+		-ms-transform: translateX(-10px) translateY(-10px);
+		-o-transform: translateX(-10px) translateY(-10px);
+		transform: translateX(-10px) translateY(-10px);
+	}
+	100%{
+		-webkit-transform: translateX(0) translateY(0);
+		-moz-transform: translateX(0) translateY(0);
+		-ms-transform: translateX(0) translateY(0);
+		-o-transform: translateX(0) translateY(0);
+		transform: translateX(0) translateY(0);
+	}
+}
+@-ms-keyframes handClick{
+	0%{
+		-webkit-transform: translateX(0) translateY(0);
+		-moz-transform: translateX(0) translateY(0);
+		-ms-transform: translateX(0) translateY(0);
+		-o-transform: translateX(0) translateY(0);
+		transform: translateX(0) translateY(0);
+	}
+	50%{
+		-webkit-transform: translateX(-10px) translateY(-10px);
+		-moz-transform: translateX(-10px) translateY(-10px);
+		-ms-transform: translateX(-10px) translateY(-10px);
+		-o-transform: translateX(-10px) translateY(-10px);
+		transform: translateX(-10px) translateY(-10px);
+	}
+	100%{
+		-webkit-transform: translateX(0) translateY(0);
+		-moz-transform: translateX(0) translateY(0);
+		-ms-transform: translateX(0) translateY(0);
+		-o-transform: translateX(0) translateY(0);
+		transform: translateX(0) translateY(0);
+	}
+}
+@keyframes handClick{
+	0%{
+		-webkit-transform: translateX(0) translateY(0);
+		-moz-transform: translateX(0) translateY(0);
+		-ms-transform: translateX(0) translateY(0);
+		-o-transform: translateX(0) translateY(0);
+		transform: translateX(0) translateY(0);
+	}
+	50%{
+		-webkit-transform: translateX(-10px) translateY(-10px);
+		-moz-transform: translateX(-10px) translateY(-10px);
+		-ms-transform: translateX(-10px) translateY(-10px);
+		-o-transform: translateX(-10px) translateY(-10px);
+		transform: translateX(-10px) translateY(-10px);
+	}
+	100%{
+		-webkit-transform: translateX(0) translateY(0);
+		-moz-transform: translateX(0) translateY(0);
+		-ms-transform: translateX(0) translateY(0);
+		-o-transform: translateX(0) translateY(0);
+		transform: translateX(0) translateY(0);
+	}
+}
+
+/*添加动画End*/
